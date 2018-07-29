@@ -68,16 +68,16 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const indexPageQuery = graphql`
-  query IndexPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-			frontmatter {
-				title
-        hero {
-          title
-          description
-        }
-			}
+query IndexPage($id: String!) {
+  markdownRemark(id: { eq: $id }) {
+    html
+    frontmatter {
+      title
+      hero {
+        title
+        description
+      }
     }
   }
+}
 `;

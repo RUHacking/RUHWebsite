@@ -46,5 +46,3 @@ collections:
             }
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-         
-
