@@ -5,7 +5,7 @@ import github from '../img/github-icon.svg'
 import logo from '../img/logo/RUHlogo.png'
 
 const Navbar = () => (
-  <nav className="navbar is-black">
+  <nav className="navbar is-spaced is-primary is-fixed-top">
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">

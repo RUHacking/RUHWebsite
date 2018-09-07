@@ -44,5 +44,22 @@ collections:
                 {label: "Hero Description", name: "description", widget: "markdown"}
               ]
             }
+          - {label: About, name: about, widget: object, fields:
+              [
+                {label: "About Title", name: "title", widget: "string"},
+                {label: "About Description Col 1", name: "description_1", widget: object, fields:
+                  [
+                    {label: "Title", name: "title", widget: "string"}
+                    {label: "Description", name: "description", widget: "markdown"}
+                  ]
+                }
+                {label: "About Description Col 2", name: "description_2", widget: object, fields:
+                  [
+                    {label: "Title", name: "title", widget: "string"}
+                    {label: "Description", name: "description", widget: "markdown"}
+                  ]
+                }
+              ]
+            }
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
