@@ -1,6 +1,6 @@
-**Note:** Gatsby v2 beta support is here! Check out the [gatsby-v2 branch](https://github.com/AustinGreen/gatsby-starter-netlify-cms/tree/gatsby-v2) to start using it now.
-
 # Gatsby + Netlify CMS Starter
+
+**Note:** This starter uses the [Gatsby v2 Beta](https://www.gatsbyjs.org/blog/2018-06-16-announcing-gatsby-v2-beta-launch/).
 
 This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
 
