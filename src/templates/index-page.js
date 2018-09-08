@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
+import Map from '../components/Map'
 import logo from '../img/logo/RUHlogo_title_red.png'
 
 export const IndexPageTemplate = ({ title, hero, about, content, contentComponent }) => {
@@ -33,7 +34,7 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
         </div>
       </section>
 
-      <section className="hero section--about is-dark is-medium">
+      <section className="hero section--about is-dark is-small">
         <div className="hero-head">
         </div>
         <div className="hero-body">
@@ -59,12 +60,20 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
         </div>
       </section>
 
-      <section className="hero section--location is-dark is-medium">
+      <section className="hero section--location is-light is-medium">
         <div className="hero-head">
+          <Map
+            center={{
+              lat: 51.455350, 
+              lng: -0.938644,
+            }}
+          />
         </div>
         <div className="hero-body">
           <div className="container">
-            
+            <div class="columns">
+              <div class="column"></div>
+            </div>
           </div>
         </div>
       </section>
