@@ -54,6 +54,18 @@ collections:
             [
               {label: "Sponsors Title", name: "title", widget: "string"},
               {label: "Sponsors Description", name: "description", widget: "markdown"},
+              {label: "Sponsors List", name: "sponsor_list", widget: "object", fields:
+                [
+                  {label: "Image Field 1", name: "img1", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 2", name: "img2", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 3", name: "img3", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 4", name: "img4", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 5", name: "img5", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 6", name: "img6", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 7", name: "img7", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                  {label: "Image Field 8", name: "img8", widget: "image", default: "/img/partners/gdg_reading.jpeg"},
+                ]
+              }
             ]
           }
           - {label: "Title", name: "title", widget: "string"}

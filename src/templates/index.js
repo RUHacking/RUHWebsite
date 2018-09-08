@@ -65,7 +65,7 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
       <section className="hero section--location is-primary is-small">
         <div className="hero-head">
           <div className="columns is-gapless">
-            <div className="column is-two-thirds-desktop">
+            <div className="column is-fullheight is-two-thirds-desktop">
               <Map
                 centre={{
                   lat: loc.coords.lat,
@@ -80,13 +80,13 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
                 }
               />
             </div>
-            <div className="column">
-              <div className="hero-body">
+            <div className="column is-one-third-desktop">
+              <div className="">
                 <div style={{height: '100%'}} className="container has-background-primary">
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                     {loc.title}
                   </h2>
-                  {loc.description}
+                  <p>{loc.description}</p>
                 </div>
               </div>
             </div>
@@ -103,23 +103,18 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
             <p>{sponsors.description}</p>
           </div>
         </div>
-        <div className="hero-body">
-          <div className="tile is-ancestor">
-            <div className="tile">
-              <div className="tile is-child">
-                <div className="card">
-                  <div className="card-image">
-                    <figure className="image is-4by3">
-                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+        <div className="hero-body is-paddingless">
+          <div className="container section">
+            <div className="columns is-multiline is-mobile is-centered is-variable is-8">
+              {Object.values(sponsors.sponsor_list).map(val => {
+                return (
+                  <div key={val} className="column is-narrow is-half-mobile is-one-quarter-tablet is-one-quarter-desktop">
+                    <figure className="image">
+                      <img className="" src={val} alt="Placeholder image"/>
                     </figure>
                   </div>
-                  <div className="card-content">
-                    <div className="content">
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -175,6 +170,16 @@ query IndexPage($id: String!) {
       sponsors {
         title
         description
+        sponsor_list {
+          img1
+          img2
+          img3
+          img4
+          img5
+          img6
+          img7
+          img8
+        }
       }
       about {
         title
