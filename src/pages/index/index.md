@@ -1,5 +1,5 @@
 ---
-templateKey: 'index-page'
+templateKey: 'index'
 path: /
 hero:
   title: 'R. U. Hacking?'
