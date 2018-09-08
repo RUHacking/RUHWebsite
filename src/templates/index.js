@@ -2,13 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
 import Map from '../components/Map'
 import logo from '../img/logo/RUHlogo_title_red.png'
 
-export const IndexPageTemplate = ({ title, hero, about, content, contentComponent }) => {
-  const PageContent = contentComponent || Content;
-
+export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) => {
+  // const PageContent = contentComponent || Content;
+  const { hero, about, loc, title } = frontmatter;
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
                 <h2 className="subtitle is-size-5 has-text-centered">{hero.description}</h2>
                 <div className="level">
                   <div className="level-item">
-                    <a className="button is-primary is-inverted is-outlined is-large is-rounded">Join the society today!</a>
+                    <a href="/" className="button is-primary is-inverted is-outlined is-large is-rounded">Join the society today!</a>
                   </div>
                 </div>
               </div>
@@ -47,71 +47,60 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
             <div className="columns">
               <div className="column is-half">
                 <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
-                  {about.description_1.title}
+                  {about.col_1.title}
                 </h3>
-                {about.description_1.description}
+                {about.col_1.description}
               </div>
               <div className="column is-half">
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
-                  {about.description_2.title}
+                  {about.col_2.title}
                 </h3>
-                {about.description_2.description}
+                {about.col_2.description}
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="hero section--location is-light is-medium">
+      <section className="hero section--location is-primary is-small">
         <div className="hero-head">
-          <div className="columns">
+          <div className="columns is-gapless">
             <div className="column is-two-thirds-desktop">
               <Map
                 centre={{
-                  lat: 51.4414,
-                  lng: -0.9418,
+                  lat: loc.coords.lat,
+                  lng: loc.coords.lng,
                 }}
+                markerElement={
+                  <div>
+                    <h3 className="has-text-black">
+                      {loc.marker}
+                    </h3>
+                  </div>
+                }
               />
             </div>
             <div className="column">
-              <div className="container has-background-primary">
-                hewop
+              <div className="hero-body">
+                <div style={{height: '100%'}} className="container has-background-primary">
+                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                    {loc.title}
+                  </h2>
+                  {loc.description}
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="hero-body">
-          <div className="container">
-            <div className="columns">
-              <div className="column"></div>
             </div>
           </div>
         </div>
       </section>
 
 
-      {/* <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10">
-              <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {title}
-                </h2>
-                <PageContent className="content" content={content} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
     </Layout>
   )
 }
 
 IndexPageTemplate.propTypes = {
-  title: PropTypes.string.isRequired,
-  hero: PropTypes.object,
-  about: PropTypes.object,
+  frontmatter: PropTypes.object,
   content: PropTypes.string,
 	contentComponent: PropTypes.func,
 }
@@ -122,9 +111,7 @@ const Index = ({ data }) => {
   return (
     <IndexPageTemplate
       contentComponent={HTMLContent}
-      title={post.frontmatter.title}
-      hero={post.frontmatter.hero}
-			about={post.frontmatter.about}
+      frontmatter={post.frontmatter}
       content={post.html}
     />
   )
@@ -147,13 +134,22 @@ query IndexPage($id: String!) {
         title
         description
       }
+      loc {
+        title
+        description
+        marker
+        coords {
+          lat
+          lng
+        }
+      }
       about {
         title
-        description_1 {
+        col_1 {
           title
           description
         }
-        description_2 {
+        col_2 {
           title
           description
         }

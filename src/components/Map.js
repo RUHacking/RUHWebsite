@@ -8,11 +8,10 @@ const Map = compose(
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `400px` }} />,
     mapElement: <div style={{ height: `100%` }} />,
-    markerElement: <div>hi</div>,
     isMarkerShown: true,
   }),
   withStateHandlers(() => ({
-    isOpen: true,
+    isOpen: false,
   }), {
     onToggleOpen: ({ isOpen }) => () => ({
       isOpen: !isOpen,

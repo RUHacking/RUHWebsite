@@ -23,13 +23,13 @@ collections:
           - {label: About, name: about, widget: object, fields:
               [
                 {label: "About Title", name: "title", widget: "string"},
-                {label: "About Description Col 1", name: "description_1", widget: object, fields:
+                {label: "About Description Col 1", name: "col_1", widget: object, fields:
                   [
                     {label: "Title", name: "title", widget: "string"}
                     {label: "Description", name: "description", widget: "markdown"}
                   ]
                 }
-                {label: "About Description Col 2", name: "description_2", widget: object, fields:
+                {label: "About Description Col 2", name: "col_2", widget: object, fields:
                   [
                     {label: "Title", name: "title", widget: "string"}
                     {label: "Description", name: "description", widget: "markdown"}
@@ -37,5 +37,18 @@ collections:
                 }
               ]
             }
+          - {label: Location, name: loc, widget: object, fields:
+              [
+                {label: "Location Title", name: "title", widget: "string"},
+                {label: "Location Description", name: "description", widget: "markdown"}
+                {label: "Location Marker", name: "marker", widget: "markdown"}
+                {label: "Location Coords", name: "coords", widget: object, fields:
+                  [
+                    {label: "Latitude", name: "lat", widget: "number"}
+                    {label: "Longitude", name: "lng", widget: "number"}
+                  ]
+                }
+              ]
+          }
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
