@@ -8,7 +8,7 @@ import logo from '../img/logo/RUHlogo_title_red.png'
 
 export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc } = frontmatter;
+  const { hero, about, loc, sponsors } = frontmatter;
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -49,13 +49,13 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
                 <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.col_1.title}
                 </h3>
-                {about.col_1.description}
+                <p>{about.col_1.description}</p>
               </div>
               <div className="column is-half">
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.col_2.title}
                 </h3>
-                {about.col_2.description}
+                <p>{about.col_2.description}</p>
               </div>
             </div>
           </div>
@@ -94,11 +94,34 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
         </div>
       </section>
 
-      <section className="hero section--sponsors is-dark is-small">
+      <section className="hero section--sponsors is-dark is-large">
         <div className="hero-head">
+          <div className="container section">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              {sponsors.title}
+            </h2>
+            <p>{sponsors.description}</p>
+          </div>
         </div>
         <div className="hero-body">
+          <div className="tile is-ancestor">
+            <div className="tile">
+              <div className="tile is-child">
+                <div className="card">
+                  <div className="card-image">
+                    <figure className="image is-4by3">
+                      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"/>
+                    </figure>
+                  </div>
+                  <div className="card-content">
+                    <div className="content">
 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </Layout>
@@ -148,6 +171,10 @@ query IndexPage($id: String!) {
           lat
           lng
         }
+      }
+      sponsors {
+        title
+        description
       }
       about {
         title

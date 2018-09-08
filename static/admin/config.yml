@@ -13,7 +13,7 @@ collections:
         label: "Index"
         name: "index"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index"}
           - {label: Hero, name: hero, widget: object, fields:
               [
                 {label: "Hero Title", name: "title", widget: "string"},
@@ -49,6 +49,12 @@ collections:
                   ]
                 }
               ]
+          }
+          - {label: Sponsors, name: sponsors, widget: object, fields:
+            [
+              {label: "Sponsors Title", name: "title", widget: "string"},
+              {label: "Sponsors Description", name: "description", widget: "markdown"},
+            ]
           }
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
