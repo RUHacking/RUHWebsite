@@ -105,11 +105,11 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
         </div>
         <div className="hero-body is-paddingless">
           <div className="container section">
-            <div className="columns is-multiline is-mobile is-centered is-variable is-8">
+            <div className="columns is-multiline is-mobile is-centered is-variable is-2">
               {Object.values(sponsors.sponsor_list).map(val => {
                 return (
                   <div key={val} className="column is-narrow is-half-mobile is-one-quarter-tablet is-one-quarter-desktop">
-                    <figure className="image">
+                    <figure className="image box" >
                       <img className="" src={val} alt="Placeholder image"/>
                     </figure>
                   </div>

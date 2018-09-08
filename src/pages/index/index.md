@@ -25,7 +25,7 @@ sponsors:
   description: "R. U. Hacking? works hard to provide our members with strong links to local industry leaders, that's why we actively seek industry partners to come and provide talks and workshops at our events. This offers an excellent platform for our students to create ties with businesses while at University and get a good foothold for when looking for placements."
   sponsor_list:
     img1: /img/partners/Austin-Fraser.png
-    img2: /img/partners/clarks-legal.png
+    img2: /img/partners/clarks_legal.png
     img3: /img/partners/forbury.png
     img4: /img/partners/ic_logo.png
     img5: /img/partners/logo-sage-people.png
