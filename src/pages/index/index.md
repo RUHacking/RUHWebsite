@@ -1,5 +1,5 @@
 ---
-templateKey: 'index-page'
+templateKey: 'index'
 path: /
 title: "Hi"
 hero:

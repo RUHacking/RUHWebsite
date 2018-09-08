@@ -1,4 +1,6 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Map from '../components/Map'
@@ -8,7 +10,7 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
   const PageContent = contentComponent || Content;
 
   return (
-    <Fragment>
+    <Layout>
       <section className="hero is-fullheight is-primary">
         <div className="hero-body">
           <div className="container is-fluid">
@@ -102,7 +104,7 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
           </div>
         </div>
       </section> */}
-    </Fragment>
+    </Layout>
   )
 }
 
@@ -114,9 +116,9 @@ IndexPageTemplate.propTypes = {
 	contentComponent: PropTypes.func,
 }
 
-const IndexPage = ({ data }) => {
-  const { markdownRemark: post } = data;
 
+const Index = ({ data }) => {
+  const { markdownRemark: post } = data
   return (
     <IndexPageTemplate
       contentComponent={HTMLContent}
@@ -128,12 +130,12 @@ const IndexPage = ({ data }) => {
   )
 }
 
-IndexPage.propTypes = {
+Index.propTypes = {
 	data: PropTypes.object.isRequired,
 }
 
 
-export default IndexPage
+export default Index
 
 export const indexPageQuery = graphql`
 query IndexPage($id: String!) {
