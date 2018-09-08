@@ -20,8 +20,8 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
                 </div>
               </div>
             </div>
-            <div class="columns">
-              <div class="column is-half is-offset-one-quarter">
+            <div className="columns">
+              <div className="column is-half is-offset-one-quarter">
                 <h2 className="subtitle is-size-5 has-text-centered">{hero.description}</h2>
                 <div className="level">
                   <div className="level-item">
@@ -42,14 +42,14 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {about.title}
             </h2>
-            <div class="columns">
-              <div class="column is-half">
+            <div className="columns">
+              <div className="column is-half">
                 <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.description_1.title}
                 </h3>
                 {about.description_1.description}
               </div>
-              <div class="column is-half">
+              <div className="column is-half">
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.description_2.title}
                 </h3>
@@ -62,17 +62,26 @@ export const IndexPageTemplate = ({ title, hero, about, content, contentComponen
 
       <section className="hero section--location is-light is-medium">
         <div className="hero-head">
-          <Map
-            center={{
-              lat: 51.455350, 
-              lng: -0.938644,
-            }}
-          />
+          <div className="columns">
+            <div className="column is-two-thirds-desktop">
+              <Map
+                centre={{
+                  lat: 51.4414,
+                  lng: -0.9418,
+                }}
+              />
+            </div>
+            <div className="column">
+              <div className="container has-background-primary">
+                hewop
+              </div>
+            </div>
+          </div>
         </div>
         <div className="hero-body">
           <div className="container">
-            <div class="columns">
-              <div class="column"></div>
+            <div className="columns">
+              <div className="column"></div>
             </div>
           </div>
         </div>
@@ -106,11 +115,12 @@ IndexPageTemplate.propTypes = {
 }
 
 const IndexPage = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <IndexPageTemplate
       contentComponent={HTMLContent}
+      title={post.frontmatter.title}
       hero={post.frontmatter.hero}
 			about={post.frontmatter.about}
       content={post.html}
