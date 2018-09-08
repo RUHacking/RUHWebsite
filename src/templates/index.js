@@ -8,7 +8,7 @@ import logo from '../img/logo/RUHlogo_title_red.png'
 
 export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, title } = frontmatter;
+  const { hero, about, loc } = frontmatter;
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -94,7 +94,13 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
         </div>
       </section>
 
+      <section className="hero section--sponsors is-dark is-small">
+        <div className="hero-head">
+        </div>
+        <div className="hero-body">
 
+        </div>
+      </section>
     </Layout>
   )
 }
