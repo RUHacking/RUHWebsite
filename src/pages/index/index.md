@@ -1,5 +1,6 @@
 ---
 templateKey: index
+path: /
 hero:
   description: >-
     We are a student led technology society based at the University of Reading.
