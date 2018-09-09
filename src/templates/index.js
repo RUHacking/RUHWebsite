@@ -117,7 +117,7 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
                               return (
                                 <div key={sec} className="tile is-child box">
                                   <figure className="image" >
-                                    <img className="" src={sec} alt="Placeholder image"/>
+                                    <img className="" src={sec} alt={sec}/>
                                   </figure>
                                 </div>
                               );
