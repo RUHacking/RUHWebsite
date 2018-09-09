@@ -30,13 +30,13 @@ export const IndexPageTemplate = ({
               <div className="level-item">
                 <div className="level-item">
                   <img src={logo} alt={hero.title} style={{ width: '4rem' }} />
-                  <h1 className="title is-size-2">{hero.title}</h1>
+                  <h1 className="title is-size-1">{hero.title}</h1>
                 </div>
               </div>
             </div>
             <div className="columns">
               <div className="column is-half is-offset-one-quarter">
-                <h2 className="subtitle is-size-5 has-text-centered">
+                <h2 className="subtitle is-size-4 has-text-centered">
                   <StyledMDContent content={hero.description} />
                 </h2>
                 <div className="level">
