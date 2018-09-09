@@ -55,6 +55,4 @@ sponsors:
     img7: /img/partners/think_eng.jpeg
     img8: /img/partners/gdg_reading.jpeg
   title: Partners
-title: Hi
 ---
-# A markdown document for the index page.
