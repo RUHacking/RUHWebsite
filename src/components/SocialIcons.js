@@ -37,6 +37,18 @@ const SocialIcons = compose(withProps({}))(props => (
       <a
         className="button is-medium is-outlined is-primary"
         rel="noopener noreferrer"
+        href="https://github.com/RUHacking"
+        target="_blank"
+      >
+        <span className="icon is-small">
+          <FontAwesomeIcon icon={['fab', 'github']} />
+        </span>
+      </a>
+    </p>
+    <p className="control">
+      <a
+        className="button is-medium is-outlined is-primary"
+        rel="noopener noreferrer"
         href="https://www.facebook.com/readingunihack"
         target="_blank"
       >
