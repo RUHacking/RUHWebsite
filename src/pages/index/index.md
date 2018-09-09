@@ -15,10 +15,10 @@ about:
       Hackathons are events where people from multiple disciplines can team up
       to create a quick and demonstrable version of their project. The teams
       compete to see which project will be deemed the best by experts in the
-      industry and can win prizes! Hackathons are often themed around a certrain
-      topic, but can often be freeform! Our society aims to provide some
+      industry and can win prizes! Hackathons are often themed around a certain
+      topic, but can often be free-form! Our society aims to provide some
       mini-hacks and similar events throughout the year with our big 24-hour
-      hackathon being held in February.
+      Hackathon being held in February.
     title: What is a hackathon anyway?
   col_2:
     description: >-
