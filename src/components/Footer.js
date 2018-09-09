@@ -8,14 +8,13 @@ const Footer = () => (
         <div className="column is-6 is-offset-3">
           <div className="level">
             <div className="level-item has-text-centered">
-            <p> © R. U. Hacking? 2018. All rights reserved.</p>
+              <p> © R. U. Hacking? 2018. All rights reserved.</p>
             </div>
             <div className="level-item">
-            <SocialIcons/>
+              <SocialIcons />
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </footer>

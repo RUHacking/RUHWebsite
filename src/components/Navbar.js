@@ -7,7 +7,7 @@ const Navbar = () => (
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item">
-            <img src={logo} alt="RUHacking Logo" style={{ width: 'auto' }} />
+          <img src={logo} alt="RUHacking Logo" style={{ width: 'auto' }} />
         </Link>
       </div>
       <div className="navbar-start">
@@ -15,8 +15,8 @@ const Navbar = () => (
           About
         </Link>
         <Link className="navbar-item" to="/products">
-				  Team
-				</Link>
+          Team
+        </Link>
       </div>
     </div>
   </nav>

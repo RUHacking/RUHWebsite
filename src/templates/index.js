@@ -6,10 +6,14 @@ import { HTMLContent } from '../components/Content'
 import Map from '../components/Map'
 import logo from '../img/logo/RUHlogo_title_red.png'
 
-export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) => {
+export const IndexPageTemplate = ({
+  frontmatter,
+  content,
+  contentComponent,
+}) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors } = frontmatter;
-  const sponsorList = Object.values(sponsors.sponsor_list);
+  const { hero, about, loc, sponsors } = frontmatter
+  const sponsorList = Object.values(sponsors.sponsor_list)
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -25,10 +29,17 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
             </div>
             <div className="columns">
               <div className="column is-half is-offset-one-quarter">
-                <h2 className="subtitle is-size-5 has-text-centered">{hero.description}</h2>
+                <h2 className="subtitle is-size-5 has-text-centered">
+                  {hero.description}
+                </h2>
                 <div className="level">
                   <div className="level-item">
-                    <a href="/" className="button is-primary is-inverted is-outlined is-large is-rounded">Join the society today!</a>
+                    <a
+                      href="/"
+                      className="button is-primary is-inverted is-outlined is-large is-rounded"
+                    >
+                      Join the society today!
+                    </a>
                   </div>
                 </div>
               </div>
@@ -51,7 +62,7 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
                 <p>{about.col_1.description}</p>
               </div>
               <div className="column is-half">
-              <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
+                <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.col_2.title}
                 </h3>
                 <p>{about.col_2.description}</p>
@@ -72,16 +83,17 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
                 }}
                 markerElement={
                   <div>
-                    <h3 className="has-text-black">
-                      {loc.marker}
-                    </h3>
+                    <h3 className="has-text-black">{loc.marker}</h3>
                   </div>
                 }
               />
             </div>
             <div className="column is-one-third-desktop">
               <div className="section">
-                <div style={{height: '100%'}} className="container has-background-primary">
+                <div
+                  style={{ height: '100%' }}
+                  className="container has-background-primary"
+                >
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                     {loc.title}
                   </h2>
@@ -108,23 +120,28 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
               <div className="column is-10 is-offset-2">
                 <div className="tile is-ancestor">
                   {sponsorList
-                    .reduce((acc, _, i) => (i % 3) ? acc : [...acc, sponsorList.slice(i, i + 3)],[])
+                    .reduce(
+                      (acc, _, i) =>
+                        i % 3 ? acc : [...acc, sponsorList.slice(i, i + 3)],
+                      []
+                    )
                     .map(val => {
                       return (
-                        <div key={val} className="tile is-3 is-vertical is-parent">
-                          {
-                            val.map(sec => {
-                              return (
-                                <div key={sec} className="tile is-child box">
-                                  <figure className="image" >
-                                    <img className="" src={sec} alt={sec}/>
-                                  </figure>
-                                </div>
-                              );
-                            })
-                          }
+                        <div
+                          key={val}
+                          className="tile is-3 is-vertical is-parent"
+                        >
+                          {val.map(sec => {
+                            return (
+                              <div key={sec} className="tile is-child box">
+                                <figure className="image">
+                                  <img className="" src={sec} alt={sec} />
+                                </figure>
+                              </div>
+                            )
+                          })}
                         </div>
-                      );
+                      )
                     })}
                 </div>
               </div>
@@ -139,9 +156,8 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
 IndexPageTemplate.propTypes = {
   frontmatter: PropTypes.object,
   content: PropTypes.string,
-	contentComponent: PropTypes.func,
+  contentComponent: PropTypes.func,
 }
-
 
 const Index = ({ data }) => {
   const { markdownRemark: post } = data
@@ -155,57 +171,56 @@ const Index = ({ data }) => {
 }
 
 Index.propTypes = {
-	data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 }
-
 
 export default Index
 
 export const indexPageQuery = graphql`
-query IndexPage($id: String!) {
-  markdownRemark(id: { eq: $id }) {
-    html
-    frontmatter {
-      title
-      hero {
+  query IndexPage($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
         title
-        description
-      }
-      loc {
-        title
-        description
-        marker
-        coords {
-          lat
-          lng
-        }
-      }
-      sponsors {
-        title
-        description
-        sponsor_list {
-          img1
-          img2
-          img3
-          img4
-          img5
-          img6
-          img7
-          img8
-        }
-      }
-      about {
-        title
-        col_1 {
+        hero {
           title
           description
         }
-        col_2 {
+        loc {
           title
           description
+          marker
+          coords {
+            lat
+            lng
+          }
+        }
+        sponsors {
+          title
+          description
+          sponsor_list {
+            img1
+            img2
+            img3
+            img4
+            img5
+            img6
+            img7
+            img8
+          }
+        }
+        about {
+          title
+          col_1 {
+            title
+            description
+          }
+          col_2 {
+            title
+            description
+          }
         }
       }
     }
   }
-}
-`;
+`
