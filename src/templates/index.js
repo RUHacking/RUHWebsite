@@ -5,7 +5,6 @@ import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
 import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
-import 'particles.js';
 import logo from '../img/logo/RUHlogo_title_red.png';
 
 const StyledMDContent = styled(MDContent)`
@@ -16,6 +15,7 @@ const StyledMDContent = styled(MDContent)`
 
 export class IndexPageTemplate extends React.Component {
   componentDidMount() {
+    require('particles.js');
     particlesJS.load('particles-js', 'assets/particles.json');
   }
 
