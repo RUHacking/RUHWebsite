@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
-import { HTMLContent } from '../components/Content';
+import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
 import logo from '../img/logo/RUHlogo_title_red.png';
+
+const StyledMDContent = styled(MDContent)`
+  a {
+    text-decoration: underline;
+  }
+`;
 
 export const IndexPageTemplate = ({
   frontmatter,
@@ -30,7 +37,7 @@ export const IndexPageTemplate = ({
             <div className="columns">
               <div className="column is-half is-offset-one-quarter">
                 <h2 className="subtitle is-size-5 has-text-centered">
-                  {hero.description}
+                  <StyledMDContent content={hero.description} />
                 </h2>
                 <div className="level">
                   <div className="level-item">
@@ -59,13 +66,13 @@ export const IndexPageTemplate = ({
                 <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.col_1.title}
                 </h3>
-                <p>{about.col_1.description}</p>
+                <StyledMDContent content={about.col_1.description} />
               </div>
               <div className="column is-half">
                 <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                   {about.col_2.title}
                 </h3>
-                <p>{about.col_2.description}</p>
+                <StyledMDContent content={about.col_2.description} />
               </div>
             </div>
           </div>
@@ -111,7 +118,7 @@ export const IndexPageTemplate = ({
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {sponsors.title}
             </h2>
-            <p>{sponsors.description}</p>
+            <StyledMDContent content={sponsors.description} />
           </div>
         </div>
         <div className="hero-body is-paddingless">
