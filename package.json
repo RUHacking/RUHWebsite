@@ -55,7 +55,7 @@
         "git add"
       ],
       "*.js": [
-        "eslint",
+        "eslint .",
         "git add"
       ],
       "*.css": "stylelint"
