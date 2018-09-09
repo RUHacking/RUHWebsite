@@ -1,6 +1,5 @@
 ---
 templateKey: index
-path: /
 hero:
   description: >-
     We are a student led technology society based at the University of Reading.
@@ -8,7 +7,7 @@ hero:
     Our events are the perfect opportunity for both newcomers and seasoned
     techies alike to collaborate & learn; facilitated by our support and
     resources.
-  title: R. U. Hacking!
+  title: R. U. Hacking?
 about:
   col_1:
     description: >-
