@@ -3,23 +3,25 @@ templateKey: index
 path: /
 hero:
   description: >-
-    We are a student led technology society based at the University of Reading.
-    We are driven to provide exciting educational opportunities for everyone.
-    Our events are the perfect opportunity for both newcomers and seasoned
-    techies alike to collaborate & learn; facilitated by our support and
-    resources.
+    We are a [student-led technology
+    society](https://www.rusu.co.uk/societies/15199/) based here at the
+    [University of Reading](http://www.reading.ac.uk/). We are driven to provide
+    exciting opportunities for our members to build their _skills_ as well as a
+    _professional network_. Our events are the perfect opportunity for both
+    newcomers and seasoned techies alike to collaborate & learn, facilitated by
+    our support and resources.
   title: R. U. Hacking?
 about:
   col_1:
     description: >-
-      Hackathons are events where people from multiple disciplines can team up
-      to create a quick and demonstrable version of their project. The teams
+      **Hackathons** are events where people from multiple disciplines can team
+      up to create a quick and demonstrable version of their project. The teams
       compete to see which project will be deemed the best by experts in the
       industry and can win prizes! Hackathons are often themed around a certain
       topic, but can often be free-form! Our society aims to provide some
       mini-hacks and similar events throughout the year with our big 24-hour
-      Hackathon being held in February.
-    title: What is a hackathon anyway?
+      Hackathon being held in February, 2019.
+    title: What is a Hackathon anyway?
   col_2:
     description: >-
       Building from our Hackathon last year, we're aiming to put our Alumni
@@ -30,13 +32,13 @@ about:
       overall best, so definitely come down and make something you can boast
       about on your CV!
     title: What will the event be like?
-  title: About
+  title: About our Hackathons
 loc:
   coords:
     lat: 51.4414
     lng: -0.9418
   description: Some copy about the hackathon venue
-  marker: Marker text
+  marker: Reading University Students' Union
   title: Venue
 sponsors:
   description: >-
@@ -56,3 +58,4 @@ sponsors:
     img8: /img/partners/gdg_reading.jpeg
   title: Partners
 ---
+
