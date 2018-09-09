@@ -9,6 +9,7 @@ import logo from '../img/logo/RUHlogo_title_red.png'
 export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) => {
   // const PageContent = contentComponent || Content;
   const { hero, about, loc, sponsors } = frontmatter;
+  const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -37,10 +38,8 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
       </section>
 
       <section className="hero section--about is-dark is-small">
-        <div className="hero-head">
-        </div>
         <div className="hero-body">
-          <div className="container">
+          <div className="container section">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {about.title}
             </h2>
@@ -81,7 +80,7 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
               />
             </div>
             <div className="column is-one-third-desktop">
-              <div className="">
+              <div className="section">
                 <div style={{height: '100%'}} className="container has-background-primary">
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                     {loc.title}
@@ -105,16 +104,30 @@ export const IndexPageTemplate = ({ frontmatter, content, contentComponent }) =>
         </div>
         <div className="hero-body is-paddingless">
           <div className="container section">
-            <div className="columns is-multiline is-mobile is-centered is-variable is-2">
-              {Object.values(sponsors.sponsor_list).map(val => {
-                return (
-                  <div key={val} className="column is-narrow is-half-mobile is-one-quarter-tablet is-one-quarter-desktop">
-                    <figure className="image box" >
-                      <img className="" src={val} alt="Placeholder image"/>
-                    </figure>
-                  </div>
-                );
-              })}
+            <div className="columns is-centered">
+              <div className="column is-10 is-offset-2">
+                <div className="tile is-ancestor">
+                  {sponsorList
+                    .reduce((acc, _, i) => (i % 3) ? acc : [...acc, sponsorList.slice(i, i + 3)],[])
+                    .map(val => {
+                      return (
+                        <div key={val} className="tile is-3 is-vertical is-parent">
+                          {
+                            val.map(sec => {
+                              return (
+                                <div key={sec} className="tile is-child box">
+                                  <figure className="image" >
+                                    <img className="" src={sec} alt="Placeholder image"/>
+                                  </figure>
+                                </div>
+                              );
+                            })
+                          }
+                        </div>
+                      );
+                    })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
