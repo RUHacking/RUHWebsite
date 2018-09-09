@@ -4,12 +4,27 @@
 [![GitHub license](https://img.shields.io/github/license/RUHacking/RUHWebsite.svg)](https://github.com/RUHacking/RUHWebsite/blob/develop/LICENSE)
 
 
-## Installation
+### Installation
 ```
 yarn
 ```
 
-## Development
+### Development
+Starts a development server on localhost:8000
 ```
+nvm use
 yarn develop
 ```
+
+### Lint and format
+```
+yarn format
+yarn lint
+```
+
+### Build Prod Copy
+```
+yarn build
+```
+
+
