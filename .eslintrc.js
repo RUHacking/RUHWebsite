@@ -15,6 +15,9 @@ module.exports = {
     },
     sourceType: 'module',
   },
+  globals: {
+    particlesJS: true,
+  },
   plugins: ['react'],
   rules: {
     indent: ['error', 2],

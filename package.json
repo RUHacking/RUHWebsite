@@ -24,6 +24,7 @@
     "netlify-cms": "^2.1.1",
     "node-sass": "^4.9.2",
     "parcel-bundler": "^1.9.4",
+    "particles.js": "^2.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.4.1",
