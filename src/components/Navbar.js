@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/logo/RUHlogo.png'
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../img/logo/RUHlogo.png';
 
 const Navbar = () => (
   <nav className="navbar is-spaced is-primary is-fixed-top">
@@ -20,6 +20,6 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-)
+);
 
-export default Navbar
+export default Navbar;

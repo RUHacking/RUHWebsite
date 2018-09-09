@@ -1,8 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import Footer from '../components/Footer'
-import './all.sass'
+import Footer from '../components/Footer';
+import './all.sass';
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -11,6 +11,6 @@ const TemplateWrapper = ({ children }) => (
     <div>{children}</div>
     <Footer />
   </div>
-)
+);
 
-export default TemplateWrapper
+export default TemplateWrapper;

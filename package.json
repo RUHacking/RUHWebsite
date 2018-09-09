@@ -55,22 +55,22 @@
         "git add"
       ],
       "*.js": [
-        "eslint .",
+        "eslint . --fix",
         "git add"
       ],
       "*.css": "stylelint"
     }
   },
   "devDependencies": {
-    "prettier": "^1.7.4",
-    "rimraf": "^2.6.2",
     "@commitlint/cli": "7.1.2",
     "@commitlint/config-angular": "7.1.2",
-    "eslint": "4.19.1",
-    "eslint-plugin-react": "7.11.1",
+    "eslint": "5.5.0",
+    "eslint-plugin-react": "^7.11.1",
     "husky": "0.14.3",
     "lerna": "3.3.0",
     "lint-staged": "7.2.2",
+    "prettier": "^1.7.4",
+    "rimraf": "^2.6.2",
     "stylelint": "9.5.0",
     "stylelint-config-standard": "18.2.0"
   }

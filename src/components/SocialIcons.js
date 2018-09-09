@@ -1,11 +1,11 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { compose, withProps } from 'recompose'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { compose, withProps } from 'recompose';
 
-library.add(fab, fas)
+library.add(fab, fas);
 
 const SocialIcons = compose(withProps({}))(props => (
   <div className="social-icons field has-addons">
@@ -46,5 +46,5 @@ const SocialIcons = compose(withProps({}))(props => (
       </a>
     </p>
   </div>
-))
-export default SocialIcons
+));
+export default SocialIcons;

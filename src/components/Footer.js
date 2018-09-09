@@ -1,5 +1,5 @@
-import React from 'react'
-import SocialIcons from './SocialIcons'
+import React from 'react';
+import SocialIcons from './SocialIcons';
 
 const Footer = () => (
   <footer className="footer">
@@ -18,6 +18,6 @@ const Footer = () => (
       </div>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

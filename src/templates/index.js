@@ -1,10 +1,10 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import PropTypes from 'prop-types'
-import { HTMLContent } from '../components/Content'
-import Map from '../components/Map'
-import logo from '../img/logo/RUHlogo_title_red.png'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/Layout';
+import PropTypes from 'prop-types';
+import { HTMLContent } from '../components/Content';
+import Map from '../components/Map';
+import logo from '../img/logo/RUHlogo_title_red.png';
 
 export const IndexPageTemplate = ({
   frontmatter,
@@ -12,8 +12,8 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors } = frontmatter
-  const sponsorList = Object.values(sponsors.sponsor_list)
+  const { hero, about, loc, sponsors } = frontmatter;
+  const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
       <section className="hero is-fullheight is-primary">
@@ -138,10 +138,10 @@ export const IndexPageTemplate = ({
                                   <img className="" src={sec} alt={sec} />
                                 </figure>
                               </div>
-                            )
+                            );
                           })}
                         </div>
-                      )
+                      );
                     })}
                 </div>
               </div>
@@ -150,31 +150,31 @@ export const IndexPageTemplate = ({
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
 IndexPageTemplate.propTypes = {
   frontmatter: PropTypes.object,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+};
 
 const Index = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
   return (
     <IndexPageTemplate
       contentComponent={HTMLContent}
       frontmatter={post.frontmatter}
       content={post.html}
     />
-  )
-}
+  );
+};
 
 Index.propTypes = {
   data: PropTypes.object.isRequired,
-}
+};
 
-export default Index
+export default Index;
 
 export const indexPageQuery = graphql`
   query IndexPage($id: String!) {
@@ -223,4 +223,4 @@ export const indexPageQuery = graphql`
       }
     }
   }
-`
+`;
