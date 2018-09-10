@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
 import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
+import Gallery from '../components/Gallery';
 import logo from '../img/logo/RUHlogo_title_red.png';
 
 const StyledMDContent = styled(MDContent)`
@@ -150,6 +151,29 @@ export const IndexPageTemplate = ({
                         </div>
                       );
                     })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="hero section--location is-primary is-large">
+        <div className="hero-head">
+          <div className="columns is-gapless">
+            <div className="column is-fullheight is-3">
+              <Gallery />
+            </div>
+            <div className="column">
+              <div className="section">
+                <div
+                  style={{ height: '100%' }}
+                  className="container has-background-primary"
+                >
+                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                    {loc.title}
+                  </h2>
+                  <p>{loc.description}</p>
                 </div>
               </div>
             </div>
