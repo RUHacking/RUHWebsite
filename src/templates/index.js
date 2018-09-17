@@ -5,6 +5,7 @@ import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
 import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
+import Gallery from '../components/Gallery';
 import logo from '../img/logo/RUHlogo_title_red.png';
 
 const StyledMDContent = styled(MDContent)`
@@ -19,7 +20,7 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors } = frontmatter;
+  const { hero, about, loc, sponsors, featured_images } = frontmatter;
   const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
@@ -156,6 +157,16 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
+
+      <section className="hero section--gallery is-primary is-large">
+        <div className="hero-head">
+          <div className="columns">
+            <div className="column is-12">
+              <Gallery images={featured_images.image_list} />
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
@@ -202,19 +213,13 @@ export const indexPageQuery = graphql`
             lng
           }
         }
+        featured_images {
+          image_list
+        }
         sponsors {
           title
           description
-          sponsor_list {
-            img1
-            img2
-            img3
-            img4
-            img5
-            img6
-            img7
-            img8
-          }
+          sponsor_list
         }
         about {
           title
