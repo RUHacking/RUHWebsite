@@ -46,7 +46,7 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+    "format": "prettier --trailing-comma es5 --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "commitmsg": "commitlint -e",
     "precommit": "lint-staged",
@@ -55,7 +55,7 @@
   "lint-staged": {
     "linters": {
       "*.{js,json}": [
-        "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
+        "prettier --trailing-comma es5 --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
         "git add"
       ],
       "*.js": [
