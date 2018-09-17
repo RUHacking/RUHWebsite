@@ -51,6 +51,17 @@ collections:
                 }
               ]
           }
+          - {label: Featured Images, name: featured_images, widget: object, fields:
+            [
+              {
+                label: "Gallery",
+                name: "image_list",
+                widget: "list",
+                field:
+                  - {label: Image, name: image, widget: image}
+              },
+            ]
+          }
           - {label: Sponsors, name: sponsors, widget: object, fields:
             [
               {label: "Sponsors Title", name: "title", widget: "string"},

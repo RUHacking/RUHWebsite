@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors } = frontmatter;
+  const { hero, about, loc, sponsors, featured_images } = frontmatter;
   const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
@@ -161,8 +161,8 @@ export const IndexPageTemplate = ({
       <section className="hero section--location is-primary is-large">
         <div className="hero-head">
           <div className="columns is-gapless">
-            <div className="column is-fullheight is-3">
-              <Gallery />
+            <div className="column is-fullheight is-5">
+              <Gallery images={featured_images.image_list} />
             </div>
             <div className="column">
               <div className="section">
@@ -225,6 +225,9 @@ export const indexPageQuery = graphql`
             lat
             lng
           }
+        }
+        featured_images {
+          image_list
         }
         sponsors {
           title
