@@ -158,24 +158,11 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--location is-primary is-large">
+      <section className="hero section--gallery is-primary is-large">
         <div className="hero-head">
-          <div className="columns is-gapless">
-            <div className="column is-fullheight is-5">
+          <div className="columns">
+            <div className="column is-12">
               <Gallery images={featured_images.image_list} />
-            </div>
-            <div className="column">
-              <div className="section">
-                <div
-                  style={{ height: '100%' }}
-                  className="container has-background-primary"
-                >
-                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                    {loc.title}
-                  </h2>
-                  <p>{loc.description}</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -232,16 +219,7 @@ export const indexPageQuery = graphql`
         sponsors {
           title
           description
-          sponsor_list {
-            img1
-            img2
-            img3
-            img4
-            img5
-            img6
-            img7
-            img8
-          }
+          sponsor_list
         }
         about {
           title

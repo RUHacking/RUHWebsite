@@ -48,24 +48,22 @@ sponsors:
     for our students to create ties with businesses while at University and get
     a good foothold for when looking for placements.
   sponsor_list:
-    img1: /img/partners/Austin-Fraser.png
-    img2: /img/partners/clarks_legal.png
-    img3: /img/partners/forbury.png
-    img4: /img/partners/ic_logo.png
-    img5: /img/partners/logo-sage-people.png
-    img6: /img/partners/Reading_Buses_Logo.png
-    img7: /img/partners/think_eng.jpeg
-    img8: /img/partners/gdg_reading.jpeg
+    - /img/partners/Austin-Fraser.png
+    - /img/partners/clarks_legal.png
+    - /img/partners/forbury.png
+    - /img/partners/ic_logo.png
+    - /img/partners/logo-sage-people.png
+    - /img/partners/Reading_Buses_Logo.png
+    - /img/partners/think_eng.jpeg
+    - /img/partners/gdg_reading.jpeg
   title: Partners
 featured_images:
   image_list:
     - /img/gallery/27657719_166147187365710_3326038022976609627_n.jpg
-    - /img/gallery/27752475_166146787365750_3979183357571361770_n.jpg
     - /img/gallery/27749996_166147120699050_4413085694102426696_n.jpg
     - /img/gallery/27857910_166147267365702_4186085707761812543_n.jpg
     - /img/gallery/27750034_166146884032407_3214548113051520784_n.jpg
     - /img/gallery/27858168_166146974032398_3864991842326311952_n.jpg
-    - /img/gallery/27750093_166147064032389_3375681957469221108_n.jpg
     - /img/gallery/27858419_166147214032374_3940142838318592634_n.jpg
     - /img/gallery/27750730_166146784032417_6596976680107637171_n.jpg
     - /img/gallery/27858771_166147037365725_4800152157863829006_n.jpg

@@ -8,11 +8,10 @@ class Gallery extends React.Component {
     var settings = {
       infinite: true,
       speed: 500,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 10000,
-      adaptiveHeight: true,
       arrows: false,
     };
     return (
@@ -32,10 +31,13 @@ class Gallery extends React.Component {
 }
 
 const styledGallery = styled(Gallery)`
-  img {
-    margin: 0 auto;
-  }
-  .slide-container {
+  .slick-slide {
+    line-height: 0;
+    img {
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 `;
 export default styledGallery;
