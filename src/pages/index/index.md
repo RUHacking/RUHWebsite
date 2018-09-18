@@ -40,23 +40,6 @@ loc:
   description: Some copy about the hackathon venue
   marker: Reading University Students' Union
   title: Venue
-sponsors:
-  description: >-
-    R. U. Hacking? works hard to provide our members with strong links to local
-    industry leaders, that's why we actively seek industry partners to come and
-    provide talks and workshops at our events. This offers an excellent platform
-    for our students to create ties with businesses while at University and get
-    a good foothold for when looking for placements.
-  sponsor_list:
-    - /img/partners/Austin-Fraser.png
-    - /img/partners/clarks_legal.png
-    - /img/partners/forbury.png
-    - /img/partners/ic_logo.png
-    - /img/partners/logo-sage-people.png
-    - /img/partners/Reading_Buses_Logo.png
-    - /img/partners/think_eng.jpeg
-    - /img/partners/gdg_reading.jpeg
-  title: Partners
 featured_images:
   image_list:
     - /img/gallery/27657719_166147187365710_3326038022976609627_n.jpg
@@ -76,6 +59,23 @@ featured_images:
     - /img/gallery/27752283_166147144032381_4285845538876164927_n.jpg
     - /img/gallery/28055901_166146957365733_2355891104709023386_n.jpg
     - /img/gallery/27752424_166147197365709_2373160923975501460_n.jpg
-
+sponsors:
+  description: >-
+    R. U. Hacking? works hard to provide our members with strong links to local
+    industry leaders, that's why we actively seek industry partners to come and
+    provide talks and workshops at our events. This offers an excellent platform
+    for our students to create ties with businesses while at University and get
+    a good foothold for when looking for placements.
+  sponsor_list:
+    - /img/partners/Austin-Fraser.png
+    - /img/partners/clarks_legal.png
+    - /img/partners/forbury.png
+    - /img/partners/ic_logo.png
+    - /img/partners/logo-sage-people.png
+    - /img/partners/Reading_Buses_Logo.png
+    - /img/partners/think_eng.jpeg
+    - /img/partners/gdg_reading.jpeg
+    - /img/reading-logo.png
+  title: Partners
 ---
 
