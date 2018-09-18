@@ -56,6 +56,16 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
+      <section className="hero section--gallery is-primary is-large">
+        <div className="hero-head">
+          <div className="columns">
+            <div className="column is-12">
+              <Gallery images={featured_images.image_list} />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="hero section--about is-dark is-small">
         <div className="hero-body">
           <div className="container section">
@@ -158,12 +168,18 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--gallery is-primary is-large">
+      <section className="hero section--events is-primary is-large">
         <div className="hero-head">
-          <div className="columns">
-            <div className="column is-12">
-              <Gallery images={featured_images.image_list} />
-            </div>
+          <div className="container section">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              Upcoming Events
+            </h2>
+            <StyledMDContent content={sponsors.description} />
+          </div>
+        </div>
+        <div className="hero-body is-paddingless">
+          <div className="container section">
+            <div className="columns is-centered" />
           </div>
         </div>
       </section>
