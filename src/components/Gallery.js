@@ -1,7 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
-import 'slick-carousel';
+if (typeof window !== 'undefined') {
+  require('slick-carousel');
+}
 
 class Gallery extends React.Component {
   render() {
