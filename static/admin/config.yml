@@ -57,9 +57,8 @@ collections:
                 label: "Gallery",
                 name: "image_list",
                 widget: "list",
-                field:
-                  - {label: Image, name: image, widget: image}
-              },
+                field: {label: Image, name: image, widget: image}
+              }
             ]
           }
           - {label: Sponsors, name: sponsors, widget: object, fields:
@@ -70,8 +69,7 @@ collections:
                 label: "Sponsors List",
                 name: "sponsor_list",
                 widget: "list",
-                field:
-                  - {label: Image, name: image, widget: image}
+                field: {label: Image, name: image, widget: image}
               }
             ]
           }
