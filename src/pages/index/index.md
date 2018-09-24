@@ -93,9 +93,16 @@ events:
       booked out an entire bus (the roofless bus if weather allows!) and getting
       driven down to the Reading Transport Ltd depot for a quick tour around
       their facilities and Tech Lab!
-    image: /img/reading_buses_logo.png
+    image: /img/reading_buses_square.png
     link: 'https://www.rusu.co.uk/events/15199/3434/'
     subtitle: 28th September 10am - 1pm Meet next to the Students' Union
     title: Taster Event - Reading Busses Tour
+  - desc: >-
+      drink establishments and getting to know each other through fun
+      activities! We welcome non-drinkers too!
+    image: /img/rus_thic_512.png
+    link: 'https://www.rusu.co.uk/events/15199/3513/'
+    subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
+    title: We Need a Theme - R. U. Social?
 ---
 
