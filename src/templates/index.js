@@ -112,7 +112,7 @@ export const IndexPageTemplate = ({
                     <div
                       className="card is-centered"
                       key={i}
-                      style={{ maxWidth: '350px' }}
+                      style={{ maxWidth: '350px', minHeight: '675px' }}
                     >
                       <a href={v.link} target="_blank">
                         <div className="card-image">
@@ -194,7 +194,7 @@ export const IndexPageTemplate = ({
         <div className="hero-body is-paddingless">
           <div className="container section">
             <div className="columns is-centered">
-              <div className="column is-10 is-offset-2">
+              <div className="column is-10">
                 <div className="tile is-ancestor">
                   {sponsorList
                     .reduce(
