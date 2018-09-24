@@ -76,6 +76,8 @@ sponsors:
     - /img/partners/think_eng.jpeg
     - /img/partners/gdg_reading.jpeg
     - /img/reading-logo.png
+    - /img/berkshire_logo_sml_400x400.jpg
+    - /img/github.svg
   title: Partners
 ---
 
