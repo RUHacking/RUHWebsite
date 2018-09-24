@@ -77,5 +77,27 @@ sponsors:
     - /img/partners/gdg_reading.jpeg
     - /img/reading-logo.png
   title: Partners
+events:
+  - {
+    "title": Taster Session - Google Developer Group Reading & Thames Valley,
+    "subtitle": "Meet at Palmer Building, Thu 27 September 2018 10:00-14:00",
+    "desc": "[Event subject to attendee limit] Join us for an Internet of Things workshop in Thames Valley Science Park, collaboratively organised by GDG Reading & Thames Valley and Internet of Things Thames Valley.",
+    "link": https://www.rusu.co.uk/events/15199/3434/,
+    "image": /img/partners/gdg_reading.jpeg,
+  }
+  - {
+    "title": Taster Session - Google Developer Group Reading & Thames Valley,
+    "subtitle": "Meet at Palmer Building, Thu 27 September 2018 10:00-14:00",
+    "desc": "[Event subject to attendee limit] Join us for an Internet of Things workshop in Thames Valley Science Park, collaboratively organised by GDG Reading & Thames Valley and Internet of Things Thames Valley.",
+    "link": https://www.rusu.co.uk/events/15199/3434/,
+    "image": /img/partners/gdg_reading.jpeg,
+  }
+  - {
+    "title": Taster Session - Google Developer Group Reading & Thames Valley,
+    "subtitle": "Meet at Palmer Building, Thu 27 September 2018 10:00-14:00",
+    "desc": "[Event subject to attendee limit] Join us for an Internet of Things workshop in Thames Valley Science Park, collaboratively organised by GDG Reading & Thames Valley and Internet of Things Thames Valley.",
+    "link": https://www.rusu.co.uk/events/15199/3434/,
+    "image": /img/partners/gdg_reading.jpeg,
+  }
 ---
 

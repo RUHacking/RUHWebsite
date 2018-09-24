@@ -7,6 +7,9 @@ import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
 import Gallery from '../components/Gallery';
 import logo from '../img/logo/RUHlogo_title_red.png';
+// import BigCalendar from 'react-big-calendar';
+// import moment from 'moment';
+// const localizer = BigCalendar.momentLocalizer(moment);
 
 const StyledMDContent = styled(MDContent)`
   a {
@@ -20,7 +23,7 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors, featured_images } = frontmatter;
+  const { hero, about, loc, sponsors, featured_images, events } = frontmatter;
   const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
@@ -90,7 +93,58 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--location is-primary is-small">
+      <section className="hero section--events is-primary is-large">
+        <div className="hero-head">
+          <div className="container section">
+            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              Upcoming Events
+            </h2>
+            <StyledMDContent content={sponsors.description} />
+          </div>
+        </div>
+        <div className="hero-body is-paddingless">
+          <div className="container section">
+            <div className="columns is-centered">
+              {events.map((v, i) => {
+                return (
+                  <div className="column">
+                    <div
+                      className="card is-centered"
+                      key={i}
+                      style={{ maxWidth: '350px' }}
+                    >
+                      <div className="card-image">
+                        <figure className="image">
+                          <img className="" src={v.image} alt={v.title} />
+                        </figure>
+                      </div>
+                      <div className="card-content">
+                        <div className="media">
+                          <div className="media-left" />
+                          <div className="media-content">
+                            <p className="title has-text-black is-4">
+                              {v.title}
+                            </p>
+                            <p className="subtitle has-text-black is-6">
+                              {v.subtitle}
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="content">
+                          <StyledMDContent content={v.desc} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="hero section--location is-dark is-small">
         <div className="hero-head">
           <div className="columns is-gapless">
             <div className="column is-fullheight is-two-thirds-desktop">
@@ -110,7 +164,7 @@ export const IndexPageTemplate = ({
               <div className="section">
                 <div
                   style={{ height: '100%' }}
-                  className="container has-background-primary"
+                  className="container has-background-dark"
                 >
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                     {loc.title}
@@ -123,7 +177,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--sponsors is-dark is-large">
+      <section className="hero section--sponsors is-primary is-large">
         <div className="hero-head">
           <div className="container section">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -164,22 +218,6 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hero section--events is-primary is-large">
-        <div className="hero-head">
-          <div className="container section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              Upcoming Events
-            </h2>
-            <StyledMDContent content={sponsors.description} />
-          </div>
-        </div>
-        <div className="hero-body is-paddingless">
-          <div className="container section">
-            <div className="columns is-centered" />
           </div>
         </div>
       </section>
@@ -228,6 +266,13 @@ export const indexPageQuery = graphql`
             lat
             lng
           }
+        }
+        events {
+          title
+          desc
+          image
+          link
+          subtitle
         }
         featured_images {
           image_list
