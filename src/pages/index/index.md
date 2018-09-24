@@ -37,7 +37,11 @@ loc:
   coords:
     lat: 51.4414
     lng: -0.9418
-  description: Some copy about the hackathon venue
+  description: >-
+    All of our regular activities will be based here on Whiteknights campus! As
+    we're a student society, we'll use the Students' Union as a meeting point
+    for town events. Some local campus events might have different meeting
+    points (e.g. the Computer Science department).
   marker: Reading University Students' Union
   title: Venue
 featured_images:
