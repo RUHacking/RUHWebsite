@@ -46,7 +46,8 @@ export const IndexPageTemplate = ({
                 <div className="level">
                   <div className="level-item">
                     <a
-                      href="/"
+                      href="https://www.rusu.co.uk/societies/ruhacking/"
+                      target="_blank"
                       className="button is-primary is-inverted is-outlined is-large is-rounded"
                     >
                       Join the society today!
