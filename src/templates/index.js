@@ -113,18 +113,22 @@ export const IndexPageTemplate = ({
                       key={i}
                       style={{ maxWidth: '350px' }}
                     >
-                      <div className="card-image">
-                        <figure className="image">
-                          <img className="" src={v.image} alt={v.title} />
-                        </figure>
-                      </div>
+                      <a href={v.link} target="_blank">
+                        <div className="card-image">
+                          <figure className="image">
+                            <img className="" src={v.image} alt={v.title} />
+                          </figure>
+                        </div>
+                      </a>
                       <div className="card-content">
                         <div className="media">
                           <div className="media-left" />
                           <div className="media-content">
-                            <p className="title has-text-black is-4">
-                              {v.title}
-                            </p>
+                            <a href={v.link} target="_blank">
+                              <p className="title has-text-black is-4">
+                                {v.title}
+                              </p>
+                            </a>
                             <p className="subtitle has-text-black is-6">
                               {v.subtitle}
                             </p>
