@@ -31,7 +31,7 @@ about:
       very solid entries, to the point where it was difficult to choose the
       overall best, so definitely come down and make something you can boast
       about on your CV!
-    title: What will the event be like?
+    title: What will the events be like?
   title: About our Hackathons
 loc:
   coords:
