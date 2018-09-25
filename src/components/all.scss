@@ -32,7 +32,6 @@ $slick-loader-path: "~slick-carousel/slick/";
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
-
   li {
     padding: 0 2rem 1rem 0;
     margin-bottom: 1.5rem;
@@ -40,9 +39,11 @@ $slick-loader-path: "~slick-carousel/slick/";
   }
 }
 
+.card {
+  margin: 0 auto;
+}
+
 .tile {
-  max-width: '350px';
-  min-height: '700px';
   .image {
     transform: translateY(-50%);
     top: 50%;
