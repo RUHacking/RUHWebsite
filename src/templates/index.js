@@ -32,10 +32,35 @@ export const IndexPageTemplate = ({
           <div className="container is-fluid">
             <div className="level">
               <div className="level-item">
-                <div className="level-item">
-                  <img src={logo} alt={hero.title} style={{ width: '4rem' }} />
-                  <h1 className="title is-size-1">{hero.title}</h1>
-                </div>
+                <figure className="image" style={{ width: '20rem' }}>
+                  <img src={logo} alt={hero.title} />
+                </figure>
+              </div>
+            </div>
+            <div className="level">
+              <div className="level-item">
+                <h1
+                  className="title is-size-1"
+                  style={{
+                    fontFamily: 'Roboto',
+                    fontWeight: 'bolder',
+                  }}
+                >
+                  {hero.title}
+                </h1>
+              </div>
+            </div>
+            <div className="level">
+              <div className="level-item">
+                <h2
+                  className="subtitle is-size-2"
+                  style={{
+                    fontFamily: 'Roboto',
+                    fontWeight: 'bolder',
+                  }}
+                >
+                  Create. Invent. Hack
+                </h2>
               </div>
             </div>
             <div className="columns">
@@ -105,10 +130,10 @@ export const IndexPageTemplate = ({
         </div>
         <div className="hero-body is-paddingless">
           <div className="container section">
-            <div className="columns is-centered">
+            <div className="columns is-multiline">
               {events.map((v, i) => {
                 return (
-                  <div className="column is-4" key={i}>
+                  <div className="column is-3" key={i}>
                     <div
                       className="card"
                       style={{ maxWidth: '350px', minHeight: '700px' }}
@@ -206,7 +231,13 @@ export const IndexPageTemplate = ({
                             return (
                               <div key={sec} className="tile is-child box">
                                 <figure className="image">
-                                  <img className="" src={sec} alt={sec} />
+                                  <a href={sec.link} target="_blank">
+                                    <img
+                                      className=""
+                                      src={sec.image}
+                                      alt={sec}
+                                    />
+                                  </a>
                                 </figure>
                               </div>
                             );
@@ -279,7 +310,10 @@ export const indexPageQuery = graphql`
         sponsors {
           title
           description
-          sponsor_list
+          sponsor_list {
+            image
+            link
+          }
         }
         about {
           title

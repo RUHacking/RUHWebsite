@@ -69,7 +69,10 @@ collections:
                 label: "Sponsors List",
                 name: "sponsor_list",
                 widget: "list",
-                field: {label: Image, name: image, widget: image}
+                fields: [
+                  {label: Image, name: image, widget: image},
+                  {label: Link, name: link, widget: "text"}
+                ]
               }
             ]
           }

@@ -71,17 +71,28 @@ sponsors:
     for our students to create ties with businesses while at University and get
     a good foothold for when looking for placements.
   sponsor_list:
-    - /img/partners/Austin-Fraser.png
-    - /img/partners/clarks_legal.png
-    - /img/partners/forbury.png
-    - /img/partners/ic_logo.png
-    - /img/partners/logo-sage-people.png
-    - /img/partners/Reading_Buses_Logo.png
-    - /img/partners/think_eng.jpeg
-    - /img/partners/gdg_reading.jpeg
-    - /img/reading-logo.png
-    - /img/berkshire_logo_sml_400x400.jpg
-    - /img/github.svg
+    - image: /img/partners/Austin-Fraser.png
+      link: /
+    - image: /img/partners/clarks_legal.png
+      link: /
+    - image: /img/partners/forbury.png
+      link: /
+    - image: /img/partners/ic_logo.png
+      link: /
+    - image: /img/partners/logo-sage-people.png
+      link: /
+    - image: /img/partners/Reading_Buses_Logo.png
+      link: /
+    - image: /img/partners/think_eng.jpeg
+      link: /
+    - image: /img/partners/gdg_reading.jpeg
+      link: /
+    - image: /img/reading-logo.png
+      link: /
+    - image: /img/berkshire_logo_sml_400x400.jpg
+      link: /
+    - image: /img/github.svg
+      link: /
   title: Partners
 events:
   - desc: >-
@@ -101,6 +112,22 @@ events:
     link: 'https://www.rusu.co.uk/events/15199/3433/'
     subtitle: 28th September 10am - 1pm Meet next to the Students' Union
     title: Taster Event - Reading Busses Tour
+  - desc: >-
+      Come hang out with us in our second biweekly R. U. Social? social, where
+      we'll be going down to our local drink establishments and getting to know
+      each other through fun activities! We welcome non-drinkers too!
+    image: /img/rus_thic_512.png
+    link: 'https://www.rusu.co.uk/events/15199/3513/'
+    subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
+    title: We Need a Theme - R. U. Social?
+  - desc: >-
+      Come hang out with us in our second biweekly R. U. Social? social, where
+      we'll be going down to our local drink establishments and getting to know
+      each other through fun activities! We welcome non-drinkers too!
+    image: /img/rus_thic_512.png
+    link: 'https://www.rusu.co.uk/events/15199/3513/'
+    subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
+    title: We Need a Theme - R. U. Social?
   - desc: >-
       Come hang out with us in our second biweekly R. U. Social? social, where
       we'll be going down to our local drink establishments and getting to know

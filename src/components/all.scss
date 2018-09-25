@@ -3,7 +3,6 @@ $border: black;
 @import "~bulma/sass/utilities/initial-variables";
 @import "~bulma/sass/utilities/mixins";
 
-
 // Config vars
 $ruh-red: #D1161F;
 $ruh-red-invert: #fff;
@@ -20,7 +19,6 @@ $slick-font-path: "~slick-carousel/slick/fonts/";
 $slick-loader-path: "~slick-carousel/slick/";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
-@import "~react-big-calendar/lib/css/react-big-calendar.css";
 
 .content .taglist {
   list-style: none;
@@ -37,6 +35,10 @@ $slick-loader-path: "~slick-carousel/slick/";
     margin-bottom: 1.5rem;
     margin-top: 0;
   }
+}
+
+* {
+  font-family: Roboto, Open Sans;
 }
 
 .card {
