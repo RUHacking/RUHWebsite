@@ -99,7 +99,7 @@ events:
       Come hang out with us in our first biweekly R. U. Social? social, where
       we'll be going down to our local drink establishments and getting to know
       each other through fun activities! We welcome non-drinkers too!
-    image: /img/rus_thic_512.png
+    image: /img/rus_thic_pc_512.png
     link: 'https://www.rusu.co.uk/events/15199/3434/'
     subtitle: 27th September 7pm - 11pm Meet next to the Students' Union
     title: Taster Event - R. U. Social?
@@ -114,9 +114,9 @@ events:
     title: Taster Event - Reading Busses Tour
   - desc: >-
       Come hang out with us in our second biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and getting to know
-      each other through fun activities! We welcome non-drinkers too!
-    image: /img/rus_thic_512.png
+      we'll be going down to our local drink establishments and coming up with
+      themes for future socials! We welcome non-drinkers too!
+    image: /img/rus_thic_pc_512.png
     link: 'https://www.rusu.co.uk/events/15199/3513/'
     subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
     title: We Need a Theme - R. U. Social?
