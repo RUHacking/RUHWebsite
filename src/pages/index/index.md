@@ -98,7 +98,7 @@ events:
       driven down to the Reading Transport Ltd depot for a quick tour around
       their facilities and Tech Lab!
     image: /img/reading_buses_square.png
-    link: 'https://www.rusu.co.uk/events/15199/3434/'
+    link: 'https://www.rusu.co.uk/events/15199/3433/'
     subtitle: 28th September 10am - 1pm Meet next to the Students' Union
     title: Taster Event - Reading Busses Tour
   - desc: >-
