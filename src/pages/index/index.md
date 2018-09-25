@@ -101,6 +101,9 @@ featured_event:
     learning, and great company! Bring your laptop and positive attitude!
 
 
+    <br>
+
+
     Hacktoberfest — brought to you by DigitalOcean in partnership with GitHub
     and Twilio — is a month-long celebration of open source software.
     Maintainers are invited to guide would-be contributors towards issues that
@@ -108,6 +111,14 @@ featured_event:
     give back to both projects they like, and ones they've just discovered. No
     contribution is too small—bug fixes and documentation updates are valid ways
     of participating.
+
+
+    <br>
+
+
+    <a
+    href="https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519">Sign
+    up for the event here!</a>
   image: /img/twitter-facebook-copy.png
   link: >-
     https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519
