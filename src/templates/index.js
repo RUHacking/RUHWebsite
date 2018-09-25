@@ -111,16 +111,20 @@ export const IndexPageTemplate = ({
             </h2>
             <div className="columns">
               <div className="column is-half">
-                <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
+                <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
                   {about.col_1.title}
                 </h3>
-                <StyledMDContent content={about.col_1.description} />
+                <h3 className="subtitle is-size-5">
+                  <StyledMDContent content={about.col_1.description} />
+                </h3>
               </div>
               <div className="column is-half">
-                <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
+                <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
                   {about.col_2.title}
                 </h3>
-                <StyledMDContent content={about.col_2.description} />
+                <h3 className="subtitle is-size-5">
+                  <StyledMDContent content={about.col_2.description} />
+                </h3>
               </div>
             </div>
           </div>
@@ -145,9 +149,9 @@ export const IndexPageTemplate = ({
               </div>
               <div className="column">
                 <div className="section">
-                  <h2 className="subtitle is-size-4">
+                  <h3 className="subtitle is-size-5">
                     <StyledMDContent content={featured_event[0].desc} />
-                  </h2>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -160,7 +164,9 @@ export const IndexPageTemplate = ({
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               Upcoming Events
             </h2>
-            <StyledMDContent content={sponsors.description} />
+            <h3 className="subtitle is-size-4">
+              <StyledMDContent content={sponsors.description} />
+            </h3>
           </div>
         </div>
         <div className="hero-body is-paddingless">
@@ -229,7 +235,9 @@ export const IndexPageTemplate = ({
                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                   {loc.title}
                 </h2>
-                <StyledMDContent content={loc.description} />
+                <h3 className="subtitle is-size-5">
+                  <StyledMDContent content={loc.description} />
+                </h3>
               </div>
             </div>
           </div>
@@ -242,7 +250,9 @@ export const IndexPageTemplate = ({
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {sponsors.title}
             </h2>
-            <StyledMDContent content={sponsors.description} />
+            <h3 className="subtitle is-size-5">
+              <StyledMDContent content={sponsors.description} />
+            </h3>
           </div>
         </div>
         <div className="hero-body is-paddingless">
