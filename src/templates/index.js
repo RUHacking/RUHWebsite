@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
           <div className="container is-fluid">
             <div className="level">
               <div className="level-item">
-                <figure className="image" style={{ width: '20rem' }}>
+                <figure className="image" style={{ width: '16rem' }}>
                   <img src={logo} alt={hero.title} />
                 </figure>
               </div>

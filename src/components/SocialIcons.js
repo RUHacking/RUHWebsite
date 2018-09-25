@@ -25,7 +25,7 @@ const SocialIcons = compose(withProps({}))(props => (
       <a
         className="button is-medium is-outlined is-primary"
         rel="noopener noreferrer"
-        href="mailto:ruhacking@googlegroups.com"
+        href="mailto:hey@ruhacking.me"
         target="_blank"
       >
         <span className="icon is-small">
