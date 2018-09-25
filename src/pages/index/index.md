@@ -72,27 +72,27 @@ sponsors:
     a good foothold for when looking for placements.
   sponsor_list:
     - image: /img/partners/Austin-Fraser.png
-      link: /
+      link: 'https://www.austinfraser.com/en/'
     - image: /img/partners/clarks_legal.png
-      link: /
+      link: 'https://www.clarkslegal.com/'
     - image: /img/partners/forbury.png
-      link: /
+      link: 'https://www.forbury.tech/'
     - image: /img/partners/ic_logo.png
-      link: /
+      link: 'https://www.vitalsix.co.uk/products/innovation-catalyst'
     - image: /img/partners/logo-sage-people.png
-      link: /
+      link: 'https://www.sagepeople.com/home/'
     - image: /img/partners/Reading_Buses_Logo.png
-      link: /
+      link: 'https://www.reading-buses.co.uk/'
     - image: /img/partners/think_eng.jpeg
-      link: /
+      link: 'https://think-engineer.com/'
     - image: /img/partners/gdg_reading.jpeg
-      link: /
+      link: 'https://www.meetup.com/GDG-Reading-Thames-Valley/'
     - image: /img/reading-logo.png
-      link: /
+      link: 'http://www.reading.ac.uk/'
     - image: /img/berkshire_logo_sml_400x400.jpg
-      link: /
+      link: 'https://www.bcs.org/category/14631'
     - image: /img/github.svg
-      link: /
+      link: 'https://education.github.com/'
   title: Partners
 featured_event:
   - desc: >-
