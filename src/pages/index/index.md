@@ -96,13 +96,23 @@ sponsors:
   title: Partners
 featured_event:
   desc: >-
-    Come hang out with us in our first biweekly R. U. Social? social, where
-    we'll be going down to our local drink establishments and getting to know
-    each other through fun activities! We welcome non-drinkers too!
-  image: /img/rus_thic_pc_512.png
-  link: 'https://www.rusu.co.uk/events/15199/3434/'
-  subtitle: 27th September 7pm - 11pm Meet next to the Students' Union
-  title: Taster Event - R. U. Social? 
+    It's Hacktoberfest 2018! Proudly brought to you by the team at the Reading
+    University Hacking society, let's celebrate open source over food, drinks,
+    learning, and great company! Bring your laptop and positive attitude!
+
+
+    Hacktoberfest — brought to you by DigitalOcean in partnership with GitHub
+    and Twilio — is a month-long celebration of open source software.
+    Maintainers are invited to guide would-be contributors towards issues that
+    will help move the project forward, and contributors get the opportunity to
+    give back to both projects they like, and ones they've just discovered. No
+    contribution is too small—bug fixes and documentation updates are valid ways
+    of participating.
+  image: /img/twitter-facebook-copy.png
+  link: >-
+    https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519
+  subtitle: Sat 20 October 2018 11am - 8pm Thames Tower
+  title: Hacktoberfest 2018 - Reading & Thames Valley
 events:
   - desc: >-
       Come hang out with us in our first biweekly R. U. Social? social, where
@@ -128,6 +138,6 @@ events:
     image: /img/rus_thic_pc_512.png
     link: 'https://www.rusu.co.uk/events/15199/3513/'
     subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
-    title: We Need a Theme - R. U. Social?
+    title: <Theme> - R. U. Social?
 ---
 
