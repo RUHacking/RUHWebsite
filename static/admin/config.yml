@@ -76,6 +76,15 @@ collections:
               }
             ]
           }
+          - {label: Featured Event, name: featured_event, widget: object, fields:
+            [
+              {label: "Event Title", name: title, widget: "string"},
+              {label: "Event Subtitle", name: subtitle, widget: "string"},
+              {label: "Event Description", name: desc, widget: "markdown"},
+              {label: "Event Image", name: image, widget: "image"},
+              {label: "Event Link", name: link, widget: "text"}
+            ]
+          }
           - {label: Events, name: events, widget: list, fields: [
               {label: "Event Title", name: title, widget: "string"},
               {label: "Event Subtitle", name: subtitle, widget: "string"},

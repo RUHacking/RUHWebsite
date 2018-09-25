@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
 import Gallery from '../components/Gallery';
-import logo from '../img/logo/RUHlogo_title_red.png';
+import logo from '../img/logo/ruh_logo_new.png';
 // import BigCalendar from 'react-big-calendar';
 // import moment from 'moment';
 // const localizer = BigCalendar.momentLocalizer(moment);
@@ -23,7 +23,15 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const { hero, about, loc, sponsors, featured_images, events } = frontmatter;
+  const {
+    hero,
+    about,
+    loc,
+    sponsors,
+    featured_images,
+    events,
+    featured_event,
+  } = frontmatter;
   const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
@@ -118,8 +126,35 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
-
-      <section className="hero section--events is-primary is-large">
+      <section className="hero section--featured-event is-primary is-medium">
+        <div className="hero-head">
+          <div className="container section">
+            <div className="columns">
+              <div className="column" style={{ borderRight: '1px solid' }}>
+                <a href={featured_event[0].link} target="_blank">
+                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                    {featured_event[0].title}
+                  </h2>
+                  <h3 className="subtitle is-size-4">
+                    {featured_event[0].subtitle}
+                  </h3>
+                  <figure className="image" style={{ maxWidth: '20rem' }}>
+                    <img src={featured_event[0].image} />
+                  </figure>
+                </a>
+              </div>
+              <div className="column">
+                <div className="section">
+                  <h2 className="subtitle is-size-4">
+                    <StyledMDContent content={featured_event[0].desc} />
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="hero section--events is-dark is-large">
         <div className="hero-head">
           <div className="container section">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -130,7 +165,7 @@ export const IndexPageTemplate = ({
         </div>
         <div className="hero-body is-paddingless">
           <div className="container section">
-            <div className="columns is-multiline">
+            <div className="columns is-centered is-multiline">
               {events.map((v, i) => {
                 return (
                   <div className="column is-3" key={i}>
@@ -173,7 +208,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--location is-dark is-small">
+      <section className="hero section--location is-primary is-small">
         <div className="hero-body is-paddingless">
           <div className="columns is-gapless">
             <div className="column is-fullheight is-two-thirds-desktop">
@@ -201,7 +236,7 @@ export const IndexPageTemplate = ({
         </div>
       </section>
 
-      <section className="hero section--sponsors is-primary is-large">
+      <section className="hero section--sponsors is-dark is-large">
         <div className="hero-head">
           <div className="container section">
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
@@ -221,15 +256,18 @@ export const IndexPageTemplate = ({
                         i % 3 ? acc : [...acc, sponsorList.slice(i, i + 3)],
                       []
                     )
-                    .map(val => {
+                    .map((val, i) => {
                       return (
                         <div
-                          key={val}
+                          key={i}
                           className="tile is-3 is-vertical is-parent"
                         >
                           {val.map(sec => {
                             return (
-                              <div key={sec} className="tile is-child box">
+                              <div
+                                key={sec.image}
+                                className="tile is-child box"
+                              >
                                 <figure className="image">
                                   <a href={sec.link} target="_blank">
                                     <img
@@ -298,6 +336,13 @@ export const indexPageQuery = graphql`
           }
         }
         events {
+          title
+          desc
+          image
+          link
+          subtitle
+        }
+        featured_event {
           title
           desc
           image
