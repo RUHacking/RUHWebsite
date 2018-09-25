@@ -108,12 +108,8 @@ export const IndexPageTemplate = ({
             <div className="columns is-centered">
               {events.map((v, i) => {
                 return (
-                  <div className="column">
-                    <div
-                      className="card is-centered"
-                      key={i}
-                      style={{ maxWidth: '350px', minHeight: '675px' }}
-                    >
+                  <div className="column is-4" key={i}>
+                    <div className="card">
                       <a href={v.link} target="_blank">
                         <div className="card-image">
                           <figure className="image">

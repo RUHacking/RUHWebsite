@@ -1,4 +1,8 @@
+
+$border: black;
 @import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/mixins";
+
 
 // Config vars
 $ruh-red: #D1161F;
@@ -10,7 +14,7 @@ $primary-invert: $ruh-red-invert;
 $primary-dark: $ruh-dark;
 $footer-background-color: $ruh-red-invert;
 
-$card-shadow: 0 2px 3px rgba($ruh-dark, 1.0), 0 0 0 2px rgba($ruh-dark, 1.0);
+// $card-shadow: 0 2px 3px rgba($ruh-dark, 1.0), 0 0 0 2px rgba($ruh-dark, 1.0);
 
 $slick-font-path: "~slick-carousel/slick/fonts/";
 $slick-loader-path: "~slick-carousel/slick/";
@@ -33,6 +37,20 @@ $slick-loader-path: "~slick-carousel/slick/";
     padding: 0 2rem 1rem 0;
     margin-bottom: 1.5rem;
     margin-top: 0;
+  }
+}
+
+.tile {
+  max-width: '350px';
+  min-height: '700px';
+  .image {
+    transform: translateY(-50%);
+    top: 50%;
+  }
+  @include mobile() {
+    .image {
+      transform: initial;
+    }
   }
 }
 
