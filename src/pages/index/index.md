@@ -95,14 +95,14 @@ sponsors:
       link: 'https://education.github.com/'
   title: Partners
 featured_event:
-  - desc: >-
-      Come hang out with us in our first biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and getting to know
-      each other through fun activities! We welcome non-drinkers too!
-    image: /img/rus_thic_pc_512.png
-    link: 'https://www.rusu.co.uk/events/15199/3434/'
-    subtitle: 27th September 7pm - 11pm Meet next to the Students' Union
-    title: Taster Event - R. U. Social? 
+  desc: >-
+    Come hang out with us in our first biweekly R. U. Social? social, where
+    we'll be going down to our local drink establishments and getting to know
+    each other through fun activities! We welcome non-drinkers too!
+  image: /img/rus_thic_pc_512.png
+  link: 'https://www.rusu.co.uk/events/15199/3434/'
+  subtitle: 27th September 7pm - 11pm Meet next to the Students' Union
+  title: Taster Event - R. U. Social? 
 events:
   - desc: >-
       Come hang out with us in our first biweekly R. U. Social? social, where

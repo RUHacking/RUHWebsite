@@ -135,22 +135,22 @@ export const IndexPageTemplate = ({
           <div className="container section">
             <div className="columns">
               <div className="column" style={{ borderRight: '1px solid' }}>
-                <a href={featured_event[0].link} target="_blank">
+                <a href={featured_event.link} target="_blank">
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                    {featured_event[0].title}
+                    {featured_event.title}
                   </h2>
                   <h3 className="subtitle is-size-4">
-                    {featured_event[0].subtitle}
+                    {featured_event.subtitle}
                   </h3>
                   <figure className="image" style={{ maxWidth: '20rem' }}>
-                    <img src={featured_event[0].image} />
+                    <img src={featured_event.image} />
                   </figure>
                 </a>
               </div>
               <div className="column">
                 <div className="section">
                   <h3 className="subtitle is-size-5">
-                    <StyledMDContent content={featured_event[0].desc} />
+                    <StyledMDContent content={featured_event.desc} />
                   </h3>
                 </div>
               </div>
