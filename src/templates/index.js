@@ -149,7 +149,7 @@ export const IndexPageTemplate = ({
       </section>
 
       <section className="hero section--location is-dark is-small">
-        <div className="hero-head">
+        <div className="hero-body is-paddingless">
           <div className="columns is-gapless">
             <div className="column is-fullheight is-two-thirds-desktop">
               <Map
@@ -164,17 +164,12 @@ export const IndexPageTemplate = ({
                 }
               />
             </div>
-            <div className="column is-one-third-desktop">
+            <div className="column">
               <div className="section">
-                <div
-                  style={{ height: '100%' }}
-                  className="container has-background-dark"
-                >
-                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                    {loc.title}
-                  </h2>
-                  <p>{loc.description}</p>
-                </div>
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {loc.title}
+                </h2>
+                <StyledMDContent content={loc.description} />
               </div>
             </div>
           </div>
