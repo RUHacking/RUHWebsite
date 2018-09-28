@@ -93,6 +93,8 @@ sponsors:
       link: 'https://www.bcs.org/category/14631'
     - image: /img/github.svg
       link: 'https://education.github.com/'
+    - image: /img/utc-reading.jpg
+      link: 'https://www.utcreading.co.uk/'
   title: Partners
 featured_event:
   desc: >-
