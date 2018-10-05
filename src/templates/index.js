@@ -61,7 +61,7 @@ export const IndexPageTemplate = ({
             <div className="level">
               <div className="level-item">
                 <h2
-                  className="subtitle is-size-2"
+                  className="subtitle is-size-3"
                   style={{
                     fontFamily: 'Roboto',
                     fontWeight: 'bolder',
