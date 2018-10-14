@@ -128,29 +128,28 @@ featured_event:
   title: Hacktoberfest 2018 - Reading & Thames Valley
 events:
   - desc: >-
-      Come hang out with us in our first biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and getting to know
-      each other through fun activities! We welcome non-drinkers too!
-    image: /img/rus_thic_pc_512.png
-    link: 'https://www.rusu.co.uk/events/15199/3434/'
-    subtitle: 27th September 7pm - 11pm Meet next to the Students' Union
-    title: Taster Event - R. U. Social?
-  - desc: >-
-      Come along to have a tour with one of our industry partners! We have
-      booked out an entire bus (the roofless bus if weather allows!) and getting
-      driven down to the Reading Transport Ltd depot for a quick tour around
-      their facilities and Tech Lab!
-    image: /img/reading_buses_square.png
-    link: 'https://www.rusu.co.uk/events/15199/3433/'
-    subtitle: 28th September 10am - 1pm Meet next to the Students' Union
-    title: Taster Event - Reading Busses Tour
-  - desc: >-
       Come hang out with us in our second biweekly R. U. Social? social, where
       we'll be going down to our local drink establishments and coming up with
       themes for future socials! We welcome non-drinkers too!
     image: /img/rus_thic_pc_512.png
     link: 'https://www.rusu.co.uk/events/15199/3513/'
     subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
+    title: <Theme> - R. U. Social?
+  - desc: >-
+      Come hang out with us in our third biweekly R. U. Social? social, where
+      we'll be going down to our local drink establishments and reminiscing on
+      Hacktoberfest! We welcome non-drinkers too!
+    image: /img/rus_thic_pc_512.png
+    link: 'https://www.rusu.co.uk/events/15199/3537/'
+    subtitle: 25th October 7pm - 11pm Meet next to the Students' Union
+    title: Posthack - R. U. Social?
+  - desc: >-
+      Come hang out with us in our fourth biweekly R. U. Social? social, where
+      we'll be going down to our local drink establishments and coming up with
+      themes for future socials! We welcome non-drinkers too!
+    image: /img/rus_thic_pc_512.png
+    link: 'https://www.rusu.co.uk/events/15199/3538/'
+    subtitle: 8th November 7pm - 11pm Meet next to the Students' Union
     title: <Theme> - R. U. Social?
 ---
 
