@@ -124,7 +124,7 @@ featured_event:
   image: /img/twitter-facebook-copy.png
   link: >-
     https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519
-  subtitle: Sat 20 October 2018 11am - 8pm Thames Tower
+  subtitle: Sun 28 October 2018 11am - 8pm Thames Tower
   title: Hacktoberfest 2018 - Reading & Thames Valley
 events:
   - desc: >-
@@ -137,12 +137,12 @@ events:
     title: <Theme> - R. U. Social?
   - desc: >-
       Come hang out with us in our third biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and reminiscing on
+      we'll be going down to our local drink establishments and planning for
       Hacktoberfest! We welcome non-drinkers too!
     image: /img/rus_thic_pc_512.png
     link: 'https://www.rusu.co.uk/events/15199/3537/'
     subtitle: 25th October 7pm - 11pm Meet next to the Students' Union
-    title: Posthack - R. U. Social?
+    title: Prehack - R. U. Social?
   - desc: >-
       Come hang out with us in our fourth biweekly R. U. Social? social, where
       we'll be going down to our local drink establishments and coming up with
