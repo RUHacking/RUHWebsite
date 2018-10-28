@@ -57,6 +57,18 @@ const SocialIcons = compose(withProps({}))(props => (
         </span>
       </a>
     </p>
+    <p className="control">
+      <a
+        className="button is-medium is-outlined is-primary"
+        rel="noopener noreferrer"
+        href="https://www.instagram.com/r.u.hacking/"
+        target="_blank"
+      >
+        <span className="icon is-small">
+          <FontAwesomeIcon icon={['fab', 'instagram']} />
+        </span>
+      </a>
+    </p>
   </div>
 ));
 export default SocialIcons;
