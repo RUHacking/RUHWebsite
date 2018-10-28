@@ -13,7 +13,7 @@ yarn
 Starts a development server on localhost:8000
 ```
 nvm use
-yarn develop
+yarn dev
 ```
 
 ### Lint and format
