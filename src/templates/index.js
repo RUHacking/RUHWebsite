@@ -95,11 +95,7 @@ export const IndexPageTemplate = ({
 
       <section className="hero section--gallery is-primary is-large">
         <div className="hero-head">
-          <div className="columns">
-            <div className="column is-12">
-              <Gallery images={featured_images.image_list} />
-            </div>
-          </div>
+          <Gallery images={featured_images.image_list} />
         </div>
       </section>
 
