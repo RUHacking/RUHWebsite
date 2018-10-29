@@ -57,6 +57,14 @@ $slick-loader-path: "~slick-carousel/slick/";
   }
 }
 
+.has-border {
+  border: 1px solid white;
+  border-width: 0 1px 0 0;
+  @include mobile() {
+    border-width: 0 0 1px 0;
+  }
+}
+
 // Helper Classes
 .full-width-image-container {
   width: 100vw;
