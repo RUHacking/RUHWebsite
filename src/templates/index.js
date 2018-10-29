@@ -95,11 +95,7 @@ export const IndexPageTemplate = ({
 
       <section className="hero section--gallery is-primary is-large">
         <div className="hero-head">
-          <div className="columns">
-            <div className="column is-12">
-              <Gallery images={featured_images.image_list} />
-            </div>
-          </div>
+          <Gallery images={featured_images.image_list} />
         </div>
       </section>
 
@@ -133,11 +129,8 @@ export const IndexPageTemplate = ({
       <section className="hero section--featured-event is-primary is-medium">
         <div className="hero-head">
           <div className="container section">
-            <div className="columns  is-centered">
-              <div
-                className="column has-text-centered"
-                style={{ borderRight: '1px solid' }}
-              >
+            <div className="columns is-centered">
+              <div className="column has-text-centered has-border">
                 <a href={featured_event.link} target="_blank">
                   <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                     {featured_event.title}
