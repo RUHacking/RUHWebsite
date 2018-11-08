@@ -145,11 +145,11 @@ events:
     title: Prehack - R. U. Social?
   - desc: >-
       Come hang out with us in our fourth biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and coming up with
-      themes for future socials! We welcome non-drinkers too!
+      we'll be going down to the Firebase Google Developer Group meetup and
+      going to a town pub afterwards! We welcome non-drinkers too!
     image: /img/rus_thic_pc_512.png
-    link: 'https://www.rusu.co.uk/events/15199/3538/'
-    subtitle: 8th November 7pm - 11pm Meet next to the Students' Union
-    title: <Theme> - R. U. Social?
+    link: 'https://www.meetup.com/GDG-Reading-Thames-Valley/events/255614103/'
+    subtitle: '8th November 6pm - 11pm Central Working, RSVP using Meetup Page'
+    title: Firebase - R. U. Social?
 ---
 
