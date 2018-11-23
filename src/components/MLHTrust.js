@@ -11,7 +11,12 @@ const MLHTrust = compose(
   })
 )(props => (
   <div className={props.className}>
-    <a id="mlh-trust-badge" href={props.mlhLink} target="_blank">
+    <a
+      style={{ maxWidth: '100px' }}
+      id="mlh-trust-badge"
+      href={props.mlhLink}
+      target="_blank"
+    >
       <img
         src={props.mlhLogo}
         alt="Major League Hacking 2019 Hackathon Season"
