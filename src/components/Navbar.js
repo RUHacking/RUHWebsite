@@ -7,20 +7,22 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      hidden: false,
+      scrolled: false,
     };
     this.checkShow = this.checkShow.bind(this);
   }
-  checkShow(event) {
-    let { hidden } = this.state;
-    if (!hidden && window.scrollY > 0) {
-      this.setState({ hidden: true });
-    } else if (hidden && window.scrollY === 0) {
-      this.setState({ hidden: false });
+  checkShow() {
+    let { scrolled } = this.state;
+    if (!scrolled && window.scrollY > 0) {
+      this.setState({ scrolled: true });
+    } else if (scrolled && window.scrollY === 0) {
+      this.setState({ scrolled: false });
     }
   }
   componentDidMount() {
     window.addEventListener('scroll', this.checkShow);
+    // Run on mount in case loading in middle of page.
+    this.checkShow();
   }
 
   componentWillUnmount() {
@@ -31,7 +33,8 @@ class Navbar extends React.Component {
       <div className={this.props.className}>
         <nav
           className={
-            'navbar is-dark is-fixed-top' + (this.state.hidden ? ' hidden' : '')
+            'navbar is-fixed-top' +
+            (this.state.scrolled ? ' is-dark' : ' is-primary')
           }
         >
           <div className="container">
@@ -61,14 +64,11 @@ class Navbar extends React.Component {
 
 const styledNavbar = styled(Navbar)`
   .navbar {
-    transition: opacity 0.3s;
+    transition: background-color 0.3s;
     &.is-transparent {
       background-color: transparent;
       background-image: none;
     }
-  }
-  .hidden {
-    opacity: 0;
   }
 `;
 
