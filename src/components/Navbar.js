@@ -19,10 +19,35 @@ class Navbar extends React.Component {
       this.setState({ scrolled: false });
     }
   }
+  registerBurger() {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll('.navbar-burger'),
+      0
+    );
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  }
   componentDidMount() {
     window.addEventListener('scroll', this.checkShow);
     // Run on mount in case loading in middle of page.
     this.checkShow();
+    // Register click handler for burger menu expand.
+    this.registerBurger();
   }
 
   componentWillUnmount() {
@@ -36,6 +61,8 @@ class Navbar extends React.Component {
             'navbar is-fixed-top' +
             (this.state.scrolled ? ' is-dark' : ' is-primary')
           }
+          role="navigation"
+          aria-label="main navigation"
         >
           <div className="container">
             <div className="navbar-brand">
@@ -46,14 +73,27 @@ class Navbar extends React.Component {
                   style={{ width: 'auto' }}
                 />
               </Link>
+              <a
+                role="button"
+                className="navbar-burger"
+                data-target="navMenu"
+                aria-label="menu"
+                aria-expanded="false"
+              >
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+              </a>
             </div>
-            <div className="navbar-start">
-              <Link className="navbar-item" to="/sponsors">
-                Sponsors
-              </Link>
-              <Link className="navbar-item" to="/team">
-                Team
-              </Link>
+            <div className="navbar-menu is-primary" id="navMenu">
+              <div className="navbar-start">
+                <Link className="navbar-item" to="/sponsors">
+                  Sponsors
+                </Link>
+                <Link className="navbar-item" to="/team">
+                  Team
+                </Link>
+              </div>
             </div>
           </div>
         </nav>
