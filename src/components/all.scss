@@ -12,6 +12,7 @@ $primary: $ruh-red;
 $primary-invert: $ruh-red-invert;
 $primary-dark: $ruh-dark;
 $footer-background-color: $ruh-red-invert;
+$footer-padding: 1rem 1rem 1rem;
 
 // $card-shadow: 0 2px 3px rgba($ruh-dark, 1.0), 0 0 0 2px rgba($ruh-dark, 1.0);
 
@@ -39,6 +40,18 @@ $slick-loader-path: "~slick-carousel/slick/";
 
 * {
   font-family: Roboto, Open Sans;
+}
+
+header {
+  .subtitle {
+    line-height: 1.2;
+  }
+}
+
+.footer {
+  .icon {
+    margin: .5em;
+  }
 }
 
 .card {

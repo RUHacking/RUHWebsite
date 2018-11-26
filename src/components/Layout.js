@@ -7,10 +7,10 @@ import './all.scss';
 
 const TemplateWrapper = ({ children }) => (
   <div>
+    <MLHTrust />
     <Helmet title="R. U. Hacking?">
       <link rel="shortcut icon" href="favicon.png" />
     </Helmet>
-    <MLHTrust />
     <Navbar />
     <div>{children}</div>
     <Footer />
