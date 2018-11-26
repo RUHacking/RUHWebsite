@@ -19,6 +19,9 @@ class Navbar extends React.Component {
       this.setState({ scrolled: false });
     }
   }
+
+  toggleLight() {}
+
   registerBurger() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
