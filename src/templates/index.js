@@ -74,7 +74,7 @@ export const IndexPageTemplate = ({
             </div>
             <div className="level">
               <div className="level-item">
-                <h3 className="">February 16th-17th 2019</h3>
+                <h3 className="">February 16-17 (Sat-Sun), 2019</h3>
               </div>
             </div>
             <div className="columns">
