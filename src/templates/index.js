@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import { HTMLContent, MDContent } from '../components/Content';
 import Map from '../components/Map';
 import Gallery from '../components/Gallery';
+
 import logo from '../img/logo/ruh_logo_new.png';
 // import BigCalendar from 'react-big-calendar';
 // import moment from 'moment';
@@ -35,7 +36,7 @@ export const IndexPageTemplate = ({
   const sponsorList = Object.values(sponsors.sponsor_list);
   return (
     <Layout>
-      <section className="hero is-fullheight is-primary">
+      <header className="hero is-fullheight is-primary">
         <div className="hero-body">
           <div className="container is-fluid">
             <div className="level">
@@ -71,27 +72,41 @@ export const IndexPageTemplate = ({
                 </h2>
               </div>
             </div>
+            <div className="level">
+              <div className="level-item">
+                <h3 className="">February 16th-17th 2019</h3>
+              </div>
+            </div>
             <div className="columns">
               <div className="column is-half is-offset-one-quarter">
-                <h2 className="subtitle is-size-4 has-text-centered">
-                  <StyledMDContent content={hero.description} />
-                </h2>
                 <div className="level">
-                  <div className="level-item">
+                  <div className="level-item is-dark">
+                    <a
+                      href="https://www.eventbrite.co.uk/e/r-u-hacking-2018-student-hackathon-event-tickets-52684847798#tickets"
+                      target="_blank"
+                      className="button is-dark is-large"
+                    >
+                      Get your spot now!
+                    </a>
+                  </div>
+                  {/* <div className="level-item">
                     <a
                       href="https://www.rusu.co.uk/societies/ruhacking/"
                       target="_blank"
                       className="button is-primary is-inverted is-outlined is-large is-rounded"
                     >
-                      Join the society today!
+                      
                     </a>
-                  </div>
+                  </div> */}
                 </div>
+                <h2 className="subtitle is-size-4 has-text-centered">
+                  <StyledMDContent content={hero.description} />
+                </h2>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </header>
 
       <section className="hero section--gallery is-primary is-large">
         <div className="hero-head">

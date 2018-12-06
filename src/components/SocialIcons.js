@@ -8,10 +8,13 @@ import { compose, withProps } from 'recompose';
 library.add(fab, fas);
 
 const SocialIcons = compose(withProps({}))(props => (
-  <div className="social-icons field has-addons">
+  <div
+    className="social-icons field has-addons"
+    style={{ justifyContent: 'center' }}
+  >
     <p className="control">
       <a
-        className="button is-medium is-outlined is-primary"
+        className="button is-large is-rounded is-dark"
         rel="noopener noreferrer"
         href="https://twitter.com/ReadingUniHack"
         target="_blank"
@@ -23,7 +26,7 @@ const SocialIcons = compose(withProps({}))(props => (
     </p>
     <p className="control">
       <a
-        className="button is-medium is-outlined is-primary"
+        className="button is-large is-dark"
         rel="noopener noreferrer"
         href="mailto:hey@ruhacking.me"
         target="_blank"
@@ -35,7 +38,7 @@ const SocialIcons = compose(withProps({}))(props => (
     </p>
     <p className="control">
       <a
-        className="button is-medium is-outlined is-primary"
+        className="button is-large is-dark"
         rel="noopener noreferrer"
         href="https://github.com/RUHacking"
         target="_blank"
@@ -47,7 +50,7 @@ const SocialIcons = compose(withProps({}))(props => (
     </p>
     <p className="control">
       <a
-        className="button is-medium is-outlined is-primary"
+        className="button is-large is-dark"
         rel="noopener noreferrer"
         href="https://www.facebook.com/readingunihack"
         target="_blank"
@@ -59,7 +62,7 @@ const SocialIcons = compose(withProps({}))(props => (
     </p>
     <p className="control">
       <a
-        className="button is-medium is-outlined is-primary"
+        className="button is-large is-rounded is-dark"
         rel="noopener noreferrer"
         href="https://www.instagram.com/r.u.hacking/"
         target="_blank"
