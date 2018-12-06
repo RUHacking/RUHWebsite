@@ -27,6 +27,14 @@ const Footer = () => (
             by RUHacking.
           </p>
           <h4 className="subtitle is-size-6" style={{ marginBottom: '1em' }}>
+            <a
+              target="_blank"
+              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            >
+              MLH Code of Conduct
+            </a>
+          </h4>
+          <h4 className="subtitle is-size-6" style={{ marginBottom: '1em' }}>
             © R. U. Hacking? {new Date().getFullYear()}. All rights reserved.
           </h4>
         </div>
