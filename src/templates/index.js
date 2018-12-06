@@ -68,7 +68,7 @@ export const IndexPageTemplate = ({
                     fontWeight: 'bolder',
                   }}
                 >
-                  Create. Invent. Hack
+                  Learn, Build, Share!
                 </h2>
               </div>
             </div>
@@ -82,7 +82,7 @@ export const IndexPageTemplate = ({
                 <div className="level">
                   <div className="level-item is-dark">
                     <a
-                      href="https://www.eventbrite.co.uk/e/r-u-hacking-2018-student-hackathon-event-tickets-52684847798#tickets"
+                      href="https://www.eventbrite.co.uk/e/r-u-hacking-2018-student-hackathon-event-tickets-52684847798?aff=webaction#tickets"
                       target="_blank"
                       className="button is-dark is-large"
                     >
