@@ -10,39 +10,28 @@ hero:
     _professional network_. Our events are the perfect opportunity for both
     newcomers and seasoned techies alike to collaborate & learn, facilitated by
     our support and resources.
-  title: R. U. Hacking?
+  title: R. U. Hacking? 2019
 about:
   col_1:
-    description: >-
-      **Hackathons** are events where people from multiple disciplines can team
-      up to create a quick and demonstrable version of their project. The teams
-      compete to see which project will be deemed the best by experts in the
-      industry and can win prizes! Hackathons are often themed around a certain
-      topic, but can often be free-form! Our society aims to provide some
-      mini-hacks and similar events throughout the year with our big 24-hour
-      Hackathon being held in February, 2019.
+    description: "A **Hackathon **is a programming marathon, where teams of 2-4 put their ideas together to create something exciting in only 24 hours. It gives teams of hackers a chance to turn their ideas into reality and present them.\r\n\nThere will be a number of prizes for using specific technologies as well as the overall best project. There will be additional prize pools available exclusively to first-timers!"
     title: What is a Hackathon anyway?
   col_2:
-    description: >-
-      Building from our Hackathon last year, we're aiming to put our Alumni
-      prize award towards equipping our hardware lab for Hackathon attendees to
-      make use of. Some of the hardware will include low-power microcontrollers
-      and potentially some Virtual Reality equipment! Last year's event had some
-      very solid entries, to the point where it was difficult to choose the
-      overall best, so definitely come down and make something you can boast
-      about on your CV!
-    title: What will the events be like?
+    description: "To attend as a hacker, you must be in full-time education (e.g. University, college) or have finished in the past year. We have no other requirements!\r\n\nWe welcome attendees from all disciplines as we strongly believe Hackathon projects require skills beyond just technical - benefiting from skills such as design, entrepreneurship and overall creativity."
+    title: Can I attend?
   title: About our Hackathons
 loc:
   coords:
     lat: 51.4414
     lng: -0.9418
   description: >-
-    All of our regular activities will be based here on Whiteknights campus! As
-    we're a student society, we'll use the Students' Union as a meeting point
-    for town events. Some local campus events might have different meeting
-    points (e.g. the Computer Science department).
-  marker: Reading University Students' Union
+    Our flagship 24-hour event will be held at the Henley Business School
+    Building on Whiteknights campus at the University of Reading.
+
+
+    All of our regular activities are also based here on Whiteknights campus. As
+    we're a student society, we use the Students' Union as a meeting point for
+    town events.
+  marker: 'Whiteknights Campus, University of Reading'
   title: Venue
 featured_images:
   image_list:
@@ -97,59 +86,36 @@ sponsors:
       link: 'https://www.utcreading.co.uk/'
   title: Partners
 featured_event:
-  desc: >-
-    It's Hacktoberfest 2018! Proudly brought to you by the team at the Reading
-    University Hacking society, let's celebrate open source over food, drinks,
-    learning, and great company! Bring your laptop and positive attitude!
-
-
-    <br>
-
-
-    Hacktoberfest — brought to you by DigitalOcean in partnership with GitHub
-    and Twilio — is a month-long celebration of open source software.
-    Maintainers are invited to guide would-be contributors towards issues that
-    will help move the project forward, and contributors get the opportunity to
-    give back to both projects they like, and ones they've just discovered. No
-    contribution is too small—bug fixes and documentation updates are valid ways
-    of participating.
-
-
-    <br>
-
-
-    <a
-    href="https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519">Sign
-    up for the event here!</a>
-  image: /img/twitter-facebook-copy.png
+  desc: "Reading University Hacking and Henley Business School proudly present our second annual 24-hour Student Hackathon at the University of Reading, welcoming students from all over Thames Valley!\r\n\n\r<br>\n\nWhether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon! Bring your laptops and bright ideas, and we'll cover food, power and Wi-Fi - beginners welcome!\n\n<br>\n\n<a href=\"https://www.eventbrite.com/e/r-u-hacking-2019-24-hour-student-hackathon-tickets-52684847798?aff=webeventinline\">Sign up for the event here!</a>"
+  image: /img/lbs.png
   link: >-
-    https://www.eventbrite.co.uk/e/hacktoberfest-2018-reading-thames-valley-tickets-50594502519
-  subtitle: Sun 28 October 2018 11am - 8pm Thames Tower
-  title: Hacktoberfest 2018 - Reading & Thames Valley
+    https://www.eventbrite.com/e/r-u-hacking-2019-24-hour-student-hackathon-tickets-52684847798?aff=webeventlink
+  subtitle: '16th-17th February, 2019 @ Henley Business School'
+  title: R. U. Hacking? 2019 | 24-Hour Student Hackathon
 events:
   - desc: >-
-      Come hang out with us in our second biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and coming up with
-      themes for future socials! We welcome non-drinkers too!
+      Come hang out with us in our first Virtual Reality R. U. Social? event,
+      where we'll be hooking ourselves into virtual reality in our department's
+      brand new Artificial Intelligence lab!
     image: /img/rus_thic_pc_512.png
-    link: 'https://www.rusu.co.uk/events/15199/3513/'
-    subtitle: 11th October 7pm - 11pm Meet next to the Students' Union
-    title: <Theme> - R. U. Social?
+    link: 'https://www.rusu.co.uk/societies/15199/'
+    subtitle: '15th January, 2019 6pm - 9pm @ Polly Vacher'
+    title: VR Night mk1 - R. U. Social?
   - desc: >-
-      Come hang out with us in our third biweekly R. U. Social? social, where
-      we'll be going down to our local drink establishments and planning for
-      Hacktoberfest! We welcome non-drinkers too!
+      Come hang out with us in our first Show & Tell R. U. Social? event, where
+      we'll be welcoming society members to share about some of their projects
+      they've been working on!
     image: /img/rus_thic_pc_512.png
-    link: 'https://www.rusu.co.uk/events/15199/3537/'
-    subtitle: 25th October 7pm - 11pm Meet next to the Students' Union
-    title: Prehack - R. U. Social?
+    link: 'https://www.rusu.co.uk/societies/15199/'
+    subtitle: '24th January, 2019 6pm - 9pm @ Polly Vacher'
+    title: Show & Tell - R. U. Social?
   - desc: >-
-      Come hang out with us in our fourth biweekly R. U. Social? social, where
-      we'll be going down to the Firebase Google Developer Group meetup and
-      going to a town pub afterwards! We welcome non-drinkers too!
+      Come hang out with us in our second Virtual Reality R. U. Social? event,
+      where we'll be hooking ourselves into virtual reality in our department's
+      brand new Artificial Intelligence lab!
     image: /img/rus_thic_pc_512.png
-    link: 'https://www.meetup.com/GDG-Reading-Thames-Valley/events/255614103/'
-    subtitle: '8th November 6pm - 11pm Central Working, RSVP using Meetup Page'
-    title: Firebase - R. U. Social?
+    link: 'https://www.rusu.co.uk/societies/15199/'
+    subtitle: '29th January, 2019 6pm - 9pm @ Polly Vacher'
+    title: VR Night mk2 - R. U. Social?
 ---
 
