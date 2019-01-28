@@ -43,6 +43,9 @@ $slick-loader-path: "~slick-carousel/slick/";
 }
 
 header {
+  .title {
+    text-align: center;
+  }
   .subtitle {
     line-height: 1.2;
   }
