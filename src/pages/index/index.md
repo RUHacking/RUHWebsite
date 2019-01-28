@@ -60,30 +60,39 @@ sponsors:
     for our students to create ties with businesses while at University and get
     a good foothold for when looking for placements.
   sponsor_list:
-    - image: /img/partners/Austin-Fraser.png
-      link: 'https://www.austinfraser.com/en/'
-    - image: /img/partners/clarks_legal.png
-      link: 'https://www.clarkslegal.com/'
-    - image: /img/partners/forbury.png
-      link: 'https://www.forbury.tech/'
-    - image: /img/partners/ic_logo.png
-      link: 'https://www.vitalsix.co.uk/products/innovation-catalyst'
-    - image: /img/partners/logo-sage-people.png
-      link: 'https://www.sagepeople.com/home/'
     - image: /img/partners/Reading_Buses_Logo.png
       link: 'https://www.reading-buses.co.uk/'
-    - image: /img/partners/think_eng.jpeg
-      link: 'https://think-engineer.com/'
+      tier: 'silver'
     - image: /img/partners/gdg_reading.jpeg
       link: 'https://www.meetup.com/GDG-Reading-Thames-Valley/'
+      tier: 'silver'
     - image: /img/reading-logo.png
       link: 'http://www.reading.ac.uk/'
+      tier: 'gold'
     - image: /img/berkshire_logo_sml_400x400.jpg
       link: 'https://www.bcs.org/category/14631'
+      tier: 'silver'
     - image: /img/github.svg
       link: 'https://education.github.com/'
+      tier: 'gold'
     - image: /img/utc-reading.jpg
       link: 'https://www.utcreading.co.uk/'
+      tier: 'bronze'
+    - image: /img/sticker-mule-logo-light.png
+      link: 'http://hackp.ac/mlh-stickermule-hackathons'
+      tier: 'bronze'
+    - image: /img/henley.png
+      link: 'https://www.henley.ac.uk/'
+      tier: 'gold'
+    - image: /img/codewizards_logo.png
+      link: 'https://codewizards.co.uk/'
+      tier: 'silver'
+    - image: /img/investec.png
+      link: 'https://www.investec.com/en_gb.html'
+      tier: 'gold'
+    - image: /img/flo_live.png
+      link: 'https://flolive.net/'
+      tier: 'gold'
   title: Partners
 featured_event:
   desc: "Reading University Hacking and Henley Business School proudly present our second annual 24-hour Student Hackathon at the University of Reading, welcoming students from all over Thames Valley!\r\n\n\r<br>\n\nWhether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon! Bring your laptops and bright ideas, and we'll cover food, power and Wi-Fi - beginners welcome!\n\n<br>\n\n<a href=\"https://www.eventbrite.com/e/r-u-hacking-2019-24-hour-student-hackathon-tickets-52684847798?aff=webeventinline\">Sign up for the event here!</a>"
