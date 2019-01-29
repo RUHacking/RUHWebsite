@@ -72,7 +72,8 @@ collections:
                 fields: [
                   {label: Image, name: image, widget: image},
                   {label: Link, name: link, widget: "text"},
-                  {label: Tier, name: tier, widget: "select", options: ["bronze", "silver", "gold"]}
+                  {label: Tier, name: tier, widget: "select", options: ["bronze", "silver", "gold"]},
+                  {label: "Alt Text", name: alt, widget: "text"}
                 ]
               }
             ]

@@ -63,36 +63,47 @@ sponsors:
     - image: /img/partners/Reading_Buses_Logo.png
       link: 'https://www.reading-buses.co.uk/'
       tier: 'silver'
+      alt: 'Reading Buses'
     - image: /img/partners/gdg_reading.jpeg
       link: 'https://www.meetup.com/GDG-Reading-Thames-Valley/'
       tier: 'silver'
+      alt: 'Google Developer Group'
     - image: /img/reading-logo.png
       link: 'http://www.reading.ac.uk/'
       tier: 'gold'
+      alt: 'Reading University'
     - image: /img/berkshire_logo_sml_400x400.jpg
       link: 'https://www.bcs.org/category/14631'
       tier: 'silver'
+      alt: 'BCS Berkshire'
     - image: /img/github.svg
       link: 'https://education.github.com/'
       tier: 'gold'
+      alt: 'GitHub Education'
     - image: /img/utc-reading.jpg
       link: 'https://www.utcreading.co.uk/'
       tier: 'bronze'
+      alt: 'UTC Reading'
     - image: /img/sticker-mule-logo-light.png
       link: 'http://hackp.ac/mlh-stickermule-hackathons'
       tier: 'bronze'
+      alt: 'Stickermule'
     - image: /img/henley.png
       link: 'https://www.henley.ac.uk/'
       tier: 'gold'
+      alt: 'Henley Business School'
     - image: /img/codewizards_logo.png
       link: 'https://codewizards.co.uk/'
       tier: 'silver'
+      alt: 'Codewizards'
     - image: /img/investec.png
       link: 'https://www.investec.com/en_gb.html'
       tier: 'gold'
+      alt: 'Investec'
     - image: /img/flo_live.png
       link: 'https://flolive.net/'
       tier: 'gold'
+      alt: 'Flo Live'
   title: Partners
 featured_event:
   desc: "Reading University Hacking and Henley Business School proudly present our second annual 24-hour Student Hackathon at the University of Reading, welcoming students from all over Thames Valley!\r\n\n\r<br>\n\nWhether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon! Bring your laptops and bright ideas, and we'll cover food, power and Wi-Fi - beginners welcome!\n\n<br>\n\n<a href=\"https://www.eventbrite.com/e/r-u-hacking-2019-24-hour-student-hackathon-tickets-52684847798?aff=webeventinline\">Sign up for the event here!</a>"

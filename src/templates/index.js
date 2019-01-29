@@ -297,7 +297,7 @@ export const IndexPageTemplate = ({
                                     <img
                                       className=""
                                       src={sec.image}
-                                      alt={sec}
+                                      alt={sec.alt}
                                     />
                                   </a>
                                 </figure>
@@ -383,6 +383,7 @@ export const indexPageQuery = graphql`
             image
             link
             tier
+            alt
           }
         }
         about {
