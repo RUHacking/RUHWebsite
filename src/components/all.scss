@@ -66,8 +66,8 @@ header {
     position: relative;
     &::before {
       position: absolute;
-      content: "";
-      font-family: 'Font Awesome\ 5 Free';
+      content: "";
+      font-family: FontAwesome;
       font-size: 1rem;
       color: $ruh-dark;
       padding: 0 .5em 0 .5em;
