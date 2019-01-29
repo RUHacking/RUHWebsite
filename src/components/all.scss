@@ -21,7 +21,12 @@ $slick-loader-path: "~slick-carousel/slick/";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
 
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+$fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
 
 
 .content .taglist {
@@ -69,8 +74,8 @@ header {
     position: relative;
     &::before {
       position: absolute;
-      content: "";
       font-family: FontAwesome;
+      content: "";
       font-size: 1rem;
       color: $ruh-dark;
       padding: 0 .5em 0 .5em;
