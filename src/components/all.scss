@@ -21,6 +21,10 @@ $slick-loader-path: "~slick-carousel/slick/";
 @import "~slick-carousel/slick/slick.scss";
 @import "~slick-carousel/slick/slick-theme.scss";
 
+$fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;
@@ -43,6 +47,9 @@ $slick-loader-path: "~slick-carousel/slick/";
 }
 
 header {
+  .title {
+    text-align: center;
+  }
   .subtitle {
     line-height: 1.2;
   }
@@ -58,10 +65,46 @@ header {
   margin: 0 auto;
 }
 
+@mixin tier($color) {
+  transition: box-shadow .1s;
+    position: relative;
+    &::before {
+      position: absolute;
+      font-family: 'Font Awesome 5 Free';
+      content: '\f0c1';
+      font-size: 1rem;
+      color: $ruh-dark;
+      padding: 0 .5em 0 .5em;
+      border-radius: 0 0 0 5px;
+      background: $color;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      opacity: 0.0;
+      transition: opacity .25s ease-in-out;
+    }
+    box-shadow: 0 2px 3px rgba($color, 1.0), 0 0 0 2px rgba($color, 1.0);
+    &:hover {
+      box-shadow: 4px 3px 4px rgba($color, 1.0), 0 0 0 4px rgba($color, 1.0);
+      &::before {
+        opacity: 1.0;
+      }
+    }
+}
+
 .tile {
   .image {
     transform: translateY(-50%);
     top: 50%;
+  }
+  .gold {
+    @include tier(gold);
+  }
+  .silver {
+    @include tier(silver);
+  }
+  .bronze {
+    @include tier(rgba(205, 127, 50, 1.0));
   }
   @include mobile() {
     .image {
