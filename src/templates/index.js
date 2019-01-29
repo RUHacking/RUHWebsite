@@ -8,9 +8,6 @@ import Map from '../components/Map';
 import Gallery from '../components/Gallery';
 
 import logo from '../img/logo/ruh_logo_new.png';
-// import BigCalendar from 'react-big-calendar';
-// import moment from 'moment';
-// const localizer = BigCalendar.momentLocalizer(moment);
 
 const StyledMDContent = styled(MDContent)`
   a {
