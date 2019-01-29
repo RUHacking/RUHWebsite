@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import logo from '../img/logo/RUHlogo.png';
 import styled from 'styled-components';
+import animateScrollTo from 'animated-scroll-to';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -69,13 +69,18 @@ class Navbar extends React.Component {
         >
           <div className="container">
             <div className="navbar-brand">
-              <Link to="/" className="navbar-item">
+              <a
+                onClick={() =>
+                  animateScrollTo(document.querySelector('.hero.is-primary'))
+                }
+                className="navbar-item"
+              >
                 <img
                   src={logo}
                   alt="RUHacking Logo"
                   style={{ width: 'auto' }}
                 />
-              </Link>
+              </a>
               <a
                 role="button"
                 className="navbar-burger"
@@ -90,12 +95,44 @@ class Navbar extends React.Component {
             </div>
             <div className="navbar-menu is-primary" id="navMenu">
               <div className="navbar-start">
-                <Link className="navbar-item" to="/sponsors">
-                  Sponsors
-                </Link>
-                <Link className="navbar-item" to="/team">
-                  Team
-                </Link>
+                <a
+                  className="navbar-item"
+                  onClick={() =>
+                    animateScrollTo(document.querySelector('.section--about'))
+                  }
+                >
+                  About
+                </a>
+                <a
+                  className="navbar-item"
+                  onClick={() =>
+                    animateScrollTo(
+                      document.querySelector('.section--featured-event')
+                    )
+                  }
+                >
+                  Events
+                </a>
+                <a
+                  className="navbar-item"
+                  onClick={() =>
+                    animateScrollTo(
+                      document.querySelector('.section--location')
+                    )
+                  }
+                >
+                  Venue
+                </a>
+                <a
+                  className="navbar-item"
+                  onClick={() =>
+                    animateScrollTo(
+                      document.querySelector('.section--sponsors')
+                    )
+                  }
+                >
+                  Partners
+                </a>
               </div>
             </div>
           </div>
