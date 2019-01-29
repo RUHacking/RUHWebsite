@@ -257,7 +257,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
-
+      {/* Begin sponsor section------------------------------------------ */}
       <section className="hero section--sponsors is-dark is-large">
         <div className="hero-head">
           <div className="container section">
@@ -290,14 +290,14 @@ export const IndexPageTemplate = ({
                             return (
                               <div
                                 key={sec.image}
-                                className="tile is-child box"
+                                className={`tile is-child box ${sec.tier}`}
                               >
                                 <figure className="image">
                                   <a href={sec.link} target="_blank">
                                     <img
                                       className=""
                                       src={sec.image}
-                                      alt={sec}
+                                      alt={sec.alt}
                                     />
                                   </a>
                                 </figure>
@@ -382,6 +382,8 @@ export const indexPageQuery = graphql`
           sponsor_list {
             image
             link
+            tier
+            alt
           }
         }
         about {
