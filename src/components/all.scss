@@ -23,11 +23,7 @@ $slick-loader-path: "~slick-carousel/slick/";
 
 $fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
-@import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
-@import '~@fortawesome/fontawesome-free/scss/brands';
-
-
 
 .content .taglist {
   list-style: none;
@@ -74,8 +70,8 @@ header {
     position: relative;
     &::before {
       position: absolute;
-      font-family: FontAwesome;
-      content: "";
+      font-family: 'Font Awesome 5 Free';
+      content: '\f0c1';
       font-size: 1rem;
       color: $ruh-dark;
       padding: 0 .5em 0 .5em;
