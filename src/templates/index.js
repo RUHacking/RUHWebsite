@@ -89,15 +89,6 @@ export const IndexPageTemplate = ({
                       Get your spot now!
                     </AwesomeButton>
                   </div>
-                  {/* <div className="level-item">
-                    <a
-                      href="https://www.rusu.co.uk/societies/ruhacking/"
-                      target="_blank"
-                      className="button is-primary is-inverted is-outlined is-large is-rounded"
-                    >
-                      
-                    </a>
-                  </div> */}
                 </div>
                 <h2 className="subtitle is-size-4 has-text-centered">
                   <StyledMDContent content={hero.description} />
