@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { AwesomeButton } from 'react-awesome-button';
+import 'react-awesome-button/dist/styles.css';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
@@ -78,13 +81,13 @@ export const IndexPageTemplate = ({
               <div className="column is-half is-offset-one-quarter">
                 <div className="level">
                   <div className="level-item is-dark">
-                    <a
+                    <AwesomeButton
                       href="https://www.eventbrite.co.uk/e/r-u-hacking-2018-student-hackathon-event-tickets-52684847798?aff=webaction#tickets"
                       target="_blank"
-                      className="button is-dark is-large"
+                      type="primary"
                     >
                       Get your spot now!
-                    </a>
+                    </AwesomeButton>
                   </div>
                   {/* <div className="level-item">
                     <a
