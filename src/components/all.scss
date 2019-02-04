@@ -25,6 +25,33 @@ $fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 
+.aws-btn {
+
+  --button-default-height: 62px;
+  --button-default-font-size: 22px;
+  --button-default-border-radius: 0px;
+  --button-horizontal-padding: 45px;
+  --button-raise-level: 7px;
+  --button-hover-pressure: 2;
+  --transform-speed: .185s;
+  --button-primary-color: #363636;
+  --button-primary-color-dark: #120e0e;
+  --button-primary-color-light: $ruh-red-invert;
+  --button-primary-color-hover: #424e6a;
+  --button-primary-border: none;
+  --button-secondary-color: #fffc6c;
+  --button-secondary-color-dark: #b9b500;
+  --button-secondary-color-light: #6c6a00;
+  --button-secondary-color-hover: #fffb3e;
+  --button-secondary-border: none;
+  --button-anchor-color: #f3c8ad;
+  --button-anchor-color-dark: #734922;
+  --button-anchor-color-light: #4c3016;
+  --button-anchor-color-hover: #f1bfa0;
+  --button-anchor-border: 1px solid #8c633c;
+
+}
+
 .content .taglist {
   list-style: none;
   margin-bottom: 0;

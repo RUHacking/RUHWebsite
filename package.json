@@ -29,6 +29,7 @@
     "parcel-bundler": "^1.9.4",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-awesome-button": "^5.0.0",
     "react-big-calendar": "^0.20.1",
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
