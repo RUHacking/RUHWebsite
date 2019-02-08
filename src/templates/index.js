@@ -262,7 +262,7 @@ export const IndexPageTemplate = ({
         </div>
         <div className="hero-body is-paddingless">
           <div className="container section">
-            <div className="columns is-centered">
+            <div className="columns">
               <div className="column is-10">
                 <div className="tile is-ancestor">
                   {sponsorList
