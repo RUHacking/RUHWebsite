@@ -70,7 +70,7 @@ export const IndexPageTemplate = ({
             <div className="level">
               <div className="level-item">
                 <h2
-                  className="subtitle is-size-3"
+                  className="subtitle is-size-4"
                   style={{
                     fontFamily: 'Cursive',
                     fontWeight: 'bolder',
