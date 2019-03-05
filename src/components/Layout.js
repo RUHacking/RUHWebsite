@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Footer from './Footer';
 import './all.scss';
 
 const TemplateWrapper = ({ children }) => (
@@ -8,6 +9,7 @@ const TemplateWrapper = ({ children }) => (
       <link rel="shortcut icon" href="favicon.png" />
     </Helmet>
     <div>{children}</div>
+    <Footer />
   </div>
 );
 
