@@ -1,22 +1,12 @@
 import React from 'react';
 
-import { AwesomeButton } from 'react-awesome-button';
 import 'react-awesome-button/dist/styles.css';
-import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
-import { HTMLContent, MDContent } from '../components/Content';
-import Map from '../components/Map';
-import Gallery from '../components/Gallery';
+import { HTMLContent } from '../components/Content';
 
 import logo from '../img/logo/ruh_logo_new.png';
-
-const StyledMDContent = styled(MDContent)`
-  a {
-    text-decoration: underline;
-  }
-`;
 
 export const IndexPageTemplate = ({
   frontmatter,
@@ -24,19 +14,22 @@ export const IndexPageTemplate = ({
   contentComponent,
 }) => {
   // const PageContent = contentComponent || Content;
-  const {
-    hero,
-    about,
-    loc,
-    sponsors,
-    featured_images,
-    events,
-    featured_event,
-  } = frontmatter;
-  const sponsorList = Object.values(sponsors.sponsor_list);
+  const { hero } = frontmatter;
   return (
     <Layout>
-      <header className="hero is-fullheight is-primary">
+      <header className="hero is-dark is-fullheight video">
+        <div className="hero-video">
+          <video
+            poster="/img/bgimg.jpg"
+            id="bgvid"
+            playsInline
+            autoPlay
+            muted
+            loop
+          >
+            <source src="/img/VID_20190108_154623.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="hero-body">
           <div className="container is-fluid">
             <div className="level">
@@ -46,6 +39,7 @@ export const IndexPageTemplate = ({
                 </figure>
               </div>
             </div>
+
             <div className="level">
               <div className="level-item">
                 <h1
@@ -72,238 +66,23 @@ export const IndexPageTemplate = ({
                 </h2>
               </div>
             </div>
+
             <div className="level">
               <div className="level-item">
-                <h3 className="">February 16-17 (Sat-Sun), 2019</h3>
-              </div>
-            </div>
-            <div className="columns">
-              <div className="column is-half is-offset-one-quarter">
-                <div className="level">
-                  <div className="level-item is-dark">
-                    <AwesomeButton
-                      href="https://www.eventbrite.co.uk/e/r-u-hacking-2018-student-hackathon-event-tickets-52684847798?aff=webaction#tickets"
-                      target="_blank"
-                      type="primary"
-                    >
-                      Get your spot now!
-                    </AwesomeButton>
-                  </div>
-                </div>
-                <h2 className="subtitle is-size-4 has-text-centered">
-                  <StyledMDContent content={hero.description} />
+                <h2
+                  className="subtitle is-size-4"
+                  style={{
+                    fontFamily: 'Cursive',
+                    fontWeight: 'bolder',
+                  }}
+                >
+                  Thanks for coming - see you next year!
                 </h2>
               </div>
             </div>
           </div>
         </div>
       </header>
-
-      <section className="hero section--gallery is-primary is-large">
-        <div className="hero-head">
-          <Gallery images={featured_images.image_list} />
-        </div>
-      </section>
-
-      <section className="hero section--about is-dark is-small">
-        <div className="hero-body">
-          <div className="container section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              {about.title}
-            </h2>
-            <div className="columns">
-              <div className="column is-half">
-                <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
-                  {about.col_1.title}
-                </h3>
-                <h3 className="subtitle is-size-5">
-                  <StyledMDContent content={about.col_1.description} />
-                </h3>
-              </div>
-              <div className="column is-half">
-                <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
-                  {about.col_2.title}
-                </h3>
-                <h3 className="subtitle is-size-5">
-                  <StyledMDContent content={about.col_2.description} />
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hero section--featured-event is-primary is-medium">
-        <div className="hero-head">
-          <div className="container section">
-            <div className="columns is-centered">
-              <div className="column has-text-centered has-border">
-                <a href={featured_event.link} target="_blank">
-                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                    {featured_event.title}
-                  </h2>
-                  <h3 className="subtitle is-size-4">
-                    {featured_event.subtitle}
-                  </h3>
-                  <figure
-                    className="image"
-                    style={{ maxWidth: '25rem', margin: '0 auto' }}
-                  >
-                    <img src={featured_event.image} />
-                  </figure>
-                </a>
-              </div>
-              <div className="column">
-                <div className="section">
-                  <h3 className="subtitle is-size-5">
-                    <StyledMDContent content={featured_event.desc} />
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hero section--events is-dark is-large">
-        <div className="hero-head">
-          <div className="container section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              Upcoming Events
-            </h2>
-            <h3 className="subtitle is-size-4">
-              <StyledMDContent content={sponsors.description} />
-            </h3>
-          </div>
-        </div>
-        <div className="hero-body is-paddingless">
-          <div className="container section">
-            <div className="columns is-centered is-multiline">
-              {events.map((v, i) => {
-                return (
-                  <div className="column is-3" key={i}>
-                    <div
-                      className="card"
-                      style={{ maxWidth: '350px', minHeight: '700px' }}
-                    >
-                      <a href={v.link} target="_blank">
-                        <div className="card-image">
-                          <figure className="image">
-                            <img className="" src={v.image} alt={v.title} />
-                          </figure>
-                        </div>
-                      </a>
-                      <div className="card-content">
-                        <div className="media">
-                          <div className="media-left" />
-                          <div className="media-content">
-                            <a href={v.link} target="_blank">
-                              <p className="title has-text-black is-4">
-                                {v.title}
-                              </p>
-                            </a>
-                            <p className="subtitle has-text-black is-6">
-                              {v.subtitle}
-                            </p>
-                          </div>
-                        </div>
-
-                        <div className="content">
-                          <StyledMDContent content={v.desc} />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hero section--location is-primary is-small">
-        <div className="hero-body is-paddingless">
-          <div className="columns is-gapless">
-            <div className="column is-fullheight is-two-thirds-desktop">
-              <Map
-                centre={{
-                  lat: loc.coords.lat,
-                  lng: loc.coords.lng,
-                }}
-                markerElement={
-                  <div>
-                    <h3 className="has-text-black">{loc.marker}</h3>
-                  </div>
-                }
-              />
-            </div>
-            <div className="column">
-              <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                  {loc.title}
-                </h2>
-                <h3 className="subtitle is-size-5">
-                  <StyledMDContent content={loc.description} />
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Begin sponsor section------------------------------------------ */}
-      <section className="hero section--sponsors is-dark is-large">
-        <div className="hero-head">
-          <div className="container section">
-            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-              {sponsors.title}
-            </h2>
-            <h3 className="subtitle is-size-5">
-              <StyledMDContent content={sponsors.description} />
-            </h3>
-          </div>
-        </div>
-        <div className="hero-body is-paddingless">
-          <div className="container section">
-            <div className="columns">
-              <div className="column is-10">
-                <div className="tile is-ancestor">
-                  {sponsorList
-                    .reduce(
-                      (acc, _, i) =>
-                        i % 3 ? acc : [...acc, sponsorList.slice(i, i + 3)],
-                      []
-                    )
-                    .map((val, i) => {
-                      return (
-                        <div
-                          key={i}
-                          className="tile is-3 is-vertical is-parent"
-                        >
-                          {val.map(sec => {
-                            return (
-                              <div
-                                key={sec.image}
-                                className={`tile is-child box ${sec.tier}`}
-                              >
-                                <figure className="image">
-                                  <a href={sec.link} target="_blank">
-                                    <img
-                                      className=""
-                                      src={sec.image}
-                                      alt={sec.alt}
-                                    />
-                                  </a>
-                                </figure>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      );
-                    })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
   );
 };
