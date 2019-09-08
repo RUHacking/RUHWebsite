@@ -10,7 +10,7 @@ hero:
     _professional network_. Our events are the perfect opportunity for both
     newcomers and seasoned techies alike to collaborate & learn, facilitated by
     our support and resources.
-  title: R. U. Hacking? 2019
+  title: R. U. Hacking? 2020
 about:
   col_1:
     description: "A **Hackathon **is a programming marathon, where teams of 2-4 put their ideas together to create something exciting in only 24 hours. It gives teams of hackers a chance to turn their ideas into reality and present them.\r\n\nThere will be a number of prizes for using specific technologies as well as the overall best project. There will be additional prize pools available exclusively to first-timers!"
@@ -119,7 +119,7 @@ featured_event:
   link: >-
     https://www.eventbrite.com/e/r-u-hacking-2019-24-hour-student-hackathon-tickets-52684847798?aff=webeventlink
   subtitle: '16th-17th February, 2019 @ Henley Business School'
-  title: R. U. Hacking? 2019 | 24-Hour Student Hackathon
+  title: R. U. Hacking? 2020 | 24-Hour Student Hackathon
 events:
   - desc: >-
       Come hang out with us in our first Virtual Reality R. U. Social? event,
