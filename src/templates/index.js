@@ -8,6 +8,10 @@ import { HTMLContent } from '../components/Content';
 
 import logo from '../img/logo/ruh_logo_new.png';
 
+function openInNewTab(url) {
+  window.open(url, '_blank').focus();
+}
+
 export const IndexPageTemplate = ({
   frontmatter,
   content,
@@ -69,15 +73,29 @@ export const IndexPageTemplate = ({
 
             <div className="level">
               <div className="level-item">
-                <h2
-                  className="subtitle is-size-4"
+                <button
                   style={{
-                    fontFamily: 'Cursive',
-                    fontWeight: 'bolder',
+                    backgroundColor: '#d11620',
+                    fontFamily: 'Roboto',
+                    color: 'white',
+                    padding: '20px 32px',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontSize: '22px',
+                    border: 'none',
+                    boxShadow: '0 0 13px #00000077',
+                    borderRadius: '3px',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => {
+                    openInNewTab(
+                      'https://www.eventbrite.co.uk/e/r-u-hacking-2020-24-hour-student-hackathon-tickets-71648722257'
+                    );
                   }}
                 >
-                  Thanks for coming - see you next year!
-                </h2>
+                  Sign up
+                </button>
               </div>
             </div>
           </div>

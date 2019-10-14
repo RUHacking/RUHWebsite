@@ -35,6 +35,11 @@ const Footer = () => (
             </a>
           </h4>
           <h4 className="subtitle is-size-6" style={{ marginBottom: '1em' }}>
+            <a target="_blank" href="https://www.netlify.com">
+              This site is powered by Netlify.
+            </a>
+          </h4>
+          <h4 className="subtitle is-size-6" style={{ marginBottom: '1em' }}>
             © R. U. Hacking? {new Date().getFullYear()}. All rights reserved.
           </h4>
         </div>
