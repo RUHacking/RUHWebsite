@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
 import { HTMLContent } from '../components/Content';
 
-import logo from '../img/logo/ruh_logo_new.png';
+import logo from '../img/logo/newLogo.png';
 
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
@@ -49,7 +49,7 @@ export const IndexPageTemplate = ({
                 <h1
                   className="title is-size-1"
                   style={{
-                    fontFamily: 'Roboto',
+                    fontFamily: 'clone-rounded-latin, sans-serif',
                     fontWeight: 'bolder',
                   }}
                 >
@@ -62,7 +62,7 @@ export const IndexPageTemplate = ({
                 <h2
                   className="subtitle is-size-3"
                   style={{
-                    fontFamily: 'Roboto',
+                    fontFamily: 'clone-rounded-latin, sans-serif',
                     fontWeight: 'bolder',
                   }}
                 >
@@ -75,8 +75,8 @@ export const IndexPageTemplate = ({
               <div className="level-item">
                 <button
                   style={{
-                    backgroundColor: '#d11620',
-                    fontFamily: 'Roboto',
+                    backgroundColor: '#ea5837',
+                    fontFamily: 'clone-rounded-latin, sans-serif',
                     color: 'white',
                     padding: '20px 32px',
                     textAlign: 'center',

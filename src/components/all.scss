@@ -4,11 +4,11 @@ $border: black;
 @import "~bulma/sass/utilities/mixins";
 
 // Config vars
-$ruh-red: #D1161F;
+$ruh-grey: #454545;
 $ruh-red-invert: #fff;
 $ruh-dark: #363636;
 
-$primary: $ruh-red;
+$primary: $ruh-grey;
 $primary-invert: $ruh-red-invert;
 $primary-dark: $ruh-dark;
 $footer-background-color: $ruh-red-invert;
@@ -70,7 +70,7 @@ $fa-font-path : '~@fortawesome/fontawesome-free/webfonts';
 }
 
 * {
-  font-family: Roboto, Open Sans;
+  font-family: clone-rounded-latin, sans-serif;
 }
 
 header {
