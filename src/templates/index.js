@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import PropTypes from 'prop-types';
 import { HTMLContent } from '../components/Content';
 
-import logo from '../img/logo/newLogo.png';
+import logo from '../img/logo/newCodeLogo.png';
 
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
@@ -51,6 +51,7 @@ export const IndexPageTemplate = ({
                   style={{
                     fontFamily: 'clone-rounded-latin, sans-serif',
                     fontWeight: 'bolder',
+                    color: '#16b8d8',
                   }}
                 >
                   {hero.title}
@@ -64,9 +65,10 @@ export const IndexPageTemplate = ({
                   style={{
                     fontFamily: 'clone-rounded-latin, sans-serif',
                     fontWeight: 'bolder',
+                    color: '#ea5837',
                   }}
                 >
-                  Learn, Build, Share!
+                  Learn, Create, Connect!
                 </h2>
               </div>
             </div>

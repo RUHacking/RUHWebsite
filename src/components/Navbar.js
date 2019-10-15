@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/logo/newLogo.png';
+import logo from '../img/logo/newCodeLogo.png';
 import styled from 'styled-components';
 import animateScrollTo from 'animated-scroll-to';
 
