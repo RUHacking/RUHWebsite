@@ -53,7 +53,7 @@ export const IndexPageTemplate = ({
                     fontWeight: 'bolder',
                   }}
                 >
-                  {hero.title}
+                  R. U. Hacking? {new Date().getFullYear()}
                 </h1>
               </div>
             </div>
