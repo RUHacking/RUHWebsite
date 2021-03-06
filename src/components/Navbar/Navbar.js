@@ -1,4 +1,87 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { Button } from '../../global_styles';
+import {
+  Nav,
+  Navbar_Contain,
+  NavLogo,
+  NavIcon,
+  ICON,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavItemBtn,
+  NavBtnLink,
+} from './navbar.elements';
+
+const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+  const handleClcick = () => setClick(!click);
+
+  const showButton = () => {
+    if (window.innetWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
+  return (
+    <>
+      <IconContext.Provider value={{ color: '#00FFFF' }}>
+        <Nav>
+          <Navbar_Contain>
+            <NavLogo to="/">
+              <NavIcon />
+              R. U. Hacking?
+            </NavLogo>
+            <ICON onClick={handleClcick}>
+              {click ? <FaTimes /> : <FaBars />}
+            </ICON>
+            <NavMenu onClick={handleClcick} click={click}>
+              <NavItem>
+                <NavLinks to="/">HOME</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to="/">SERVICES</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to="/">ABOUT US</NavLinks>
+              </NavItem>
+
+              <NavItemBtn>
+                {button ? (
+                  <NavBtnLink to="/sign-up">
+                    <Button primary>SIGN UP</Button>
+                  </NavBtnLink>
+                ) : (
+                  <NavBtnLink to="/sing=up">
+                    <Button onClick={ICON} fontBig primary></Button>
+                  </NavBtnLink>
+                )}
+              </NavItemBtn>
+            </NavMenu>
+          </Navbar_Contain>
+        </Nav>
+      </IconContext.Provider>
+    </>
+  );
+};
+
+export default Navbar;
+
+/*
+
 import logo from '../img/logo/newLogo.png';
 import styled from 'styled-components';
 import animateScrollTo from 'animated-scroll-to';
@@ -153,3 +236,6 @@ const styledNavbar = styled(Navbar)`
 `;
 
 export default styledNavbar;
+
+
+*/

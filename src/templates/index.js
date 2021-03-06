@@ -1,13 +1,26 @@
 import React from 'react';
-
+import GlobalStyles from '../global_styles';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Navbar, Footer } from '../components';
+import Home from '../templates/HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import PropTypes from 'prop-types';
-import { HTMLContent } from '../components/Content';
 
-import logo from '../img/logo/newLogo.png';
+function App() {
+  return (
+    <Router>
+      <GlobalStyles />
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
+}
 
+export default App;
+/*
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
 }
@@ -127,7 +140,7 @@ Index.propTypes = {
 };
 
 export default Index;
-
+*/
 export const indexPageQuery = graphql`
   query IndexPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
