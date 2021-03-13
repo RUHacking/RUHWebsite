@@ -2,17 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
+import logo from '../../img/logo/RUHlogo.png';
 import {
   Nav,
   Navbar_Contain,
   NavLogo,
-  NavIcon,
   ICON,
   NavMenu,
   NavItem,
   NavLinks,
   NavItemBtn,
   NavBtnLink,
+  NavIcon,
 } from './navbar.elements';
 
 const Navbar = () => {
@@ -41,6 +42,7 @@ const Navbar = () => {
           <Navbar_Contain>
             <NavLogo to="/">
               <NavIcon />
+              <img src={logo} alt="RUHacking Logo" style={{ width: 'auto' }} />
               R. U. Hacking?
             </NavLogo>
             <ICON onClick={handleClcick}>
