@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default class HTML extends React.Component {
+export default class MLH extends React.Component {
   render() {
     return (
       <html {...this.props.htmlAttributes}>
@@ -22,6 +22,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+
           <a
             id="mlh-trust-badge"
             style={{
@@ -29,8 +30,7 @@ export default class HTML extends React.Component {
               maxWidth: '100px',
               minWidth: '60px',
               position: 'fixed',
-              right: '50px',
-              top: 0,
+
               width: '10%',
               zIndex: 10000,
             }}
@@ -40,7 +40,7 @@ export default class HTML extends React.Component {
             <img
               src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-black.svg"
               alt="Major League Hacking 2019 Hackathon Season"
-              style={{ width: '100%' }}
+              style={{ width: 'auto100%' }}
             />
           </a>
         </body>
@@ -49,7 +49,7 @@ export default class HTML extends React.Component {
   }
 }
 
-HTML.propTypes = {
+MLH.propTypes = {
   htmlAttributes: PropTypes.object,
   headComponents: PropTypes.array,
   bodyAttributes: PropTypes.object,

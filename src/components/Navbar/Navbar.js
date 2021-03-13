@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
-import logo from '../../img/logo/RUHlogo.png';
+import { MLH } from '../../html.js';
+import logo from '../../img/logo/newLogo.png';
 import {
   Nav,
   Navbar_Contain,
@@ -13,7 +14,6 @@ import {
   NavLinks,
   NavItemBtn,
   NavBtnLink,
-  NavIcon,
 } from './navbar.elements';
 
 const Navbar = () => {
@@ -37,12 +37,16 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#00FFFF' }}>
+      <IconContext.Provider value={{ color: '#EA5837' }}>
         <Nav>
           <Navbar_Contain>
             <NavLogo to="/">
-              <NavIcon />
-              <img src={logo} alt="RUHacking Logo" style={{ width: 'auto' }} />
+              <MLH />
+              <img
+                src={logo}
+                alt="RUHacking Logo"
+                style={{ width: 'auto', height: 50 }}
+              />
               R. U. Hacking?
             </NavLogo>
             <ICON onClick={handleClcick}>

@@ -50,8 +50,8 @@ export const HomeObjectThree = {
 };
 
 export const HomeObjectFour = {
-  lightBg: false,
-  primary: true,
+  lightBg: true,
+  primary: false,
   imgStart: 'start',
   lightTopLine: true,
   lightTextDesc: true,
@@ -59,7 +59,7 @@ export const HomeObjectFour = {
   description:
     'This is R U Hacking we are something something something something something something something something something',
   headline: 'RUHACKING is a great something something',
-  lightText: true,
+  lightText: false,
   topLine: 'BEST WEBSITE',
   img: require('../../img/RandomImageDelete4.png'),
   alt: 'Image',
