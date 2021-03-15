@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
-import { MLH } from '../../html.js';
 import logo from '../../img/logo/newLogo.png';
 import {
   Nav,
@@ -41,11 +40,10 @@ const Navbar = () => {
         <Nav>
           <Navbar_Contain>
             <NavLogo to="/">
-              <MLH />
               <img
                 src={logo}
                 alt="RUHacking Logo"
-                style={{ width: 'auto', height: 50 }}
+                style={{ width: 'auto', height: 70, marginRight: 25 }}
               />
               R. U. Hacking?
             </NavLogo>
@@ -58,11 +56,19 @@ const Navbar = () => {
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">SERVICES</NavLinks>
+                <NavLinks to="/">ABOUT US</NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">ABOUT US</NavLinks>
+                <NavLinks to="/">SPONSORS</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to="/">FAQ</NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks to="/">CONTACT US</NavLinks>
               </NavItem>
 
               <NavItemBtn>

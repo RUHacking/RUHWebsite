@@ -30,7 +30,7 @@ export default class MLH extends React.Component {
               maxWidth: '100px',
               minWidth: '60px',
               position: 'fixed',
-
+              top: '100%',
               width: '10%',
               zIndex: 10000,
             }}

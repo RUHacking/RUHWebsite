@@ -1,4 +1,6 @@
 import React from 'react';
+import FAQ from '../../components/FAQ/FAQ';
+
 import { InfoSection } from '../../components';
 import {
   HomeObjectOne,
@@ -12,6 +14,7 @@ const Home = () => {
     <>
       <InfoSection {...HomeObjectOne} />
       <InfoSection {...HomeObjectTwo} />
+      <FAQ />
       <InfoSection {...HomeObjectThree} />
       <InfoSection {...HomeObjectFour} />
     </>
