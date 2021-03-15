@@ -5,7 +5,7 @@ export const Data = [
   },
   {
     question: 'Who is a little angry bean',
-    answer: 'Emiliy',
+    answer: 'Emily is',
   },
   {
     question: 'What does bibi like the most',

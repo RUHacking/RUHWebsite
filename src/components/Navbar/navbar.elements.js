@@ -90,13 +90,13 @@ export const NavLinks = styled(Link)`
   height: 100%;
 
   @media screen and (max-witdh: 960px) {
-    text-alight: center;
+    text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
 
     &:hover {
-      color: #fff;
+      color: #ffff;
       transition: all 0.3s ease;
     }
   }

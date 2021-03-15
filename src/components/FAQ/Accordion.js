@@ -8,25 +8,24 @@ import {
 } from 'react-icons/io';
 
 const FooterSubHeading = styled.p`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans Unicode2',
-    'Lucida Sans Unicode2', Arial, Helvetica, sans-serif, sans-serif;
-  margin-bottom: 24px;
-  font-size: 50px;
-  color: #000000;
+  font-size: 40px;
+  color: #ffff;
   align-items: center;
+  background: #454545;
+  text-align: center;
+  border-radius: 25px;
 `;
 
 const Dropdown = styled.div`
-  background: #16b8d8;
-  color: #454545;
+  background: #ffff;
+  color: #000000;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #454545;
-  border-bottom: 1px solid #454545;
+  font-size: 20px;
+
+  border-radius: 25px;
 `;
 
 const AccordionSection = styled.div`
@@ -35,33 +34,38 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 120vh;
-  background: #ea5837;
+  height: 110vh;
+  background: #454545;
 `;
 
 const Container = styled.div`
   position: absolute;
-  top: 30%;
-  box-shadow: 2px 10px 35px 1px rgba(153, 153, 153, 0.3);
+  top: 15%;
+  box-shadow: 10px 10px 35px 1px rgba(15, 15, 15, 0);
+  border-radius: 25px;
 `;
 
 const Wrap = styled.div`
-  background: #ffff;
+  background: #ea5837;
   color: #000000;
   display: flex;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
   width: 100%;
-  text-align: center;
+  border-bottom: 20px solid #454545;
+  border-top: 20px solid #454545;
+  border-radius: 25px;
+
   cursor: pointer;
 
   h1 {
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 
   span {
-    margin-right: 1.5rem;
+    margin-right: 1.6rem;
   }
 `;
 
