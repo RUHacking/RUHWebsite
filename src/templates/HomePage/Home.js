@@ -7,7 +7,6 @@ import Sponsors from '../../components/Sponsors/Sponsors';
 import {
   HomeObjectOne,
   HomeObjectTwo,
-  HomeObjectThree,
   HomeObjectFour,
   HomeObjectFive,
 } from './Data';
@@ -18,12 +17,13 @@ const Home = () => {
   return (
     <>
       <InfoSection {...HomeObjectOne} />
+      <InfoSection {...HomeObjectFour} />
+      <FooterSubHeading>
+        Sponsors
+        <Sponsors {...HomeObjectFive} />
+      </FooterSubHeading>
       <InfoSection {...HomeObjectTwo} />
       <FAQ />
-      <InfoSection {...HomeObjectThree} />
-      <InfoSection {...HomeObjectFour} />
-      <FooterSubHeading>Sponsors</FooterSubHeading>
-      <Sponsors {...HomeObjectFive} />
     </>
   );
 };

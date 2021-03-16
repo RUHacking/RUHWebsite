@@ -64,6 +64,10 @@ const Navbar = () => {
               </NavItem>
 
               <NavItem>
+                <NavLinks to="/">EXTRA INFO</NavLinks>
+              </NavItem>
+
+              <NavItem>
                 <NavLinks to="/">FAQ</NavLinks>
               </NavItem>
 

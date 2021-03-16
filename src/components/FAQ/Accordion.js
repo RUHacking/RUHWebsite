@@ -6,14 +6,14 @@ import {
   IoIosArrowDropdownCircle,
   IoIosArrowDropupCircle,
 } from 'react-icons/io';
+import { Container } from '../../global_styles';
 
 const FooterSubHeading = styled.p`
   font-size: 40px;
-  color: #ffff;
+  color: #000000;
   align-items: center;
-  background: #454545;
   text-align: center;
-  border-radius: 25px;
+  display: flex;
 `;
 
 const Dropdown = styled.div`
@@ -34,15 +34,8 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 110vh;
-  background: #454545;
-`;
-
-const Container = styled.div`
-  position: absolute;
-  top: 15%;
-  box-shadow: 10px 10px 35px 1px rgba(15, 15, 15, 0);
-  border-radius: 25px;
+  height: 120vh;
+  background: #ffff;
 `;
 
 const Wrap = styled.div`
@@ -53,8 +46,8 @@ const Wrap = styled.div`
   text-align: center;
   align-items: center;
   width: 100%;
-  border-bottom: 20px solid #454545;
-  border-top: 20px solid #454545;
+  border-bottom: 20px solid #ffff;
+  border-top: 20px solid #ffff;
   border-radius: 25px;
 
   cursor: pointer;
@@ -80,10 +73,10 @@ export const Accordion = () => {
   };
 
   return (
-    <IconContext.Provider value={{ color: '#000000', size: '50px' }}>
-      <AccordionSection>
-        <Container>
-          <FooterSubHeading>Frequently Asked Questions</FooterSubHeading>
+    <Container>
+      <IconContext.Provider value={{ color: '#000000', size: '50px' }}>
+        <AccordionSection>
+          <FooterSubHeading>Frequently Asked Questions </FooterSubHeading>
 
           {Data.map((item, index) => {
             return (
@@ -106,8 +99,8 @@ export const Accordion = () => {
               </>
             );
           })}
-        </Container>
-      </AccordionSection>
-    </IconContext.Provider>
+        </AccordionSection>
+      </IconContext.Provider>
+    </Container>
   );
 };

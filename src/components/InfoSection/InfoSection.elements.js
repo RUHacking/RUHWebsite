@@ -64,7 +64,7 @@ export const Subtitle = styled.p`
 `;
 
 export const ImgWrapper = styled.div`
-  max-width: 555px;
+  max-width: 1200px;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
