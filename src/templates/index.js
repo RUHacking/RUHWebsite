@@ -5,6 +5,7 @@ import { Navbar, Footer } from '../components';
 import Home from '../templates/HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import { graphql } from 'gatsby';
+
 import Home1 from '../templates/Home1/Home1';
 import AboutUs from '../templates/AboutUs/AboutUs';
 import Sponsors from '../templates/Sponsors/Sponsors';
@@ -19,7 +20,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/Home" exact component={Home1} />
+        <Route path="/home1" exact component={Home1} />
         <Route path="/AboutUs" exact component={AboutUs} />
         <Route path="/Sponsors" exact component={Sponsors} />
         <Route path="/ExtraInfo" exact component={ExtraInfo} />

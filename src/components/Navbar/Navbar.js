@@ -44,6 +44,7 @@ const Navbar = () => {
                 src={logo}
                 alt="RUHacking Logo"
                 style={{ width: 'auto', height: 70, marginRight: 25 }}
+                href="https://www.w3schools.com/"
               />
               R. U. Hacking?
             </NavLogo>
@@ -78,7 +79,7 @@ const Navbar = () => {
               <NavItemBtn>
                 {button ? (
                   <NavBtnLink to="/sign-up">
-                    <Button primary>SIGN UP</Button>
+                    <Button primary> SIGN UP</Button>
                   </NavBtnLink>
                 ) : (
                   <NavBtnLink to="/sing=up">

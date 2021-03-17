@@ -100,6 +100,7 @@ export const FooterLinksItems = styled.div`
 
 export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
+  font-size: 25px;
 `;
 
 export const FooterLink = styled(Link)`

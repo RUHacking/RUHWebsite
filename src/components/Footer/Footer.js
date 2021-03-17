@@ -41,8 +41,8 @@ const Footer = () => {
             <FooterLinksItems>
               <FooterLinkTitle>Contact Us </FooterLinkTitle>
               <FooterLink to="/">
-                Get in touch with us by email at something and on our social
-                media FaceBook,Instagram,Twitter
+                To keep up to date with all things R.U.Hacking? or have any
+                questions for us follow our social media pages
               </FooterLink>
             </FooterLinksItems>
           </FooterLinksWrapper>
