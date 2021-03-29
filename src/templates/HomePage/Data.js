@@ -57,3 +57,20 @@ export const HomeObjectFive = {
   lightTextDesc: false,
   lightText: true,
 };
+
+export const HomeObjectSix = {
+  lightBg: true,
+  primary: true,
+  imgStart: 'start',
+  lightTopLine: false,
+  lightTextDesc: false,
+  buttonLabel: 'SPONSOR US',
+  description:
+    "Without the help of our amazing sponsors R.U.Hacking would not be possible. Our sponsors are first-class, have loads of experience and are here to provide support! More sponsors will be posted as we get closer to the event, and if you're interested in becoming a sponsor for RUHacking? 2021 then please register your interest below",
+  headline: 'Intrested in Sponsoring us?',
+  lightText: false,
+  topLine: 'Sponsors',
+  img: require('../../img/IMAGE2.png'),
+  alt: 'Image',
+  start: 'true',
+};

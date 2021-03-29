@@ -9,6 +9,7 @@ import {
   HomeObjectTwo,
   HomeObjectFour,
   HomeObjectFive,
+  HomeObjectSix,
 } from './Data';
 
 import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
@@ -16,6 +17,7 @@ import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
 const Home = () => {
   return (
     <>
+      <InfoSection {...HomeObjectSix} />
       <InfoSection {...HomeObjectOne} />
       <InfoSection {...HomeObjectFour} />
       <FooterSubHeading>

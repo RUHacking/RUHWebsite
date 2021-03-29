@@ -21,16 +21,32 @@ export const FooterSubscription = styled.section`
   color: #fff;
 `;
 
-export const FooterSubHeading = styled.p`
+export const FooterSubHeading = styled.h2`
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans Unicode2',
     'Lucida Sans Unicode2', Arial, Helvetica, sans-serif, sans-serif;
   margin-bottom: 24px;
   font-size: 24px;
 `;
 
-export const FooterSubText = styled.p`
+export const FooterSubText = styled.a`
   margin-bottom: 24px;
   font-size: 20px;
+  color: #ffff;
+  padding: 0.5rem 1rem;
+
+  height: 50px;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  @media screen and (max-witdh: 960px) {
+    width: 100%;
+
+    &:hover {
+      border: none;
+    }
+  }
 `;
 
 export const Form = styled.form`
@@ -103,7 +119,7 @@ export const FooterLinkTitle = styled.h2`
   font-size: 25px;
 `;
 
-export const FooterLink = styled(Link)`
+export const FooterLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -113,6 +129,7 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out;
   }
 `;
+
 export const SocialMedia = styled.section`
   max-width: 1000px;
   width: 100%;

@@ -20,13 +20,21 @@ import {
   SocialIcon,
   SocialLogo,
 } from './Footer.elements';
+
 const Footer = () => {
   return (
     <>
       <FooterContainer>
         <FooterSubscription>
-          <FooterSubHeading></FooterSubHeading>
-          <FooterSubText></FooterSubText>
+          <FooterSubHeading>EMAIL</FooterSubHeading>
+          <FooterSubText>
+            <a
+              href={'mailto:' + 'readingunihack@gmail.com'}
+              style={{ color: '#FFF' }}
+            >
+              readingunihack@gmail.com
+            </a>
+          </FooterSubText>
         </FooterSubscription>
         <FooterLinksContainer>
           <FooterLinksWrapper>
