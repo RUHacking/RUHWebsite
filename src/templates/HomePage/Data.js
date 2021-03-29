@@ -55,13 +55,5 @@ export const HomeObjectFive = {
   imgStart: 'start',
   lightTopLine: false,
   lightTextDesc: false,
-  buttonLabel: 'Get Started',
-  description:
-    "R. U. Hacking? (Reading University Hacking) proudly presents our third annual  Online 24-hour Student Hackathon at the University of Reading, welcoming students from all over the UK and EU! Whether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon! There are lots of prizes to be won so come along and get involved - beginners welcome!",
-  headline: 'RUHACKING is a great something something',
-  lightText: false,
-  topLine: 'BEST WEBSITE',
-  img: require('../../img/Zebra_Technologies.png'),
-  alt: 'Image',
-  start: 'true',
+  lightText: true,
 };

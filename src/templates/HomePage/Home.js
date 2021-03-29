@@ -19,7 +19,6 @@ const Home = () => {
       <InfoSection {...HomeObjectOne} />
       <InfoSection {...HomeObjectFour} />
       <FooterSubHeading>
-        Sponsors
         <Sponsors {...HomeObjectFive} />
       </FooterSubHeading>
       <InfoSection {...HomeObjectTwo} />

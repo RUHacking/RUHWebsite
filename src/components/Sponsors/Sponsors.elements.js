@@ -7,45 +7,90 @@ export const InfoSec = styled.div`
   align-items: center;
 `;
 
+export const FooterSubHeading = styled.p`
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans Unicode2',
+    'Lucida Sans Unicode2', Arial, Helvetica, sans-serif, sans-serif;
+  margin-bottom: 24px;
+  font-size: 24px;
+`;
+
 export const InfoRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0 -15px -15px -15px;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
-export const InfoColumn = styled.div`
-  max-width: 100%;
-  flex-basis: 100%;
+export const ImgWrapper = styled.div`
+  max-width: 500px;
+  width: 250px;
+  display: flex;
+  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+  margin-bottom: 40px;
+`;
+export const img = styled.img`
+  max-width: 200%;
+  max-height: 205;
+  align-items: center;
+`;
 
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
+/*NEW*/
+
+export const SponsorLinksContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 820px) {
+    padding-top: 32px;
   }
 `;
 
-export const FooterSubHeading = styled.p`
-  padding-top: 50px;
-  font-size: 40px;
+export const SponsorLinksWrapper = styled.div`
+  display: flex;
+  margin-right: 100px;
+  margin-left: 100px;
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+  }
+`;
+
+export const SponsorLinksItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
+  color: #fff;
+
+  @media screen and (max-width: 420px) {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+`;
+
+export const SponsorLinkTitle = styled.h2`
+  margin-bottom: 16px;
+  font-size: 50px;
   color: #000000;
-  align-items: center;
   text-align: center;
 `;
 
-export const ImgWrapper = styled.div`
-  max-width: 400px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
-`;
-export const img = styled.img`
-  padding-right: 0;
-  border: 0;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-  max-height: 500;
+export const SponsorContainer = styled.div`
+  z-index: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: -250px;
+  @media screen and (max-width: 1000px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 `;
