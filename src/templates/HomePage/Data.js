@@ -18,18 +18,18 @@ export const HomeObjectOne = {
 export const HomeObjectTwo = {
   lightBg: false,
   primary: true,
-  imgStart: 'start',
+  imgStart: '',
   lightTopLine: true,
   lightTextDesc: true,
   buttonLabel: 'Get Started',
   description:
     "R. U. Hacking? (Reading University Hacking) proudly presents our third annual  Online 24-hour Student Hackathon at the University of Reading, welcoming students from all over the UK and EU! Whether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon! There are lots of prizes to be won so come along and get involved - beginners welcome!",
-  headline: 'Extra info on us',
+  headline: 'R. U. Hacking? 2021',
   lightText: true,
   topLine: 'About Us',
   img: require('../../img/Sponsors.png'),
   alt: 'Image',
-  start: 'true',
+  start: '',
 };
 
 export const HomeObjectFour = {
