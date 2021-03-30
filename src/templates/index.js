@@ -5,6 +5,7 @@ import { Navbar, Footer } from '../components';
 import Home from '../templates/HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import { graphql } from 'gatsby';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home1 from '../templates/Home1/Home1';
 import AboutUs from '../templates/AboutUs/AboutUs';
