@@ -18,15 +18,14 @@ export const InfoRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
 export const ImgWrapper = styled.div`
   max-width: 500px;
   width: 250px;
   display: flex;
-  justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
   margin-bottom: 40px;
+  align-items: center;
 `;
 export const img = styled.img`
   max-width: 200%;
@@ -93,4 +92,22 @@ export const SponsorContainer = styled.div`
     padding-right: 30px;
     padding-left: 30px;
   }
+`;
+
+export const TopLine = styled.div`
+  font-size: 50px;
+  line-height: 46px;
+  letter-spacing: 1.4px;
+  margin-bottom: 90px;
+  margin-top: 90px;
+  text-align: center;
+`;
+
+export const GapForSponsors = styled.div`
+  font-size: 50px;
+  line-height: 46px;
+  letter-spacing: 1.4px;
+  margin-bottom: 90px;
+  margin-top: 90px;
+  text-align: center;
 `;

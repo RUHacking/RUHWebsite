@@ -10,6 +10,11 @@ import {
   SponsorContainer,
 } from './Sponsors.elements';
 import Zebra from '../../img/Zebra_Technologies.png';
+import S2Oi from '../../img/2Oi.png';
+import HackathonsUk from '../../img/HackathonsUk.svg';
+import ThamesValleyAiHub from '../../img/ThamesValleyAiHub.png';
+import { TopLine, GapForSponsors } from './Sponsors.elements';
+
 const Sponsors = ({ lightBg, imgStart, alt, start }) => {
   return (
     <>
@@ -19,29 +24,48 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
             <SponsorLinksWrapper>
               <SponsorLinksItems>
                 <SponsorLinkTitle style={{ color: '#FFD700' }}>
-                  Gold Sponsors
+                  Gold
+                  <ImgWrapper start={start}></ImgWrapper>
+                  <InfoRow imgStart={imgStart}></InfoRow>
                 </SponsorLinkTitle>
-                <InfoRow imgStart={imgStart}>
-                  <ImgWrapper start={start}>
-                    <img src={Zebra} alt={alt} />
-                  </ImgWrapper>
-                </InfoRow>
 
+                <TopLine></TopLine>
                 <SponsorLinkTitle style={{ color: '#C0C0C0' }}>
-                  Silver Sponsors
+                  Silver
+                  <ImgWrapper start={start}></ImgWrapper>
+                  <InfoRow imgStart={imgStart}></InfoRow>
                 </SponsorLinkTitle>
-                <InfoRow imgStart={imgStart}>
-                  <ImgWrapper start={start}>
-                    <img src={Zebra} alt={alt} />
-                  </ImgWrapper>
-                </InfoRow>
+
+                <TopLine></TopLine>
 
                 <SponsorLinkTitle style={{ color: '#CD7F32' }}>
-                  Bronze Sponsors
+                  Bronze
+                  <InfoRow imgStart={imgStart}>
+                    <ImgWrapper start={start}>
+                      <img src={Zebra} alt={alt} />
+                    </ImgWrapper>
+
+                    <GapForSponsors></GapForSponsors>
+
+                    <ImgWrapper start={start}>
+                      <img src={S2Oi} alt={alt} />
+                    </ImgWrapper>
+                  </InfoRow>
+                </SponsorLinkTitle>
+
+                <TopLine></TopLine>
+
+                <SponsorLinkTitle style={{ color: '#000000' }}>
+                  Partners
                 </SponsorLinkTitle>
                 <InfoRow imgStart={imgStart}>
                   <ImgWrapper start={start}>
-                    <img src={Zebra} alt={alt} />
+                    <img src={HackathonsUk} alt={alt} />
+                  </ImgWrapper>
+                  <GapForSponsors></GapForSponsors>
+
+                  <ImgWrapper start={start}>
+                    <img src={ThamesValleyAiHub} alt={alt} />
                   </ImgWrapper>
                 </InfoRow>
               </SponsorLinksItems>

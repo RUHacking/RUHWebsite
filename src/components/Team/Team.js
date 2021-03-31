@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, Container, CardGroup } from 'react-bootstrap';
+import { Card, CardGroup, Container, CardDeck } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { TopLine } from './Team.elements';
 
 import Dan from '../../img/Dan.jpg';
 import Nataliya from '../../img/Nataliya.jpg';
@@ -14,145 +15,98 @@ import Anna from '../../img/Anna.jpg';
 
 const Team = () => {
   return (
-    <Container>
-      <h1>Meet the Gang</h1>
-      <CardGroup>
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Dan} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Nataliya} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Amadeusz} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
-      </CardGroup>
+    <Container style={{ width: '40rem' }}>
+      <TopLine>Meet The Team</TopLine>
 
       <CardGroup>
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Emily} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+        <CardDeck>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Dan} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Daniel Broomhead</Card.Title>
+              <Card.Text>President</Card.Text>
+            </Card.Body>
+          </Card>
 
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Joe} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Nataliya} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Nataliya Lazutkina</Card.Title>
+              <Card.Text>Vice-President</Card.Text>
+            </Card.Body>
+          </Card>
 
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Savva} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Amadeusz} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Amadeusz Wlodarczyk</Card.Title>
+              <Card.Text>Secretary</Card.Text>
+            </Card.Body>
+          </Card>
+        </CardDeck>
       </CardGroup>
+
+      <TopLine></TopLine>
 
       <CardGroup>
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Neyma} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+        <CardDeck>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Emily} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Emily Man</Card.Title>
+              <Card.Text>Social Secretary</Card.Text>
+            </Card.Body>
+          </Card>
 
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Dimitar} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This card has supporting text below as a natural lead-in to
-              additional content.{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Joe} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Joe McKeown</Card.Title>
+              <Card.Text>Treasurer</Card.Text>
+            </Card.Body>
+          </Card>
 
-        <Card>
-          <Card.Img variant="top" width="200px" height="200px" src={Anna} />
-          <Card.Body>
-            <Card.Title>Card title</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Footer>
-        </Card>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Savva} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Savva Podkopov</Card.Title>
+              <Card.Text>Welfare Officer</Card.Text>
+            </Card.Body>
+          </Card>
+        </CardDeck>
       </CardGroup>
+
+      <TopLine></TopLine>
+
+      <CardGroup>
+        <CardDeck>
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Neyma} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Neyma Siddiqui</Card.Title>
+              <Card.Text>Google Developer Representative</Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Dimitar} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Dimitar </Card.Title>
+              <Card.Text>Vice-President</Card.Text>
+            </Card.Body>
+          </Card>
+
+          <Card style={{ textAlign: 'center' }}>
+            <Card.Img src={Anna} style={{ width: '100%', height: '60%' }} />
+            <Card.Body>
+              <Card.Title>Anna </Card.Title>
+              <Card.Text></Card.Text>
+            </Card.Body>
+          </Card>
+        </CardDeck>
+      </CardGroup>
+
+      <TopLine></TopLine>
     </Container>
   );
 };
