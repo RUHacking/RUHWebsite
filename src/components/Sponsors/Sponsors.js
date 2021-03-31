@@ -57,17 +57,18 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
 
                 <SponsorLinkTitle style={{ color: '#000000' }}>
                   Partners
-                </SponsorLinkTitle>
-                <InfoRow imgStart={imgStart}>
-                  <ImgWrapper start={start}>
-                    <img src={HackathonsUk} alt={alt} />
-                  </ImgWrapper>
-                  <GapForSponsors></GapForSponsors>
+                  <InfoRow imgStart={imgStart}>
+                    <ImgWrapper start={start}>
+                      <img src={HackathonsUk} alt={alt} />
+                    </ImgWrapper>
 
-                  <ImgWrapper start={start}>
-                    <img src={ThamesValleyAiHub} alt={alt} />
-                  </ImgWrapper>
-                </InfoRow>
+                    <GapForSponsors></GapForSponsors>
+
+                    <ImgWrapper start={start}>
+                      <img src={ThamesValleyAiHub} alt={alt} />
+                    </ImgWrapper>
+                  </InfoRow>
+                </SponsorLinkTitle>
               </SponsorLinksItems>
             </SponsorLinksWrapper>
           </SponsorLinksContainer>
