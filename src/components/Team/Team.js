@@ -92,7 +92,7 @@ const Team = () => {
               <Card.Img src={Neyma} style={{ width: '100%', height: '60%' }} />
               <Card.Body>
                 <Card.Title>Neyma Siddiqui</Card.Title>
-                <Card.Text>Google Developer Representative</Card.Text>
+                <Card.Text>Google Dev Rep</Card.Text>
               </Card.Body>
             </Card>
 
@@ -103,7 +103,7 @@ const Team = () => {
               />
               <Card.Body>
                 <Card.Title>Dimitar </Card.Title>
-                <Card.Text>Vice-President</Card.Text>
+                <Card.Text>Designer</Card.Text>
               </Card.Body>
             </Card>
 
@@ -111,7 +111,7 @@ const Team = () => {
               <Card.Img src={Anna} style={{ width: '100%', height: '60%' }} />
               <Card.Body>
                 <Card.Title>Anna </Card.Title>
-                <Card.Text></Card.Text>
+                <Card.Text>Designer</Card.Text>
               </Card.Body>
             </Card>
           </CardDeck>

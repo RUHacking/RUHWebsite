@@ -34,7 +34,7 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 120vh;
+  height: 175vh;
   background: #ffff;
 `;
 
