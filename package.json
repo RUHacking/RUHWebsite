@@ -3,7 +3,7 @@
   "description": "RUHacking Website",
   "version": "0.0.1",
   "author": "Milan Radojicic",
-   "engines" : { "node" : ">=10.13.0" }, 
+   "engines" : { "node" : ">=14.16.0" }, 
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
