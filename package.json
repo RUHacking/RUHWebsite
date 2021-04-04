@@ -1,7 +1,7 @@
 {
   "name": "ruhacking-site",
   "description": "RUHacking Website",
-  "version": "10.13.0",
+  "version": "0.1.0",
   "author": "Milan Radojicic",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
