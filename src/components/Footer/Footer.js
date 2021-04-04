@@ -40,15 +40,25 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinksItems>
               <FooterLinkTitle>Useful Links </FooterLinkTitle>
-              <FooterLink to="/">HOME</FooterLink>
-              <FooterLink to="/">Sponsorship</FooterLink>
-              <FooterLink to="/">Major League Hacking</FooterLink>
-              <FooterLink to="/">Something</FooterLink>
-              <FooterLink to="/">Something</FooterLink>
+              <FooterLink style={{ color: '#ffff' }} to="/">
+                HOME
+              </FooterLink>
+              <FooterLink style={{ color: '#ffff' }} to="/">
+                Sponsorship
+              </FooterLink>
+              <FooterLink style={{ color: '#ffff' }} to="/">
+                Major League Hacking
+              </FooterLink>
+              <FooterLink style={{ color: '#ffff' }} to="/">
+                Something
+              </FooterLink>
+              <FooterLink style={{ color: '#ffff' }} to="/">
+                Something
+              </FooterLink>
             </FooterLinksItems>
             <FooterLinksItems>
               <FooterLinkTitle>Contact Us </FooterLinkTitle>
-              <FooterLink to="/">
+              <FooterLink style={{ color: '#ffff' }} to="/">
                 To keep up to date with all things R.U.Hacking? or have any
                 questions for us follow our social media pages
               </FooterLink>
@@ -65,20 +75,36 @@ const Footer = () => {
                 alt="RUHacking Logo"
                 style={{ width: 'auto', height: 70, marginRight: 25 }}
               />
-              R.U.HACKING?
+              <FooterLink style={{ color: '#ffff' }}> R.U.HACKING? </FooterLink>
             </SocialLogo>
             <WebsiteRights>RUHACKING © 2021</WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" targets="_blank" aria-label="Facebook">
+              <SocialIconLink
+                href="https://www.facebook.com/readingunihack"
+                targets="_blank"
+                aria-label="Facebook"
+              >
                 <FaFacebook />
               </SocialIconLink>
-              <SocialIconLink href="/" targets="_blank" aria-label="Instagram">
+              <SocialIconLink
+                href="https://www.instagram.com/r.u.hacking/"
+                targets="_blank"
+                aria-label="Instagram"
+              >
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" targets="_blank" aria-label="Twitter">
+              <SocialIconLink
+                href="http://twitter.com/ReadingUniHack"
+                targets="_blank"
+                aria-label="Twitter"
+              >
                 <FaTwitter />
               </SocialIconLink>
-              <SocialIconLink href="/" targets="_blank" aria-label="Linkedin">
+              <SocialIconLink
+                href="https://www.linkedin.com/company/ruhacking/"
+                targets="_blank"
+                aria-label="Linkedin"
+              >
                 <FaLinkedin />
               </SocialIconLink>
             </SocialIcons>

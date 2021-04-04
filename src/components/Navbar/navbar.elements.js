@@ -56,7 +56,7 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 120vh;
     position: absolute;
     top: 80px;
     left: ${({ click }) => (click ? 0 : '-100%')};
@@ -70,14 +70,14 @@ export const NavItem = styled.li`
   height: 80px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid none;
   }
 
   @media screen and (max-witdh: 960px) {
     width: 100%;
 
     &:hover {
-      border: none;
+      border: #000000;
     }
   }
 `;
@@ -96,7 +96,7 @@ export const NavLinks = styled(Link)`
     display: table;
 
     &:hover {
-      color: #ffff;
+      color: none;
       transition: all 0.3s ease;
     }
   }
@@ -108,7 +108,7 @@ export const NavItemBtn = styled.li`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 120px;
+    height: 180px;
   }
 `;
 export const NavBtnLink = styled(Link)`

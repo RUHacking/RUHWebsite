@@ -8,6 +8,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-style: italic;
 `;
 
 export const FooterSubscription = styled.section`
@@ -18,7 +19,7 @@ export const FooterSubscription = styled.section`
   text-align: center;
   margin-bottom: 24px;
   padding: 24px;
-  color: #fff;
+  color: #ffff;
 `;
 
 export const FooterSubHeading = styled.h2`
@@ -37,7 +38,7 @@ export const FooterSubText = styled.a`
   height: 50px;
   border-bottom: 2px solid transparent;
   &:hover {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid none;
   }
 
   @media screen and (max-witdh: 960px) {
@@ -105,7 +106,7 @@ export const FooterLinksItems = styled.div`
   text-align: left;
   width: 160px;
   box-sizing: border-box;
-  color: #fff;
+  color: #ffff;
 
   @media screen and (max-width: 420px) {
     margin: 0;
@@ -125,7 +126,7 @@ export const FooterLink = styled.a`
   margin-bottom: 0.5rem;
 
   &::hover {
-    color: #0467fb;
+    color: #ea5837;
     transition: 0.3s ease-out;
   }
 `;
@@ -185,6 +186,6 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #ffff;
   font-size: 24px;
 `;

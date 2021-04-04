@@ -36,51 +36,93 @@ const Navbar = () => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: '#EA5837' }}>
+      <IconContext.Provider value={{ color: '#ea5837 ' }}>
         <Nav>
           <Navbar_Contain>
             <NavLogo to="/">
               <img
                 src={logo}
                 alt="RUHacking Logo"
-                style={{ width: 'auto', height: 70, marginRight: 25 }}
-                href="https://www.w3schools.com/"
+                style={{ width: 'auto', height: 70, marginRight: 7 }}
               />
-              R. U. Hacking?
+              <NavLinks
+                style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+              >
+                {' '}
+                R. U. Hacking?{' '}
+              </NavLinks>
             </NavLogo>
             <ICON onClick={handleClcick}>
               {click ? <FaTimes /> : <FaBars />}
             </ICON>
             <NavMenu onClick={handleClcick} click={click}>
               <NavItem>
-                <NavLinks to="/">HOME</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  HOME
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">ABOUT US</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  ABOUT US
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">SPONSORS</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  SPONSORS
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">EXTRA INFO</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  EXTRA INFO
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">FAQ</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  FAQ
+                </NavLinks>
               </NavItem>
 
               <NavItem>
-                <NavLinks to="/">CONTACT US</NavLinks>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to="/"
+                >
+                  CONTACT US
+                </NavLinks>
               </NavItem>
 
               <NavItemBtn>
                 {button ? (
-                  <NavBtnLink to="/sign-up">
-                    <Button primary> SIGN UP</Button>
-                  </NavBtnLink>
+                  <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257">
+                    <Button
+                      style={{
+                        color: '#ffff',
+                        fontFamily: 'Clone Rounded Latin',
+                      }}
+                    >
+                      {' '}
+                      SIGN UP
+                    </Button>
+                  </a>
                 ) : (
                   <NavBtnLink to="/sing=up">
                     <Button onClick={ICON} fontBig primary></Button>

@@ -13,6 +13,10 @@ import Zebra from '../../img/Zebra_Technologies.png';
 import S2Oi from '../../img/2Oi.png';
 import HackathonsUk from '../../img/HackathonsUk.svg';
 import ThamesValleyAiHub from '../../img/ThamesValleyAiHub.png';
+
+import Bayer from '../../img/Bayer.png';
+import ReadingCollege from '../../img/Reading_College_Logo.png';
+
 import { TopLine, GapForSponsors } from './Sponsors.elements';
 
 const Sponsors = ({ lightBg, imgStart, alt, start }) => {
@@ -23,14 +27,37 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
           <SponsorLinksContainer>
             <SponsorLinksWrapper>
               <SponsorLinksItems>
-                <SponsorLinkTitle style={{ color: '#FFD700' }}>
+                <TopLine></TopLine>
+                <SponsorLinkTitle
+                  style={{
+                    color: '#FFD700',
+                    fontFamily: 'Clone Rounded Latin',
+                  }}
+                >
                   Gold
-                  <ImgWrapper start={start}></ImgWrapper>
-                  <InfoRow imgStart={imgStart}></InfoRow>
+                  <InfoRow imgStart={imgStart}>
+                    <a href="https://www.activatelearning.ac.uk/our-colleges/reading-college/">
+                      <ImgWrapper start={start}>
+                        <img src={ReadingCollege} alt={alt} />
+                      </ImgWrapper>
+                    </a>
+
+                    <GapForSponsors></GapForSponsors>
+                    <a href="https://innovate.bayer.com/lifehub-uk">
+                      <ImgWrapper start={start}>
+                        <img src={Bayer} alt={alt} />
+                      </ImgWrapper>
+                    </a>
+                  </InfoRow>
                 </SponsorLinkTitle>
 
                 <TopLine></TopLine>
-                <SponsorLinkTitle style={{ color: '#C0C0C0' }}>
+                <SponsorLinkTitle
+                  style={{
+                    color: '#C0C0C0',
+                    fontFamily: 'Clone Rounded Latin',
+                  }}
+                >
                   Silver
                   <ImgWrapper start={start}></ImgWrapper>
                   <InfoRow imgStart={imgStart}></InfoRow>
@@ -38,34 +65,51 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
 
                 <TopLine></TopLine>
 
-                <SponsorLinkTitle style={{ color: '#CD7F32' }}>
+                <SponsorLinkTitle
+                  style={{
+                    color: '#CD7F32',
+                    fontFamily: 'Clone Rounded Latin',
+                  }}
+                >
                   Bronze
                   <InfoRow imgStart={imgStart}>
                     <ImgWrapper start={start}>
-                      <img src={Zebra} alt={alt} />
+                      <a href="https://www.zebra.com/us/en.html/">
+                        <img src={Zebra} alt={alt} />
+                      </a>
                     </ImgWrapper>
 
                     <GapForSponsors></GapForSponsors>
-
                     <ImgWrapper start={start}>
-                      <img src={S2Oi} alt={alt} />
+                      <a href="https://www.20i.com/">
+                        <img src={S2Oi} alt={alt} />
+                      </a>
                     </ImgWrapper>
                   </InfoRow>
                 </SponsorLinkTitle>
 
                 <TopLine></TopLine>
 
-                <SponsorLinkTitle style={{ color: '#000000' }}>
+                <SponsorLinkTitle
+                  style={{
+                    color: '#000000',
+                    fontFamily: 'Clone Rounded Latin',
+                  }}
+                >
                   Partners
                   <InfoRow imgStart={imgStart}>
-                    <ImgWrapper start={start}>
-                      <img src={HackathonsUk} alt={alt} />
-                    </ImgWrapper>
+                    <a href="https://hackathons.org.uk/">
+                      <ImgWrapper start={start}>
+                        <img src={HackathonsUk} alt={alt} />
+                      </ImgWrapper>
+                    </a>
 
                     <GapForSponsors></GapForSponsors>
 
                     <ImgWrapper start={start}>
-                      <img src={ThamesValleyAiHub} alt={alt} />
+                      <a href="https://www.tvaihub.co.uk/">
+                        <img src={ThamesValleyAiHub} alt={alt} />
+                      </a>
                     </ImgWrapper>
                   </InfoRow>
                 </SponsorLinkTitle>

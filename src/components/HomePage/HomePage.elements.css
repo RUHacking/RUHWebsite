@@ -2,17 +2,19 @@ video {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  position: fixed;
   z-index: -1;
-  position: 'fixed';
 }
 
 .hero-container {
-  background: url('../../img/RUHBackgroundImage.png') center center/cover;
+  background: url('../../img/RUHEventbriteCover.png') center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   box-shadow: insert 0 0 0 1000px rgba(0, 0, 0, 0.2);
   object-fit: contain;
+  margin-top: 200px;
 }

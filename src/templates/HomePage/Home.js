@@ -1,6 +1,9 @@
 import React from 'react';
 import FAQ from '../../components/FAQ/FAQ';
 import Team from '../../components/Team/Team';
+import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
+import InfoSection2 from '../../components/InfoSection2/InfoSection2';
+import InfoSection3 from '../../components/InfoSection3/InfoSection3';
 
 import { InfoSection } from '../../components';
 import Sponsors from '../../components/Sponsors/Sponsors';
@@ -13,15 +16,13 @@ import {
   HomeObjectFive,
 } from './Data';
 
-import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
-
 const Home = () => {
   return (
     <>
       <HomePage />
-      <InfoSection {...HomeObjectTwo} />
+      <InfoSection3 {...HomeObjectTwo} />
       <FAQ />
-      <InfoSection {...HomeObjectFour} />
+      <InfoSection2 {...HomeObjectFour} />
       <FooterSubHeading>
         <Sponsors {...HomeObjectFive} />
       </FooterSubHeading>

@@ -14,6 +14,7 @@ const FooterSubHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
+  font-style: italic;
 `;
 
 const Dropdown = styled.div`
@@ -24,6 +25,7 @@ const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
+  font-style: italic;
 
   border-radius: 25px;
 `;
@@ -34,7 +36,7 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 175vh;
+  height: 30vh;
   background: #ffff;
 `;
 
@@ -49,6 +51,7 @@ const Wrap = styled.div`
   border-bottom: 20px solid #ffff;
   border-top: 20px solid #ffff;
   border-radius: 25px;
+  font-style: italic;
 
   cursor: pointer;
 
@@ -76,30 +79,30 @@ export const Accordion = () => {
     <Container>
       <IconContext.Provider value={{ color: '#000000', size: '50px' }}>
         <AccordionSection>
-          <FooterSubHeading>Frequently Asked Questions </FooterSubHeading>
-
-          {Data.map((item, index) => {
-            return (
-              <>
-                <Wrap onClick={() => toggle(index)} keys={index}>
-                  <h1> {item.question}</h1>
-                  <span>
-                    {clicked === index ? (
-                      <IoIosArrowDropupCircle />
-                    ) : (
-                      <IoIosArrowDropdownCircle />
-                    )}
-                  </span>
-                </Wrap>
-                {clicked === index ? (
-                  <Dropdown>
-                    <p>{item.answer}</p>
-                  </Dropdown>
-                ) : null}
-              </>
-            );
-          })}
+          <FooterSubHeading>Frequently Asked Questions</FooterSubHeading>
         </AccordionSection>
+
+        {Data.map((item, index) => {
+          return (
+            <>
+              <Wrap onClick={() => toggle(index)} keys={index}>
+                <h1> {item.question}</h1>
+                <span>
+                  {clicked === index ? (
+                    <IoIosArrowDropupCircle />
+                  ) : (
+                    <IoIosArrowDropdownCircle />
+                  )}
+                </span>
+              </Wrap>
+              {clicked === index ? (
+                <Dropdown>
+                  <p>{item.answer}</p>
+                </Dropdown>
+              ) : null}
+            </>
+          );
+        })}
       </IconContext.Provider>
     </Container>
   );
