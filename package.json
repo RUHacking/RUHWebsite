@@ -1,7 +1,7 @@
 {
   "name": "ruhacking-site",
   "description": "RUHacking Website",
-  "version": "10.13.0",
+  "version": "1.2.5",
   "author": "Milan Radojicic",
 
   "dependencies": {
