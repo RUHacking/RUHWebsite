@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardGroup, CardDeck } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { TopLine } from './Team.elements';
 import { Container } from '../../global_styles';
 
