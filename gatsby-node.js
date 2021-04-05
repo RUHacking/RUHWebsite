@@ -1,78 +1,60 @@
 const path = require('path');
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const { createFilePath } = require('gatsby-source-filesystem');
 
-exports.downloadMediaFiles = ({
-  nodes,
-  getCache,
-  createNode,
-  createNodeId,
-  _auth,
-}) => {
-  nodes.map(async node => {
-    let fileNode
-    // Ensures we are only processing Media Files
-    // `wordpress__wp_media` is the media file type name for WordPress
-    if (node.__type === `wordpress__wp_media`) {
-      try {
-        fileNode = await createRemoteFileNode({
-          url: node.source_url,
-          parentNodeId: node.id,
-          getCache,
-          createNode,
-          createNodeId,
-          auth: _auth,
-        })
-      } catch (e) {
-        // Ignore
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
+
+  return graphql(`
+    {
+      allMarkdownRemark(limit: 1000) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              templateKey
+              path
+            }
+          }
+        }
       }
     }
-
-    // Adds a field `localFile` to the node
-    // ___NODE appendix tells Gatsby that this field will link to another node
-    if (fileNode) {
-      node.localFile___NODE = fileNode.id
+  `).then(result => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()));
+      return Promise.reject(result.errors);
     }
-  })
-}
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  // Ensures we are processing only markdown files
-  if (node.internal.type === "MarkdownRemark") {
-    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
-    const relativeFilePath = createFilePath({
-      node,
-      getNode,
-      basePath: "data/faqs/",
-    })
 
-    // Creates new query'able field with name of 'slug'
+    const posts = result.data.allMarkdownRemark.edges;
+
+    posts.forEach(edge => {
+      const { id, frontmatter, fields } = edge.node;
+      createPage({
+        path: fields.slug,
+        component: path.resolve(
+          `src/templates/${String(frontmatter.templateKey)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
+      });
+    });
+  });
+};
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+
+  if (node.internal.type === 'MarkdownRemark') {
+    const value = node.frontmatter.path || createFilePath({ node, getNode });
     createNodeField({
+      name: 'slug',
       node,
-      name: "slug",
-      value: `/faqs${relativeFilePath}`,
-    })
+      value,
+    });
   }
-}
-
-
-exports.onCreateNode = ({ node, getNode, actions }) => {
-  const { createNodeField } = actions
-  // Ensures we are processing only markdown files
-  if (node.internal.type === "MarkdownRemark") {
-    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
-    const relativeFilePath = createFilePath({
-      node,
-      getNode,
-      basePath: "data/faqs/",
-    })
-
-    // Creates new query'able field with name of 'slug'
-    createNodeField({
-      node,
-      name: "slug",
-      value: `/faqs${relativeFilePath}`,
-    })
-  }
-}
-
+};
 
