@@ -13,10 +13,8 @@ import Zebra from '../../img/Zebra_Technologies.png';
 import S2Oi from '../../img/2Oi.png';
 import HackathonsUk from '../../img/HackathonsUk.svg';
 import ThamesValleyAiHub from '../../img/ThamesValleyAiHub.png';
-
 import Bayer from '../../img/Bayer.png';
 import ReadingCollege from '../../img/Reading_College_Logo.png';
-
 import { TopLine, GapForSponsors } from './Sponsors.elements';
 
 const Sponsors = ({ lightBg, imgStart, alt, start }) => {

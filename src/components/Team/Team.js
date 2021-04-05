@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardGroup, CardDeck } from 'react-bootstrap';
 import { TopLine } from './Team.elements';
 import { Container } from '../../global_styles';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Dan from '../../img/Dan.jpg';
 import Nataliya from '../../img/Nataliya.jpg';
 import Amadeusz from '../../img/Amadeusz.jpg';
