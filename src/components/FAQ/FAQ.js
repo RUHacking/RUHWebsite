@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion } from './Accordion';
 
-function FAQ() {
+ function FAQ() {
   return <Accordion />;
 }
 
