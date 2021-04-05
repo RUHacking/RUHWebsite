@@ -5,10 +5,11 @@ import { Navbar, Footer } from '../components';
 import Home from './HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { createMemoryHistory } from 'history';
 
 function App() {
   return (
-    <Router>
+  <Router>
       <GlobalStyles />
       <Navbar />
       <Switch>
