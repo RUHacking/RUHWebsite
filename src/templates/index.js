@@ -7,13 +7,6 @@ import 'react-awesome-button/dist/styles.css';
 import { graphql } from 'gatsby';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home1 from '../templates/Home1/Home1';
-import AboutUs from '../templates/AboutUs/AboutUs';
-import Sponsors from '../templates/Sponsors/Sponsors';
-import ExtraInfo from '../templates/ExtraInfo/ExtraInfo';
-import FAQ1 from '../templates/FAQ1/FAQ1';
-import ContactUs from '../templates/ContactUs/ContactUs';
-
 function App() {
   return (
     <Router>
@@ -21,12 +14,6 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/home1" exact component={Home1} />
-        <Route path="/AboutUs" exact component={AboutUs} />
-        <Route path="/Sponsors" exact component={Sponsors} />
-        <Route path="/ExtraInfo" exact component={ExtraInfo} />
-        <Route path="/FAQ" exact component={FAQ1} />
-        <Route path="/ContactUs" exact component={ContactUs} />
       </Switch>
       <Footer />
     </Router>
