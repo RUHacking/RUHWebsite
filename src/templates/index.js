@@ -5,7 +5,6 @@ import { Navbar, Footer } from '../components';
 import Home from './HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { graphql } from 'gatsby';
 
 function App() {
   return (
@@ -18,6 +17,9 @@ function App() {
       <Footer />
     </Router>
   );
-}
+};
+
+
+
 
 export default App;
