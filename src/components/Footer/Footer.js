@@ -24,7 +24,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <FooterContainer>
+      <FooterContainer id='footer'>
         <FooterSubscription>
           <FooterSubHeading>EMAIL</FooterSubHeading>
           <FooterSubText>
@@ -41,19 +41,24 @@ const Footer = () => {
             <FooterLinksItems>
               <FooterLinkTitle>Useful Links </FooterLinkTitle>
               <FooterLink style={{ color: '#ffff' }} to="/">
-                HOME
-              </FooterLink>
-              <FooterLink style={{ color: '#ffff' }} to="/">
+             
+            <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
+            style={{ color: '#FFF' }}
+
+            
+            >
+
                 Sponsorship
+            </a>
               </FooterLink>
               <FooterLink style={{ color: '#ffff' }} to="/">
-                Major League Hacking
-              </FooterLink>
-              <FooterLink style={{ color: '#ffff' }} to="/">
-                Something
-              </FooterLink>
-              <FooterLink style={{ color: '#ffff' }} to="/">
-                Something
+              <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            style={{ color: '#FFF' }}
+
+            
+            >
+              MLH Code of Conduct
+              </a>
               </FooterLink>
             </FooterLinksItems>
             <FooterLinksItems>
@@ -83,6 +88,8 @@ const Footer = () => {
                 href="https://www.facebook.com/readingunihack"
                 targets="_blank"
                 aria-label="Facebook"
+                style={{ color: '#FFF' }}
+
               >
                 <FaFacebook />
               </SocialIconLink>
@@ -90,6 +97,8 @@ const Footer = () => {
                 href="https://www.instagram.com/r.u.hacking/"
                 targets="_blank"
                 aria-label="Instagram"
+                style={{ color: '#FFF' }}
+
               >
                 <FaInstagram />
               </SocialIconLink>
@@ -97,6 +106,8 @@ const Footer = () => {
                 href="http://twitter.com/ReadingUniHack"
                 targets="_blank"
                 aria-label="Twitter"
+                style={{ color: '#FFF' }}
+
               >
                 <FaTwitter />
               </SocialIconLink>
@@ -104,6 +115,8 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/ruhacking/"
                 targets="_blank"
                 aria-label="Linkedin"
+                style={{ color: '#FFF' }}
+
               >
                 <FaLinkedin />
               </SocialIconLink>

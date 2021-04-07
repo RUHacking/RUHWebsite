@@ -6,13 +6,14 @@ import Home from './HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
   <Router>
       <GlobalStyles />
       <Navbar />
       <Switch>
-        <Route path="/" exact component={Home} />
+      <Route path="/" exact component={Home} />
       </Switch>
       <Footer />
     </Router>

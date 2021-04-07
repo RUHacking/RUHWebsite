@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../../global_styles';
+import { Container, Button } from '../../global_styles';
 import {
   InfoSec,
   InfoRow,
@@ -19,6 +19,11 @@ const InfoSection = ({
   lightTextDesc,
   buttonLabel,
   description,
+  description1,
+  description2,
+  description3,
+  description4,
+  description5,
   headline,
   lightText,
   topLine,
@@ -28,7 +33,7 @@ const InfoSection = ({
 }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec lightBg={lightBg} id='inf1'>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
@@ -36,6 +41,18 @@ const InfoSection = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>{description1}</Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>{description2}</Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>{description3}</Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>{description4}</Subtitle>                
+                <Subtitle lightTextDesc={lightTextDesc}>{description5}</Subtitle>
+
+
+                <a href="https://www.rusu.co.uk/organisation/20490/">
+                  <Button big fontBig primary={primary}>
+                    {buttonLabel}
+                  </Button>
+                </a>
               </TextWrapper>
             </InfoColumn>
             <InfoColumn>

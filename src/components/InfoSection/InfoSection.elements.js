@@ -51,18 +51,20 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 600px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '#1c2237')};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? '#ffff' : '#1c2237')};
 `;
+
+
 
 export const ImgWrapper = styled.div`
   max-width: 1200px;

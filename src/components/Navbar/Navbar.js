@@ -46,7 +46,7 @@ const Navbar = () => {
                 style={{ width: 'auto', height: 70, marginRight: 7 }}
               />
               <NavLinks
-                style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                style={{ color: '#ffff', fontfamily: " clone-rounded-latin, sans-serif"}}
               >
                 {' '}
                 R. U. Hacking?{' '}
@@ -59,7 +59,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
+                  to='Homepage'
                 >
                   HOME
                 </NavLinks>
@@ -68,34 +68,16 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
+                  to='inf3'
                 >
-                  ABOUT US
+                  ABOUT
                 </NavLinks>
               </NavItem>
 
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
-                >
-                  SPONSORS
-                </NavLinks>
-              </NavItem>
-
-              <NavItem>
-                <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
-                >
-                  EXTRA INFO
-                </NavLinks>
-              </NavItem>
-
-              <NavItem>
-                <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
+                  to="faq"
                 >
                   FAQ
                 </NavLinks>
@@ -104,7 +86,35 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to="/"
+                  to="inf2"
+                >
+                  SPONSORS
+                </NavLinks>
+              </NavItem>
+
+
+              <NavItem>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to='inf1'
+                >
+                  EXTRA INFO
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to='team'
+                >
+                  TEAM
+                </NavLinks>
+              </NavItem>
+
+              <NavItem>
+                <NavLinks
+                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  to='footer'
                 >
                   CONTACT US
                 </NavLinks>

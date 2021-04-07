@@ -14,13 +14,14 @@ import S2Oi from '../../img/2Oi.png';
 import HackathonsUk from '../../img/HackathonsUk.svg';
 import ThamesValleyAiHub from '../../img/ThamesValleyAiHub.png';
 import Bayer from '../../img/Bayer.png';
-import ReadingCollege from '../../img/Reading_College_Logo.png';
 import { TopLine, GapForSponsors } from './Sponsors.elements';
+import Institute_of_Technology from '../../img/Institute_of_Technology_-_Gold_Sponsor.jpg';
+
 
 const Sponsors = ({ lightBg, imgStart, alt, start }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg}>
+      <InfoSec lightBg={lightBg} id='sponsors'>
         <SponsorContainer>
           <SponsorLinksContainer>
             <SponsorLinksWrapper>
@@ -34,9 +35,9 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                 >
                   Gold
                   <InfoRow imgStart={imgStart}>
-                    <a href="https://www.activatelearning.ac.uk/our-colleges/reading-college/">
+                    <a href="https://southcentraliot.co.uk/">
                       <ImgWrapper start={start}>
-                        <img src={ReadingCollege} alt={alt} />
+                        <img src={Institute_of_Technology} alt={alt} />
                       </ImgWrapper>
                     </a>
 

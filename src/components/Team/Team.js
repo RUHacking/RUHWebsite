@@ -18,7 +18,7 @@ import Anna from '../../img/Anna.jpg';
 
 const Team = () => {
   return (
-    <Container>
+    <Container id='team'>
       <TopLine style={{ fontFamily: 'Clone Rounded Latin' }}>
         Meet The Team
       </TopLine>
@@ -27,7 +27,7 @@ const Team = () => {
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Dan} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Dan}  style={{ width: '100%', height: '60%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Daniel Broomhead

@@ -8,6 +8,8 @@ import {
 } from 'react-icons/io';
 import { Container } from '../../global_styles';
 
+
+
 const FooterSubHeading = styled.p`
   font-size: 40px;
   color: #000000;
@@ -16,6 +18,12 @@ const FooterSubHeading = styled.p`
   display: flex;
   font-style: italic;
 `;
+
+
+const Background = styled.div`
+  background: #454545;
+`;
+
 
 const Dropdown = styled.div`
   background: #ffff;
@@ -76,7 +84,7 @@ export const Accordion = () => {
   };
 
   return (
-    <Container>
+    <Container id="faq">
       <IconContext.Provider value={{ color: '#000000', size: '50px' }}>
         <AccordionSection>
           <FooterSubHeading>Frequently Asked Questions</FooterSubHeading>
@@ -104,6 +112,8 @@ export const Accordion = () => {
           );
         })}
       </IconContext.Provider>
+      
     </Container>
+    
   );
 };

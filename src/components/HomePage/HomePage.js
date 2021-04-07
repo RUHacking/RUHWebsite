@@ -4,15 +4,15 @@ import { Button } from './Button';
 import styled from 'styled-components';
 
 const FooterHeading = styled.p`
-  font-size: 40px;
-  color: #ffff;
+  font-size: 70px;
   align-items: center;
   text-align: center;
   display: flex;
+
 `;
 
 const FooterSubHeading = styled.p`
-  font-size: 20px;
+  font-size: 50px;
   color: #ffff;
   align-items: center;
   text-align: center;
@@ -45,17 +45,17 @@ const AccordionSection = styled.div`
 
 function HomePage() {
   return (
-    <InfoSec>
+    <InfoSec id='Homepage'>
       <AccordionSection> </AccordionSection>
       <d className="hero-container">
         <source src="../../img/vid1.mp4" type="video/mp4" autoPlay loop muted />
         <FooterHeading
-          style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+          style={{ color: '#ea5837', fontFamily: 'Clone Rounded Latin' }}
         >
           R. U. Hacking? 2021 | Virtual Hackathon
         </FooterHeading>
         <FooterSubHeading
-          style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+          style={{ color: '#16B8D8', fontFamily: 'Clone Rounded Latin' }}
         >
           26th - 27th June 2021
         </FooterSubHeading>
@@ -70,13 +70,15 @@ function HomePage() {
               Get Tickets
             </Button>
           </a>
+          <a href="https://discord.gg/VfWm3nwsQF">
           <Button
             className="btns"
             buttonStyle="btn--outline"
             buttonSize="btn--large"
           >
-            Join Discord
+            Join Our Discord
           </Button>
+          </a>
         </div>
       </d>
     </InfoSec>
