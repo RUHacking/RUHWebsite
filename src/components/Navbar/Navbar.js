@@ -15,6 +15,7 @@ import {
   NavBtnLink,
 } from './navbar.elements';
 
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -59,7 +60,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to='Homepage'
+                  to='/'
                 >
                   HOME
                 </NavLinks>

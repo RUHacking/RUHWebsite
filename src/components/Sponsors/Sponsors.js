@@ -29,10 +29,20 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                 <TopLine></TopLine>
                 <SponsorLinkTitle
                   style={{
+                    color: '#000000',
+                    fontFamily: 'Clone Rounded Latin',
+                  }}
+                >
+                  SPONSORS
+                  <TopLine></TopLine>
+                </SponsorLinkTitle>
+                <SponsorLinkTitle
+                  style={{
                     color: '#FFD700',
                     fontFamily: 'Clone Rounded Latin',
                   }}
                 >
+                  
                   Gold
                   <InfoRow imgStart={imgStart}>
                     <a href="https://southcentraliot.co.uk/">

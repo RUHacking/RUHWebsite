@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.div`
   background-color: #454545;
-  padding: 4rem 0 2rem 0;
   display: flex;
+  padding: 3rem 0 2rem 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;

@@ -27,7 +27,7 @@ const Team = () => {
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Dan}  style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Dan}  style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Daniel Broomhead
@@ -41,7 +41,7 @@ const Team = () => {
             <Card style={{ textAlign: 'center' }}>
               <Card.Img
                 src={Nataliya}
-                style={{ width: '100%', height: '60%' }}
+                style={{ width: '100%', height: '80%' }}
               />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
@@ -56,7 +56,7 @@ const Team = () => {
             <Card style={{ textAlign: 'center' }}>
               <Card.Img
                 src={Amadeusz}
-                style={{ width: '100%', height: '60%' }}
+                style={{ width: '100%', height: '80%' }}
               />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
@@ -75,7 +75,7 @@ const Team = () => {
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Emily} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Emily} style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Emily Man
@@ -87,7 +87,7 @@ const Team = () => {
             </Card>
 
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Joe} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Joe} style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Joe McKeown
@@ -99,7 +99,7 @@ const Team = () => {
             </Card>
 
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Savva} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Savva} style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Savva Podkopov
@@ -117,7 +117,7 @@ const Team = () => {
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Neyma} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Neyma} style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Neyma Siddiqui
@@ -131,7 +131,7 @@ const Team = () => {
             <Card style={{ textAlign: 'center' }}>
               <Card.Img
                 src={Dimitar}
-                style={{ width: '100%', height: '60%' }}
+                style={{ width: '100%', height: '80%' }}
               />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
@@ -144,7 +144,7 @@ const Team = () => {
             </Card>
 
             <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Anna} style={{ width: '100%', height: '60%' }} />
+              <Card.Img src={Anna} style={{ width: '100%', height: '80%' }} />
               <Card.Body>
                 <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Anna Harding{' '}

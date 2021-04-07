@@ -5,6 +5,9 @@ import { Navbar, Footer } from '../components';
 import Home from './HomePage/Home';
 import 'react-awesome-button/dist/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FAQ from '../components/FAQ/FAQ';
+import Team from '../components/Team/Team';
+import InfoSection3 from '../components/InfoSection3/InfoSection3';
 
 
 function App() {
@@ -14,8 +17,12 @@ function App() {
       <Navbar />
       <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/faq" exact component={FAQ} />
+      <Route path="/team" exact component={Team} />
+      <Route path="/inf3" exact component={InfoSection3} />
+
       </Switch>
-      <Footer />
+      <Footer/>
     </Router>
   );
 };
