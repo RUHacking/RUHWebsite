@@ -21,17 +21,17 @@
   color: #fff;
   padding: 8px 20px;
   border: 1px solid var(--primary);
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .btn--medium {
   padding: 8px 20px;
-  font-size: 18px;
+  font-size: 48px;
 }
 
 .btn--large {
   padding: 12px 26px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .btn--large:hover,

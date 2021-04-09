@@ -50,7 +50,6 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                         <img src={Institute_of_Technology} alt={alt} />
                       </ImgWrapper>
                     </a>
-
                     <GapForSponsors></GapForSponsors>
                     <a href="https://innovate.bayer.com/lifehub-uk">
                       <ImgWrapper start={start}>

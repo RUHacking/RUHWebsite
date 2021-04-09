@@ -28,7 +28,6 @@ export const InfoRow = styled.div`
 
 export const InfoSec = styled.div`
   color: #fff;
-  padding: 2px;
   background: ${({ lightBg }) => (lightBg ? '#ffff' : '#454545;')};
 `;
 
@@ -38,7 +37,6 @@ const AccordionSection = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 5px;
   background: #454545;
   z-index: -2;
 `;

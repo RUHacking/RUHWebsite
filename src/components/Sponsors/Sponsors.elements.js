@@ -111,3 +111,5 @@ export const GapForSponsors = styled.div`
   margin-top: 90px;
   text-align: center;
 `;
+
+
