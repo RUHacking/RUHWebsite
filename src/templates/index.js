@@ -8,24 +8,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FAQ from '../components/FAQ/FAQ';
 import Team from '../components/Team/Team';
 import InfoSection3 from '../components/InfoSection3/InfoSection3';
+import InfoSection2 from '../components/InfoSection2/InfoSection2';
+import InfoSection from '../components/InfoSection/InfoSection';
+import HomePage from '../components/HomePage/HomePage';
+import {useHistory, userHistory} from "react-router";
+import history from "./history";
 
 
 function App() {
   return (
-  <Router>
+  <Router history={history}>
       <Navbar />
       <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/faq" exact component={FAQ} />
-      <Route path="/team" exact component={Team} />
-      <Route path="/inf3" exact component={InfoSection3} />
-
       </Switch>
       <Footer/>
     </Router>
   );
 };
-
 
 
 

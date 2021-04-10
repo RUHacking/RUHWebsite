@@ -40,7 +40,7 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: '#ea5837 ' }}>
         <Nav>
           <Navbar_Contain>
-            <NavLogo to="/">
+            <NavLogo >
               <img
                 src={logo}
                 alt="RUHacking Logo"
@@ -48,6 +48,7 @@ const Navbar = () => {
               />
               <NavLinks
                 style={{ color: '#ffff', fontfamily: " clone-rounded-latin, sans-serif"}}
+                
               >
                 {' '}
                 R. U. Hacking?{' '}

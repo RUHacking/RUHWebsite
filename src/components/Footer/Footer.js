@@ -41,7 +41,7 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinksItems>
               <FooterLinkTitle>Useful Links </FooterLinkTitle>
-              <FooterLink style={{ color: '#ffff' }} to="/">
+              <FooterLink style={{ color: '#ffff' }} >
              
             <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
             target="_blank"
@@ -53,7 +53,7 @@ const Footer = () => {
                 Sponsorship
             </a>
               </FooterLink>
-              <FooterLink style={{ color: '#ffff' }} to="/">
+              <FooterLink style={{ color: '#ffff' }} >
               <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
               target="_blank"
             style={{ color: '#FFF' }}
@@ -66,7 +66,7 @@ const Footer = () => {
             </FooterLinksItems>
             <FooterLinksItems>
               <FooterLinkTitle>Contact Us </FooterLinkTitle>
-              <FooterLink style={{ color: '#ffff' }} to="/">
+              <FooterLink style={{ color: '#ffff' }} >
                 To keep up to date with all things R.U.Hacking? or have any
                 questions for us follow our social media pages
               </FooterLink>
