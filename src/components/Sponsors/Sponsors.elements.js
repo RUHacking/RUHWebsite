@@ -89,8 +89,8 @@ export const SponsorContainer = styled.div`
   padding-left: 50px;
   margin-top: -250px;
   @media screen and (max-width: 1000px) {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 `;
 
