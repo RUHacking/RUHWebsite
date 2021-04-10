@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { Container } from '../../global_styles';
+import { Link as LinkS } from 'react-scroll';
+
 
 export const Nav = styled.nav`
   background: #454545;
@@ -81,7 +83,7 @@ export const NavItem = styled.li`
     }
   }
 `;
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(LinkS)`
   color: #fff;
   display: flex;
   align-items: center;
@@ -111,7 +113,7 @@ export const NavItemBtn = styled.li`
     height: 180px;
   }
 `;
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkS)`
   display: flex;
   justify-content: center;
   align-items: center;

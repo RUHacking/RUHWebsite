@@ -40,6 +40,7 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^4.2.0",
     "react-router": "^5.2.0",
+    "react-scroll": "^1.8.2",
     "react-slick": "^0.23.1",
     "remark": "^9.0.0",
     "remark-html": "^8.0.0",

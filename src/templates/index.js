@@ -13,7 +13,6 @@ import InfoSection3 from '../components/InfoSection3/InfoSection3';
 function App() {
   return (
   <Router>
-      <GlobalStyles />
       <Navbar />
       <Switch>
       <Route path="/" exact component={Home} />

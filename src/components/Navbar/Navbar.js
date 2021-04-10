@@ -60,7 +60,7 @@ const Navbar = () => {
               <NavItem>
                 <NavLinks
                   style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to='/'
+                  to='Homepage'
                 >
                   HOME
                 </NavLinks>
@@ -112,14 +112,7 @@ const Navbar = () => {
                 </NavLinks>
               </NavItem>
 
-              <NavItem>
-                <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to='footer'
-                >
-                  CONTACT US
-                </NavLinks>
-              </NavItem>
+
 
               <NavItemBtn>
                 {button ? (

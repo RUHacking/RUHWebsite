@@ -32,7 +32,7 @@ const InfoSection3 = ({
 }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg} >
+      <InfoSec lightBg={lightBg} id='inf3'>
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
