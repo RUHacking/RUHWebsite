@@ -16,7 +16,7 @@ import Savva from '../../img/Savva.jpg';
 import Neyma from '../../img/Neyma.jpg';
 import Dimitar from '../../img/Dimitar.jpg';
 import Anna from '../../img/Anna.jpg';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin,MdEmail,FaGithub,FaMailBulk } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin,FaGithub,FaMailBulk } from 'react-icons/fa';
 
 const SocialIcon = styled.div`
 display: none;
@@ -36,6 +36,15 @@ display: none;
   justify-content: space-between;
 
 `;
+
+
+
+
+
+
+
+
+
 
 
 const Team = () => {
@@ -58,81 +67,34 @@ const Team = () => {
                   President
                 </Card.Text>
 
-
-
                 <SocialIcon>
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                 href={'mailto:' + 'd.l.broomhead@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href="https://www.linkedin.com/in/daniel-broomhead-970ba1171"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
-
-
-
                 </SocialIcon>
+
+
+
               </Card.Body>
             </Card>
-
             <Card style={{ textAlign: 'center' }}>
               <Card.Img
                 src={Nataliya}
@@ -149,76 +111,31 @@ const Team = () => {
 
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+
+                href={'mailto:' + 'n.lazutkina@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href="https://www.linkedin.com/in/nataliya-lazutkina"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
-
-
-
                 </SocialIcon>
               </Card.Body>
             </Card>
+
+
 
             <Card style={{ textAlign: 'center' }}>
               <Card.Img
@@ -235,76 +152,18 @@ const Team = () => {
 
 
                 <SocialIcon>
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+
+                href={'mailto:' + 'a.wlodarczyk@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaGithub />
-                </SocialIconLink>
-
-
-
                 </SocialIcon>
-
               </Card.Body>
             </Card>
           </CardDeck>
@@ -324,71 +183,29 @@ const Team = () => {
                   Social Secretary
                   </Card.Text>
 
+
                   <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href={'mailto:' + 'emily.man@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href="https://www.linkedin.com/in/emily-man-98b448195"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
 
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
 
 
@@ -406,72 +223,20 @@ const Team = () => {
                 <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Treasurer
                 </Card.Text>
+
+
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href={'mailto:' + 'j.mckeown@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
 
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaGithub />
-                </SocialIconLink>
 
 
 
@@ -488,72 +253,19 @@ const Team = () => {
                 <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Welfare Officer
                 </Card.Text>
+
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href={'mailto:' + 's.i.b.podkopov@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
 
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaGithub />
-                </SocialIconLink>
 
 
 
@@ -576,71 +288,29 @@ const Team = () => {
                 <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Google Dev Rep
                 </Card.Text>
+
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href={'mailto:' + 'neyma.siddiqui@student.reading.ac.uk'}
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
+                href="https://www.linkedin.com/in/neymasiddiqui"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
 
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
 
 
@@ -665,67 +335,24 @@ const Team = () => {
                 <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
 
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
 
 
@@ -747,67 +374,24 @@ const Team = () => {
                 <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaFacebook />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaInstagram />
-                </SocialIconLink>
-
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaTwitter />
-                </SocialIconLink>
-
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
-
-              >
-                <FaLinkedin />
-                </SocialIconLink>
-
-                <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Email"
+                style={{ color: '#EA5837' }}
 
               >
                 <FaMailBulk />
                 </SocialIconLink>
 
+                <SocialIconLink>{" "}</SocialIconLink>  
 
 
                 <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 targets="_blank"
-                aria-label="Facebook"
-                style={{ color: '#000000' }}
+                aria-label="Linkedin"
+                style={{ color: '#EA5837' }}
 
               >
-                <FaGithub />
+                <FaLinkedin />
                 </SocialIconLink>
 
 
