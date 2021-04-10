@@ -5,8 +5,8 @@ export const TopLine = styled.div`
   font-size: 50px;
   line-height: 46px;
   letter-spacing: 1.4px;
-  margin-bottom: 90px;
-  margin-top: 90px;
+
+
   text-align: center;
 `;
 
