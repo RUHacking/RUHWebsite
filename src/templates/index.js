@@ -11,13 +11,11 @@ import InfoSection3 from '../components/InfoSection3/InfoSection3';
 import InfoSection2 from '../components/InfoSection2/InfoSection2';
 import InfoSection from '../components/InfoSection/InfoSection';
 import HomePage from '../components/HomePage/HomePage';
-import {useHistory, userHistory} from "react-router";
-import history from "./history";
 
 
 function App() {
   return (
-  <Router history={history}>
+  <Router>
       <Navbar />
       <Switch>
       <Route path="/" exact component={Home} />

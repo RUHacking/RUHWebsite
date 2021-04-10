@@ -44,6 +44,7 @@
     "react-router": "^5.2.0",
     "react-scroll": "^1.8.2",
     "react-slick": "^0.23.1",
+    "redux-fetch-data": "^0.1.4",
     "remark": "^9.0.0",
     "remark-html": "^8.0.0",
     "remark-preset-lint-recommended": "^3.0.2",
