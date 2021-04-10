@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { Card, CardGroup, CardDeck } from 'react-bootstrap';
 
-import { TopLine } from './Team.elements';
+import { TopLine,SmallTopLine } from './Team.elements';
 import { Container } from '../../global_styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dan from '../../img/Dan.jpg';
@@ -31,17 +31,7 @@ display: none;
 `;
 
 
- const SocialIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
 
-`;
-
-
- const InfoSec = styled.div`
-  color: #000000;
-  padding: 80px 0;
-`;
 
 
 
@@ -50,14 +40,14 @@ display: none;
 
 const Team = () => {
   return (
-    <Container id='team'>
-    <InfoSec />
-    <Container style={{ width: 'auto', height: 'auto' }} >
-      <TopLine style={{ fontFamily: 'Clone Rounded Latin' }}>
-        Meet The Team
-        </TopLine>
+    <Container >
+    <Container id="team">
 
-    
+      <SmallTopLine style={{ fontFamily: 'Clone Rounded Latin' }}>
+        Meet The Team  </SmallTopLine >
+        </Container>
+
+        <Container style={{ width: 'auto', height: 'auto' }} >
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
@@ -411,9 +401,10 @@ const Team = () => {
           </CardDeck>
         </CardGroup>
 
-        <TopLine></TopLine>
       </Container>
+      <TopLine></TopLine>
       </Container>
+
 
   );
 };
