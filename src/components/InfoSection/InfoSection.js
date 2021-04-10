@@ -48,7 +48,7 @@ const InfoSection = ({
                 <Subtitle lightTextDesc={lightTextDesc}>{description5}</Subtitle>
 
 
-                <a href="https://www.rusu.co.uk/organisation/20490/">
+                <a href="https://www.rusu.co.uk/organisation/20490/" target="_blank">
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>

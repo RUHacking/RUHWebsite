@@ -30,6 +30,7 @@ const Footer = () => {
           <FooterSubText>
             <a
               href={'mailto:' + 'readingunihack@gmail.com'}
+              target="_blank"
               style={{ color: '#FFF' }}
             >
               readingunihack@gmail.com
@@ -43,6 +44,7 @@ const Footer = () => {
               <FooterLink style={{ color: '#ffff' }} to="/">
              
             <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
+            target="_blank"
             style={{ color: '#FFF' }}
 
             
@@ -53,6 +55,7 @@ const Footer = () => {
               </FooterLink>
               <FooterLink style={{ color: '#ffff' }} to="/">
               <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+              target="_blank"
             style={{ color: '#FFF' }}
 
             
@@ -86,7 +89,7 @@ const Footer = () => {
             <SocialIcons>
               <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
-                targets="_blank"
+                target="_blank"
                 aria-label="Facebook"
                 style={{ color: '#FFF' }}
 
@@ -95,7 +98,7 @@ const Footer = () => {
               </SocialIconLink>
               <SocialIconLink
                 href="https://www.instagram.com/r.u.hacking/"
-                targets="_blank"
+                target="_blank"
                 aria-label="Instagram"
                 style={{ color: '#FFF' }}
 
@@ -104,7 +107,7 @@ const Footer = () => {
               </SocialIconLink>
               <SocialIconLink
                 href="http://twitter.com/ReadingUniHack"
-                targets="_blank"
+                target="_blank"
                 aria-label="Twitter"
                 style={{ color: '#FFF' }}
 
@@ -113,7 +116,7 @@ const Footer = () => {
               </SocialIconLink>
               <SocialIconLink
                 href="https://www.linkedin.com/company/ruhacking/"
-                targets="_blank"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#FFF' }}
 

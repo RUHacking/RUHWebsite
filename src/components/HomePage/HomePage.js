@@ -59,7 +59,7 @@ function HomePage() {
         </FooterSubHeading>
 
         <div className="hero-btns">
-          <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257">
+          <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257" target="_blank">
             <Button
               className="btns"
               buttonStyle="btn--outline"
@@ -68,7 +68,7 @@ function HomePage() {
               Get Tickets
             </Button>
           </a>
-          <a href="https://discord.gg/VfWm3nwsQF">
+          <a href="https://discord.gg/VfWm3nwsQF" target="_blank">
           <Button
             className="btns"
             buttonStyle="btn--outline"

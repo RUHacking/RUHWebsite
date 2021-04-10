@@ -116,7 +116,9 @@ const Navbar = () => {
 
               <NavItemBtn>
                 {button ? (
-                  <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257">
+                  <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257"
+                  target="_blank"
+                  >
                     <Button
                       style={{
                         color: '#ffff',

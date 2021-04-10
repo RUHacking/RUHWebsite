@@ -71,7 +71,7 @@ const Team = () => {
 
                 <SocialIconLink
                  href={'mailto:' + 'd.l.broomhead@student.reading.ac.uk'}
-                targets="_blank"
+                 target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
               >
@@ -83,7 +83,7 @@ const Team = () => {
 
                 <SocialIconLink
                 href="https://www.linkedin.com/in/daniel-broomhead-970ba1171"
-                targets="_blank"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
               >
@@ -113,7 +113,7 @@ const Team = () => {
                 <SocialIconLink
 
                 href={'mailto:' + 'n.lazutkina@student.reading.ac.uk'}
-                targets="_blank"
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
               >
@@ -125,7 +125,7 @@ const Team = () => {
 
                 <SocialIconLink
                 href="https://www.linkedin.com/in/nataliya-lazutkina"
-                targets="_blank"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
               >
@@ -156,7 +156,7 @@ const Team = () => {
                 <SocialIconLink
 
                 href={'mailto:' + 'a.wlodarczyk@student.reading.ac.uk'}
-                targets="_blank"
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
               >
@@ -186,8 +186,8 @@ const Team = () => {
 
                   <SocialIcon>
                 <SocialIconLink
-                href={'mailto:' + 'emily.man@student.reading.ac.uk'}
-                targets="_blank"
+                href={'mailto:' + 'emilyman2411@gmail.com'}
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -200,7 +200,7 @@ const Team = () => {
 
                 <SocialIconLink
                 href="https://www.linkedin.com/in/emily-man-98b448195"
-                targets="_blank"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
 
@@ -228,7 +228,7 @@ const Team = () => {
                 <SocialIcon>
                 <SocialIconLink
                 href={'mailto:' + 'j.mckeown@student.reading.ac.uk'}
-                targets="_blank"
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -257,7 +257,7 @@ const Team = () => {
                 <SocialIcon>
                 <SocialIconLink
                 href={'mailto:' + 's.i.b.podkopov@student.reading.ac.uk'}
-                targets="_blank"
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -292,7 +292,7 @@ const Team = () => {
                 <SocialIcon>
                 <SocialIconLink
                 href={'mailto:' + 'neyma.siddiqui@student.reading.ac.uk'}
-                targets="_blank"
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -305,7 +305,7 @@ const Team = () => {
 
                 <SocialIconLink
                 href="https://www.linkedin.com/in/neymasiddiqui"
-                targets="_blank"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
 
@@ -331,10 +331,12 @@ const Team = () => {
                 <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Designer
                 </Card.Text>
+
+
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
+                href={'mailto:' + 'mitkospasov1999@gmail.com'}
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -346,8 +348,8 @@ const Team = () => {
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
+                href="https://www.linkedin.com/in/dimitar-spasov"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
 
@@ -370,10 +372,14 @@ const Team = () => {
                 <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
                   Designer
                 </Card.Text>
+
+
+
+
                 <SocialIcon>
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
+                href={'mailto:' + 'anna.harding@student.reading.ac.uk'}
+                target="_blank"
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
 
@@ -385,8 +391,8 @@ const Team = () => {
 
 
                 <SocialIconLink
-                href="https://www.facebook.com/readingunihack"
-                targets="_blank"
+                href="https://www.linkedin.com/in/anna-harding-a82ba5195"
+                target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#EA5837' }}
 

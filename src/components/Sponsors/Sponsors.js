@@ -45,13 +45,13 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                   
                   Gold
                   <InfoRow imgStart={imgStart}>
-                    <a href="https://southcentraliot.co.uk/">
+                    <a href="https://southcentraliot.co.uk/" target="_blank">
                       <ImgWrapper start={start}>
                         <img src={Institute_of_Technology} alt={alt} />
                       </ImgWrapper>
                     </a>
                     <GapForSponsors></GapForSponsors>
-                    <a href="https://innovate.bayer.com/lifehub-uk">
+                    <a href="https://innovate.bayer.com/lifehub-uk" target="_blank">
                       <ImgWrapper start={start}>
                         <img src={Bayer} alt={alt} />
                       </ImgWrapper>
@@ -82,14 +82,14 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                   Bronze
                   <InfoRow imgStart={imgStart}>
                     <ImgWrapper start={start}>
-                      <a href="https://www.zebra.com/us/en.html/">
+                      <a href="https://www.zebra.com/us/en.html/" target="_blank">
                         <img src={Zebra} alt={alt} />
                       </a>
                     </ImgWrapper>
 
                     <GapForSponsors></GapForSponsors>
                     <ImgWrapper start={start}>
-                      <a href="https://www.20i.com/">
+                      <a href="https://www.20i.com/" target="_blank">
                         <img src={S2Oi} alt={alt} />
                       </a>
                     </ImgWrapper>
@@ -106,7 +106,7 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                 >
                   Partners
                   <InfoRow imgStart={imgStart}>
-                    <a href="https://hackathons.org.uk/">
+                    <a href="https://hackathons.org.uk/" target="_blank">
                       <ImgWrapper start={start}>
                         <img src={HackathonsUk} alt={alt} />
                       </ImgWrapper>
@@ -115,7 +115,7 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                     <GapForSponsors></GapForSponsors>
 
                     <ImgWrapper start={start}>
-                      <a href="https://www.tvaihub.co.uk/">
+                      <a href="https://www.tvaihub.co.uk/" target="_blank">
                         <img src={ThamesValleyAiHub} alt={alt} />
                       </a>
                     </ImgWrapper>
