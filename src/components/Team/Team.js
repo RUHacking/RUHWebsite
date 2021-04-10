@@ -38,10 +38,9 @@ display: none;
 `;
 
 
- const InfoSec = styled.div`
-  color: #000000;
-  padding: 80px 0;
-`;
+
+
+
 
 
 
@@ -51,13 +50,11 @@ display: none;
 const Team = () => {
   return (
     <Container id='team'>
-    <InfoSec />
-    <Container style={{ width: 'auto', height: 'auto' }} >
       <TopLine style={{ fontFamily: 'Clone Rounded Latin' }}>
         Meet The Team
-        </TopLine>
+      </TopLine>
 
-    
+      <Container style={{ width: 'auto', height: 'auto' }}>
         <CardGroup>
           <CardDeck>
             <Card style={{ textAlign: 'center' }}>
@@ -413,8 +410,7 @@ const Team = () => {
 
         <TopLine></TopLine>
       </Container>
-      </Container>
-
+    </Container>
   );
 };
 

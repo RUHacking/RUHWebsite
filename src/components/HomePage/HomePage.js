@@ -3,17 +3,12 @@ import './HomePage.elements.css';
 import { Button } from './Button';
 import styled from 'styled-components';
 
-
-const MargingTop = styled.p`
-  margin-bottom:200px;
-
-`
-
 const FooterHeading = styled.p`
   font-size: 70px;
   align-items: center;
   text-align: center;
   display: flex;
+
 `;
 
 const FooterSubHeading = styled.p`
@@ -22,7 +17,6 @@ const FooterSubHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
-
 `;
 
 export const InfoRow = styled.div`
@@ -50,7 +44,7 @@ const AccordionSection = styled.div`
 function HomePage() {
   return (
     <InfoSec id='Homepage'>
-   <AccordionSection> </AccordionSection>
+      <AccordionSection> </AccordionSection>
       <d className="hero-container">
         <source src="../../img/vid1.mp4" type="video/mp4" autoPlay loop muted />
         <FooterHeading
@@ -83,7 +77,6 @@ function HomePage() {
             Join Our Discord
           </Button>
           </a>
-        <MargingTop></MargingTop>
         </div>
       </d>
     </InfoSec>
