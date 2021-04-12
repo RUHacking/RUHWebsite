@@ -13,7 +13,7 @@ import Zebra from '../../img/Zebra_Technologies.png';
 import S2Oi from '../../img/2Oi.png';
 import HackathonsUk from '../../img/HackathonsUk.svg';
 import ThamesValleyAiHub from '../../img/ThamesValleyAiHub.png';
-import Bayer from '../../img/Bayer.png';
+import Bayer from '../../img/Bayer_LifeHub_UK_Logo.jpg';
 import { TopLine, GapForSponsors } from './Sponsors.elements';
 import Institute_of_Technology from '../../img/Institute_of_Technology_-_Gold_Sponsor.jpg';
 
