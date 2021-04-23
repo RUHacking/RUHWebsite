@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Button } from '../../global_styles';
+import { Container, Button } from '../../global_styles'
+import Image from 'react-bootstrap/Image'
+
 import {
   InfoSec,
   InfoRow,
@@ -57,7 +59,7 @@ const InfoSection = ({
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
-                <img src={img} alt={alt} />
+              <Image src={img} fluid  alt={alt} />
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>

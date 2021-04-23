@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
+
+
 export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
+  align-items: center;
+  text-align: center;
   background: ${({ lightBg }) => (lightBg ? '#ffff' : '#454545;')};
 `;
 
@@ -31,12 +35,14 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 650px;
   padding-top: 0;
   padding-bottom: 60px;
-  font-style: italic;
+  align-items: center;
+  text-align: center;
 
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 764px) {
     padding-bottom: 65px;
   }
 `;
@@ -51,7 +57,7 @@ export const TopLine = styled.div`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 45px;
+  font-size: 50px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
 `;
@@ -71,11 +77,24 @@ export const ImgWrapper = styled.div`
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
-export const img = styled.img`
+
+export const img3 = styled.image`
   padding-right: 0;
   border: 0;
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
+`;
+
+
+
+export const AccordionSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: #454545;
+  z-index: -2;
 `;

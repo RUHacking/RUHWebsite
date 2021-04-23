@@ -1,41 +1,34 @@
 import React from 'react';
-import { Container, Button } from '../../global_styles';
+import { Container } from '../../global_styles';
+
 import {
   InfoSec,
   InfoRow,
-  InfoColumn,
   TextWrapper,
   TopLine,
   Heading,
   Subtitle,
-  Subtitle1,
-  Subtitle2,
-  ImgWrapper,
+  AccordionSection,
 } from './InfoSection3.elements';
 
 const InfoSection3 = ({
-  primary,
-  lightBg,
   imgStart,
+  lightBg,
   lightTopLine,
   lightTextDesc,
-  buttonLabel,
   description,
   description1,
   description2,
   headline,
   lightText,
   topLine,
-  img,
-  alt,
-  start,
 }) => {
   return (
     <>
+    <AccordionSection>
       <InfoSec lightBg={lightBg} id='inf3'>
         <Container>
           <InfoRow imgStart={imgStart}>
-            <InfoColumn>
               <TextWrapper>
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
@@ -43,15 +36,10 @@ const InfoSection3 = ({
                 <Subtitle lightTextDesc={lightTextDesc}>{description1}</Subtitle>
                 <Subtitle lightTextDesc={lightTextDesc}>{description2}</Subtitle>
               </TextWrapper>
-            </InfoColumn>
-            <InfoColumn>
-              <ImgWrapper start={start}>
-                <img src={img} alt={alt} />
-              </ImgWrapper>
-            </InfoColumn>
           </InfoRow>
         </Container>
       </InfoSec>
+      </AccordionSection>
     </>
   );
 };

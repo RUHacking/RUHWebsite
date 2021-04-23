@@ -3,9 +3,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
 import logo from '../../img/logo/newLogo.png';
+
 import {
   Nav,
-  Navbar_Contain,
+  NavbarContain,
   NavLogo,
   ICON,
   NavMenu,
@@ -39,7 +40,7 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: '#ea5837 ' }}>
         <Nav>
-          <Navbar_Contain>
+          <NavbarContain>
             <NavLogo >
               <img
                 src={logo}
@@ -60,25 +61,17 @@ const Navbar = () => {
             <NavMenu onClick={handleClcick} click={click}>
               <NavItem>
                 <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif"}}
                   to='Homepage'
                 >
                   HOME
                 </NavLinks>
               </NavItem>
 
-              <NavItem>
-                <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to='inf3'
-                >
-                  ABOUT
-                </NavLinks>
-              </NavItem>
 
               <NavItem>
                 <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to="faq"
                 >
                   FAQ
@@ -87,7 +80,7 @@ const Navbar = () => {
 
               <NavItem>
                 <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to="inf2"
                 >
                   SPONSORS
@@ -95,18 +88,21 @@ const Navbar = () => {
               </NavItem>
 
 
-              <NavItem>
-                <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
-                  to='inf1'
-                >
-                  EXTRA INFO
-                </NavLinks>
-              </NavItem>
 
               <NavItem>
                 <NavLinks
-                  style={{ color: '#ffff', fontFamily: 'Clone Rounded Latin' }}
+                  style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif"}}
+                  to='inf1'
+                >
+                  ABOUT US
+                </NavLinks>
+              </NavItem>
+
+
+
+              <NavItem>
+                <NavLinks
+                  style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to='team'
                 >
                   TEAM
@@ -122,8 +118,7 @@ const Navbar = () => {
                   >
                     <Button
                       style={{
-                        color: '#ffff',
-                        fontFamily: 'Clone Rounded Latin',
+                        fontFamily: " clone-rounded-latin, sans-serif",
                       }}
                     >
                       {' '}
@@ -137,7 +132,7 @@ const Navbar = () => {
                 )}
               </NavItemBtn>
             </NavMenu>
-          </Navbar_Contain>
+          </NavbarContain>
         </Nav>
       </IconContext.Provider>
     </>

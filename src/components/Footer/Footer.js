@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin,FaDiscord } from 'react-icons/fa';
 import logo from '../../img/logo/newLogo.png';
 
 import {
@@ -26,7 +26,7 @@ const Footer = () => {
     <>
       <FooterContainer id='footer'>
         <FooterSubscription>
-          <FooterSubHeading>EMAIL</FooterSubHeading>
+          <FooterSubHeading>Email</FooterSubHeading>
           <FooterSubText>
             <a
               href={'mailto:' + 'readingunihack@gmail.com'}
@@ -53,23 +53,18 @@ const Footer = () => {
                 Sponsorship
             </a>
               </FooterLink>
-              <FooterLink style={{ color: '#ffff' }} >
-              <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-              target="_blank"
-            style={{ color: '#FFF' }}
 
-            
-            >
-              MLH Code of Conduct
-              </a>
-              </FooterLink>
+
+
+
             </FooterLinksItems>
             <FooterLinksItems>
               <FooterLinkTitle>Contact Us </FooterLinkTitle>
+              <a href = 'https://linktr.ee/r.u.hacking' target="_blank">
               <FooterLink style={{ color: '#ffff' }} >
-                To keep up to date with all things R.U.Hacking? or have any
-                questions for us follow our social media pages
+              Get the latest updates from R.U.Hacking by following us on social media
               </FooterLink>
+              </a>
             </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -87,6 +82,19 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>RUHACKING © 2021</WebsiteRights>
             <SocialIcons>
+
+
+            <SocialIconLink
+                href="https://discord.gg/VfWm3nwsQF"
+                target="_blank"
+                aria-label="Discord"
+                style={{ color: '#FFF' }}
+
+              >
+                <FaDiscord />
+              </SocialIconLink>
+
+
               <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 target="_blank"
@@ -97,15 +105,6 @@ const Footer = () => {
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink
-                href="https://www.instagram.com/r.u.hacking/"
-                target="_blank"
-                aria-label="Instagram"
-                style={{ color: '#FFF' }}
-
-              >
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink
                 href="http://twitter.com/ReadingUniHack"
                 target="_blank"
                 aria-label="Twitter"
@@ -113,6 +112,15 @@ const Footer = () => {
 
               >
                 <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink
+                href="https://www.instagram.com/r.u.hacking/"
+                target="_blank"
+                aria-label="Instagram"
+                style={{ color: '#FFF' }}
+
+              >
+                <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
                 href="https://www.linkedin.com/company/ruhacking/"

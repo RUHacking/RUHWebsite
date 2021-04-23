@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-style: italic;
+  font-family: 'clone-rounded-latin',sans-serif;
 `;
 
 export const FooterSubscription = styled.section`
@@ -23,8 +23,7 @@ export const FooterSubscription = styled.section`
 `;
 
 export const FooterSubHeading = styled.h2`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans Unicode2',
-    'Lucida Sans Unicode2', Arial, Helvetica, sans-serif, sans-serif;
+  font-family: 'clone-rounded-latin',sans-serif;
   margin-bottom: 24px;
   font-size: 24px;
 `;

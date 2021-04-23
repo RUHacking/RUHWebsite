@@ -2,42 +2,45 @@
   --primary: #fff;
 }
 
-.btn {
+.btn1 {
   padding: 8px 20px;
   outline: none;
   border: none;
   cursor: pointer;
+
+  
 }
 
-.btn--primary {
+.btn--primary1 {
   background-color: var(--primary);
   color: #242424;
   border: 1px solid var(--primary);
 }
 
-.btn--outline {
+.btn--outline1 {
   background-color: transparent;
   color: #fff;
   padding: 8px 20px;
-  border:none;
   transition: all 0.5s ease-out;
 }
 
-.btn--medium {
+.btn--medium1 {
   padding: 8px 20px;
   font-size: 48px;
 }
 
-.btn--large {
+.btn--large1 {
   padding: 12px 26px;
   font-size: 30px;
 
 }
 
-.btn--large:hover,
-.btn--medium:hover {
+
+
+.btn--large1:hover,
+.btn--medium1:hover {
   transition: all 0.3s ease-out;
-  background: #16B8D8;
+  background: #EA5837;
   color: #242424;
 }
 

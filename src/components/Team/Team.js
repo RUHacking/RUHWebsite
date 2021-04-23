@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { Card, CardGroup, CardDeck } from 'react-bootstrap';
 
-import { TopLine,SmallTopLine } from './Team.elements';
+import { TopLine,SmallTopLine,SmallGap } from './Team.elements';
 import { Container } from '../../global_styles';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dan from '../../img/Dan.jpg';
@@ -16,7 +16,9 @@ import Savva from '../../img/Savva.jpg';
 import Neyma from '../../img/Neyma.jpg';
 import Dimitar from '../../img/Dimitar.jpg';
 import Anna from '../../img/Anna.jpg';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin,FaGithub,FaMailBulk } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import Image from 'react-bootstrap/Image'
+import { MdEmail } from 'react-icons/md';
 
 const SocialIcon = styled.div`
 display: none;
@@ -33,30 +35,25 @@ display: none;
 
 
 
-
-
-
-
-
 const Team = () => {
   return (
     <Container >
     <Container id="team">
 
-      <SmallTopLine style={{ fontFamily: 'Clone Rounded Latin' }}>
+      <SmallTopLine style={{ fontFamily: 'clone-rounded-latin,sans-serif'}}>
         Meet The Team  </SmallTopLine >
         </Container>
-
+         <SmallGap></SmallGap>
         <Container style={{ width: 'auto', height: 'auto' }} >
         <CardGroup>
           <CardDeck>
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Dan}  style={{ width: 'auto', height: 'auto' }} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Dan} fluid style={{ width: 'auto', height: 'auto' }} />
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin'  }}>
+                <Card.Title style={{ fontFamily:'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Daniel Broomhead
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white' }}>
                   President
                 </Card.Text>
 
@@ -66,9 +63,9 @@ const Team = () => {
                  href={'mailto:' + 'd.l.broomhead@student.reading.ac.uk'}
                  target="_blank"
                 aria-label="Email"
-                style={{ color: '#EA5837' }}
+                style={{ color: '#EA5837', }}
               >
-                <FaMailBulk />
+                <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -88,16 +85,17 @@ const Team = () => {
 
               </Card.Body>
             </Card>
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image
                 src={Nataliya}
+                fluid
                 style={{width: 'auto', height: 'auto' }}
               />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
-                  Nataliya Lazutkina
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white' }}>
+                Nataliya Lazutkina
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Vice-President
                 </Card.Text>
 
@@ -110,7 +108,7 @@ const Team = () => {
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -130,16 +128,17 @@ const Team = () => {
 
 
 
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image
                 src={Amadeusz}
+                fluid
                 style={{width: 'auto', height: 'auto' }}
               />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Amadeusz Wlodarczyk
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Secretary
                 </Card.Text>
 
@@ -153,7 +152,7 @@ const Team = () => {
                 aria-label="Email"
                 style={{ color: '#EA5837' }}
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 </SocialIcon>
@@ -162,17 +161,20 @@ const Team = () => {
           </CardDeck>
         </CardGroup>
 
+
+
+
         <TopLine></TopLine>
 
         <CardGroup>
           <CardDeck>
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Emily} style={{ width: 'auto', height: 'auto' }} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Emily} fluid style={{ width: 'auto', height: 'auto' }} />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title  style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Emily Man
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Social Secretary
                   </Card.Text>
 
@@ -185,7 +187,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -207,13 +209,13 @@ const Team = () => {
               </Card.Body>
             </Card>
 
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Joe} style={{ width: 'auto', height: 'auto'}} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Joe} fluid style={{ width: 'auto', height: 'auto'}} />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Joe McKeown
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Treasurer
                 </Card.Text>
 
@@ -226,7 +228,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
 
@@ -237,13 +239,13 @@ const Team = () => {
               </Card.Body>
             </Card>
 
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Savva} style={{ width: 'auto', height: 'auto' }} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Savva} fluid style={{ width: 'auto', height: 'auto' }} />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Savva Podkopov
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Welfare Officer
                 </Card.Text>
 
@@ -255,7 +257,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
 
@@ -272,13 +274,13 @@ const Team = () => {
 
         <CardGroup>
           <CardDeck>
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Neyma} style={{width: 'auto', height: 'auto'}} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Neyma} fluid style={{width: 'auto', height: 'auto'}} />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily:'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Neyma Siddiqui
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white' }}>
                   Google Dev Rep
                 </Card.Text>
 
@@ -290,7 +292,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -312,16 +314,17 @@ const Team = () => {
               </Card.Body>
             </Card>
 
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image
                 src={Dimitar}
+                fluid
                 style={{ width: 'auto', height: 'auto' }}
               />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Dimitar Spasov{' '}
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Designer
                 </Card.Text>
 
@@ -334,7 +337,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -356,13 +359,13 @@ const Team = () => {
               </Card.Body>
             </Card>
 
-            <Card style={{ textAlign: 'center' }}>
-              <Card.Img src={Anna} style={{width: 'auto', height: 'auto'}} />
+            <Card style={{ textAlign: 'center',border: 'none', background:'#454545' }}>
+              <Image src={Anna} fluid style={{width: 'auto', height: 'auto'}} />
               <Card.Body>
-                <Card.Title style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Title style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Anna Harding{' '}
                 </Card.Title>
-                <Card.Text style={{ fontFamily: 'Clone Rounded Latin' }}>
+                <Card.Text style={{ fontFamily: 'clone-rounded-latin,sans-serif',color:'white'  }}>
                   Designer
                 </Card.Text>
 
@@ -377,7 +380,7 @@ const Team = () => {
                 style={{ color: '#EA5837' }}
 
               >
-                <FaMailBulk />
+                 <MdEmail size={37}/>
                 </SocialIconLink>
 
                 <SocialIconLink>{" "}</SocialIconLink>  
@@ -400,6 +403,9 @@ const Team = () => {
             </Card>
           </CardDeck>
         </CardGroup>
+
+
+
 
       </Container>
       <TopLine></TopLine>
