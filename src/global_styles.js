@@ -1,12 +1,10 @@
 import styled, { createGlobalStyle } from 'styled-components';
-
 const GlobalStyles = createGlobalStyle`
 *{
 box-sizing: boarder-box;
 margin:0;
 padding:0;
-font-family: 'Source Sans Pro',sans-serif
-
+font-family: 'clone-rounded-latin',sans-serif
 }
 
 `;
@@ -28,7 +26,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#EA5837' : '#ff9966')};
+  background: ${({ primary }) => (primary ? '#ff9966' : '#EA5837')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
   color: #fff;
@@ -40,7 +38,7 @@ export const Button = styled.button`
   &:hover {
     transition: all 0.3s ease-ease-out;
     background: #fff;
-    background: ${({ primary }) => (primary ? '#ff9966' : '#EA5837')};
+    background: ${({ primary }) => (primary ? '#EA5837' : '#ff9966')};
   }
 
   @media screen and (max-width: 991px) {

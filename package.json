@@ -1,100 +1,56 @@
 {
-  "name": "ruhacking-site",
-  "description": "RUHacking Website",
-  "version": "0.0.1",
-  "author": "Milan Radojicic",
+  "name": "ruhacking",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.4",
-    "@fortawesome/free-brands-svg-icons": "^5.3.1",
-    "@fortawesome/free-solid-svg-icons": "^5.3.1",
-    "@fortawesome/react-fontawesome": "^0.1.3",
-    "@loadable/component": "^5.14.1",
-    "animated-scroll-to": "^1.2.2",
-    "babel-preset-gatsby": "^1.2.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^4.6.0",
-    "bulma": "^0.7.0",
-    "gatsby": "3.0.0-next.0",
-    "gatsby-plugin-netlify": "^2.0.0",
-    "gatsby-plugin-netlify-cms": "^3.0.0",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^4.2.0",
-    "gatsby-plugin-sharp": "^2.0.5",
-    "gatsby-remark-images": "^2.0.1",
-    "gatsby-source-filesystem": "^2.0.1",
-    "gatsby-transformer-remark": "^2.1.1",
-    "gatsby-transformer-sharp": "^2.1.1",
-    "history": "^5.0.0",
-    "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
-    "lodash-webpack-plugin": "^0.11.4",
-    "netlify-cms": "^2.1.1",
-    "node-sass": "^4.9.2",
-    "parcel-bundler": "^1.9.4",
-    "prop-types": "^15.6.0",
-    "reach-router": "^0.0.0",
-    "react": "^16.2.0",
-    "react-awesome-button": "^5.0.0",
-    "react-big-calendar": "^0.20.1",
+    "config-yml": "^0.10.3",
+    "file-loader": "^6.2.0",
+    "flexbox-react": "^4.4.0",
+    "react": "^17.0.2",
+    "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
-    "react-google-maps": "^9.4.5",
-    "react-helmet": "^5.2.0",
     "react-icons": "^4.2.0",
-    "react-router": "^5.2.0",
+    "react-progressive-image": "^0.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
-    "react-slick": "^0.23.1",
-    "redux-fetch-data": "^0.1.4",
-    "remark": "^9.0.0",
-    "remark-html": "^8.0.0",
-    "remark-preset-lint-recommended": "^3.0.2",
-    "sass": "^1.32.8",
-    "slick-carousel": "^1.8.1",
-    "styled-components": "^4.0.0-beta.2",
-    "uuid": "^3.2.1"
+    "styled-components": "^5.2.3",
+    "web-vitals": "^1.0.1",
+    "webpack": "4.44.2",
+    "webpack-dev-server": "3.11.1"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
-    "start": "npm run develop",
-    "clean": "rimraf .cache public",
-    "build": "npm run clean && gatsby build",
-    "dev": "npm run clean && gatsby develop",
-    "serve": "gatsby serve",
-    "format": "prettier --trailing-comma es5 --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "commitmsg": "commitlint -e",
-    "precommit": "lint-staged",
-    "lint": "eslint . && stylelint ./**/*.css"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "lint-staged": {
-    "linters": {
-      "*.{js,json}": [
-        "prettier --trailing-comma es5 --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-        "git add"
-      ],
-      "*.js": [
-        "eslint . --fix",
-        "git add"
-      ],
-      "*.css": "stylelint"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "rules": {
+      "no-useless-concat": "off",
+      "react/jsx-no-target-blank": "off"
+
     }
   },
-  "devDependencies": {
-    "@commitlint/cli": "7.1.2",
-    "@commitlint/config-angular": "7.1.2",
-    "commitlint": "^7.2.0",
-    "eslint": "5.5.0",
-    "eslint-plugin-react": "^7.11.1",
-    "husky": "0.14.3",
-    "lerna": "3.3.0",
-    "lint-staged": "7.2.2",
-    "prettier": "^1.7.4",
-    "rimraf": "^2.6.2",
-    "stylelint": "9.5.0",
-    "stylelint-config-standard": "18.2.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

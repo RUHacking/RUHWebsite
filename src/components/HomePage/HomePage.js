@@ -2,18 +2,28 @@ import React from 'react';
 import './HomePage.elements.css';
 import { Button } from './Button';
 import styled from 'styled-components';
+import { Button1 } from './Button1';
 
 
-const MargingTop = styled.p`
-  margin-bottom:200px;
+
+const SmallMarging = styled.p`
+  margin-bottom:50px;
 
 `
+const FooterHeading2 = styled.p`
+font-size: 50px;
+align-items: center;
+text-align: center;
+display: flex;
+
+`;
 
 const FooterHeading = styled.p`
-  font-size: 70px;
+  font-size: 100px;
   align-items: center;
   text-align: center;
   display: flex;
+
 `;
 
 const FooterSubHeading = styled.p`
@@ -33,7 +43,7 @@ export const InfoRow = styled.div`
 `;
 
 export const InfoSec = styled.div`
-  color: #fff;
+  color: #454545;
   background: ${({ lightBg }) => (lightBg ? '#ffff' : '#454545;')};
 `;
 
@@ -49,32 +59,53 @@ const AccordionSection = styled.div`
 
 function HomePage() {
   return (
+    
     <InfoSec id='Homepage'>
+            <link rel="stylesheet" href="https://use.typekit.net/vtd1gyc.css"></link>
+
    <AccordionSection> </AccordionSection>
       <d className="hero-container">
-        <source src="../../img/vid1.mp4" type="video/mp4" autoPlay loop muted />
+       
+       
         <FooterHeading
-          style={{ color: '#ea5837', fontFamily: 'Clone Rounded Latin' }}
-        >
-          R. U. Hacking? 2021 | Virtual Hackathon
+          style={{ color: '#ea5837',
+          class:"clone-rounded-latin,sans-serif"
+        }}        
+         >
+          R. U. Hacking? 2021
         </FooterHeading>
+        <FooterHeading2
+          style={{ color: '#ea5837',
+          class:"clone-rounded-latin,sans-serif"
+        }}        
+         >
+          24-Hour Virtual Hackathon
+        </FooterHeading2>
         <FooterSubHeading
-          style={{ color: '#16B8D8', fontFamily: 'Clone Rounded Latin' }}
+          style={{ color: '#16B8D8' }}
         >
-          26th - 27th June 2021
+          26th - 27th June
         </FooterSubHeading>
+        <SmallMarging></SmallMarging>
 
-        <div className="hero-btns">
+      <div>
           <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257" target="_blank">
-            <Button
-              className="btns"
-              buttonStyle="btn--outline"
-              buttonSize="btn--large"
+            <Button1
+            className="btns1"
+            buttonStyle="btn--outline1"
+            buttonSize="btn--large1"
+
             >
               Get Tickets
-            </Button>
+            </Button1>
           </a>
-          <a href="https://discord.gg/VfWm3nwsQF" target="_blank">
+
+          </div>
+          
+
+         <div>
+
+         <a href="https://discord.gg/VfWm3nwsQF" target="_blank">
           <Button
             className="btns"
             buttonStyle="btn--outline"
@@ -83,11 +114,31 @@ function HomePage() {
             Join Our Discord
           </Button>
           </a>
-        <MargingTop></MargingTop>
+
+         </div>
+        
+          <SmallMarging></SmallMarging>
+
+          <div className="hero-btns">
+          <a href="https://www.youtube.com/watch?v=SNJPWcs9lck" target="_blank">
+          <Button1
+            className="btns1"
+            buttonStyle="btn--outline1"
+            buttonSize="btn--large1"
+          >
+            Watch R. U. Hacking? 2019 ➡
+          </Button1>
+          </a>
         </div>
+
+
+
+
+        
+
       </d>
     </InfoSec>
   );
-}
+};
 
 export default HomePage;

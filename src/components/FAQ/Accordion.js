@@ -8,7 +8,10 @@ import {
 } from 'react-icons/io';
 import { Container } from '../../global_styles';
 
+export const SmallGap = styled.div`
 
+  padding-top: 150px;
+`;
 
 const FooterSubHeading = styled.p`
   font-size: 40px;
@@ -16,13 +19,10 @@ const FooterSubHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
-  font-style: italic;
+  font-family: 'clone-rounded-latin',sans-serif;
 `;
 
 
-const Background = styled.div`
-  background: #454545;
-`;
 
 
 const Dropdown = styled.div`
@@ -33,7 +33,7 @@ const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  font-style: italic;
+  font-family: 'clone-rounded-latin',sans-serif;
 
   border-radius: 25px;
 `;
@@ -59,7 +59,7 @@ const Wrap = styled.div`
   border-bottom: 20px solid #ffff;
   border-top: 20px solid #ffff;
   border-radius: 25px;
-  font-style: italic;
+  font-family: 'clone-rounded-latin',sans-serif;
 
   cursor: pointer;
 
@@ -112,8 +112,8 @@ export const Accordion = () => {
           );
         })}
       </IconContext.Provider>
-      
+      <SmallGap></SmallGap>
+
     </Container>
-    
   );
 };

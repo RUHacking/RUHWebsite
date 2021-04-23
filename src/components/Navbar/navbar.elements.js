@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Container } from '../../global_styles';
 import { Link as LinkS } from 'react-scroll';
-
+import { Container } from '../../global_styles';
 
 export const Nav = styled.nav`
   background: #454545;
@@ -16,7 +15,7 @@ export const Nav = styled.nav`
   z-index: 999;
 `;
 
-export const Navbar_Contain = styled(Container)`
+export const NavbarContain = styled(Container)`
   display: flex;
   justify-content: space-between;
   height: 80px;
@@ -36,6 +35,7 @@ export const NavLogo = styled(Link)`
 
 export const ICON = styled.div`
   display: none;
+  
 
   @media screen and (max-width: 960px) {
     display: block;
@@ -70,6 +70,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 80px;
+
+
   border-bottom: 2px solid transparent;
   &:hover {
     border-bottom: 2px solid none;
@@ -111,6 +113,7 @@ export const NavItemBtn = styled.li`
     align-items: center;
     width: 100%;
     height: 180px;
+
   }
 `;
 export const NavBtnLink = styled(LinkS)`
@@ -124,3 +127,12 @@ export const NavBtnLink = styled(LinkS)`
   border: none;
   outline: none;
 `;
+
+
+
+
+export const SmallMarging = styled.p`
+  margin-bottom:50px;
+  background:#454545;
+
+`

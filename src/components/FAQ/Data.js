@@ -26,7 +26,7 @@ export const Data = [
   },
 
   {
-    question: 'What should i bring?',
+    question: 'What should I bring?',
     answer:
       'Due to the ongoing pandemic, we will be hosting our event online. All you need is you and your laptop! Further details ensue upon sign-up!',
   },

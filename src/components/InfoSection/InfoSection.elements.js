@@ -34,7 +34,7 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
-  font-style: italic;
+  font-family: 'clone-rounded-latin',sans-serif;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
@@ -47,17 +47,20 @@ export const TopLine = styled.div`
   line-height: 16px;
   letter-spacing: 1.4px;
   margin-bottom: 16px;
+
 `;
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 45px;
+  font-size: 50px;
   line-height: 1.1;
   color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#1c2237')};
+
+
 `;
 
 export const Subtitle = styled.p`
-  max-width: 600px;
+  max-width:440px;
   margin-bottom: 35px;
   font-size: 25px;
   line-height: 24px;
@@ -67,7 +70,7 @@ export const Subtitle = styled.p`
 
 
 export const ImgWrapper = styled.div`
-  max-width: 1200px;
+  max-width: 555px;
   display: flex;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 `;
@@ -79,3 +82,4 @@ export const img = styled.img`
   display: inline-block;
   max-height: 500px;
 `;
+

@@ -8,8 +8,7 @@ export const InfoSec = styled.div`
 `;
 
 export const FooterSubHeading = styled.p`
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Sans Unicode2',
-    'Lucida Sans Unicode2', Arial, Helvetica, sans-serif, sans-serif;
+  font-family: 'clone-rounded-latin',sans-serif;
   margin-bottom: 24px;
   font-size: 24px;
 `;
@@ -22,10 +21,11 @@ export const InfoRow = styled.div`
 
 export const ImgWrapper = styled.div`
   max-width: 500px;
-  width: 250px;
+  width:250px;
   display: flex;
   margin-bottom: 40px;
   align-items: center;
+  display: inline-block;
 `;
 export const img = styled.img`
   max-width: 200%;
@@ -33,6 +33,11 @@ export const img = styled.img`
   align-items: center;
 `;
 
+
+export const ImgWrapper1 = styled.div`
+   margin-left: auto;
+    margin-right: auto;
+`;
 /*NEW*/
 
 export const SponsorLinksContainer = styled.div`
@@ -77,6 +82,8 @@ export const SponsorLinkTitle = styled.h2`
   font-size: 50px;
   color: #000000;
   text-align: center;
+  font-family: 'clone-rounded-latin',sans-serif;
+
 `;
 
 export const SponsorContainer = styled.div`
