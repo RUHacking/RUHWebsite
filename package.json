@@ -1,6 +1,5 @@
 {
-  "name": "ruhacking-site",
-  "description": "RUHacking Website",
+  "name": "ruhacking",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

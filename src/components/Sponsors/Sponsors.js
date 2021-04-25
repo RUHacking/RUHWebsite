@@ -76,6 +76,7 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                 <TopLine></TopLine>
                 <SponsorLinkTitle
                   style={{
+
                     
                     color: '#C0C0C0',
                   }}
