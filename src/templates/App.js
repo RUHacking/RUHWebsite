@@ -13,7 +13,7 @@ function App() {
     <GlobalStyle/>
       <Navbar />
       <Switch>
-      <Route component={Home} />
+      <Route  component={Home} />
       </Switch>
       <Footer/>
     </Router>
