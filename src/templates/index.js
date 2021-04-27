@@ -54,7 +54,7 @@ export const IndexPageTemplate = ({
                     color: '#16b8d8',
                   }}
                 >
-                  R. U. Hacking? 2021
+                  {hero.title}
                 </h1>
               </div>
             </div>
