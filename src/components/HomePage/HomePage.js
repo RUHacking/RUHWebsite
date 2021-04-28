@@ -6,6 +6,16 @@ import { Button1 } from './Button1';
 
 
 
+
+
+
+
+
+
+
+
+
+
 const SmallMarging = styled.p`
   margin-bottom:50px;
 
@@ -23,7 +33,7 @@ const FooterHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
-
+  text-size-adjust: auto;
 `;
 
 const FooterSubHeading = styled.p`
@@ -45,17 +55,10 @@ export const InfoRow = styled.div`
 export const InfoSec = styled.div`
   color: #454545;
   background: ${({ lightBg }) => (lightBg ? '#ffff' : '#454545;')};
+
 `;
 
-const AccordionSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  background: #454545;
-  z-index: -2;
-`;
+
 
 function HomePage() {
   return (
@@ -63,10 +66,9 @@ function HomePage() {
     <InfoSec id='Homepage'>
             <link rel="stylesheet" href="https://use.typekit.net/vtd1gyc.css"></link>
 
-   <AccordionSection> </AccordionSection>
       <d className="hero-container">
        
-       
+
         <FooterHeading
           style={{ color: '#ea5837',
           class:"clone-rounded-latin,sans-serif"
