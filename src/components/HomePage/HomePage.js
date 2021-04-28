@@ -29,7 +29,7 @@ display: flex;
 `;
 
 const FooterHeading = styled.p`
-  font-size: 10vw;
+  font-size: 8vw;
   align-items: center;
   text-align: center;
   display: flex;
