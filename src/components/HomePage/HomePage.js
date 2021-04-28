@@ -21,7 +21,7 @@ const SmallMarging = styled.p`
 
 `
 const FooterHeading2 = styled.p`
-font-size: 3.5vw;
+font-size: 5vw;
 align-items: center;
 text-align: center;
 display: flex;
@@ -29,14 +29,14 @@ display: flex;
 `;
 
 const FooterHeading = styled.p`
-  font-size: 7vw;
+  font-size: 10vw;
   align-items: center;
   text-align: center;
   display: flex;
 `;
 
 const FooterSubHeading = styled.p`
-  font-size: 3.5vw;
+  font-size: 5vw;
   color: #ffff;
   align-items: center;
   text-align: center;
@@ -118,7 +118,6 @@ function HomePage() {
 
          </div>
         
-          <SmallMarging></SmallMarging>
 
           <div className="hero-btns">
           <a href="https://www.youtube.com/watch?v=SNJPWcs9lck" target="_blank">
