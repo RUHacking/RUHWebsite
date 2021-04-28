@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Button } from '../../global_styles'
 import Image from 'react-bootstrap/Image'
+import { Card } from 'react-bootstrap';
+
 
 import {
   InfoSec,
@@ -59,7 +61,9 @@ const InfoSection = ({
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
+                <Card style = {{border: 'none'}}>
               <Image src={img} fluid  alt={alt} />
+              </Card>
               </ImgWrapper>
             </InfoColumn>
           </InfoRow>
