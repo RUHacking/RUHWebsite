@@ -16,7 +16,7 @@ import {
   HomeObjectFive,
 } from './Data';
 
-const Home = () => {
+const Home = () =>  {
   return (
     <>
       <HomePage />
