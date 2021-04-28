@@ -21,7 +21,7 @@ const SmallMarging = styled.p`
 
 `
 const FooterHeading2 = styled.p`
-font-size: 50px;
+font-size: 3.5vw;
 align-items: center;
 text-align: center;
 display: flex;
@@ -29,15 +29,14 @@ display: flex;
 `;
 
 const FooterHeading = styled.p`
-  font-size: 100px;
+  font-size: 7vw;
   align-items: center;
   text-align: center;
   display: flex;
-  text-size-adjust: auto;
 `;
 
 const FooterSubHeading = styled.p`
-  font-size: 50px;
+  font-size: 3.5vw;
   color: #ffff;
   align-items: center;
   text-align: center;
