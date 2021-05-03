@@ -50,7 +50,7 @@ const Footer = () => {
             
             >
 
-                MLH code of conduct
+           MLH Code Of Conduct
             </a>
               </FooterLink>
 
