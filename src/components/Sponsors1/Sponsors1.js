@@ -15,6 +15,7 @@ import HackathonsUk from '../../img/HackathonsUk.png';
 import ThamesValleyAiHub from '../../img/ThamesValleyAiHub (1) (2).png';
 import Bayer from '../../img/Bayer_LifeHub_UK_Logo.png';
 import Institute_of_Technology from '../../img/Institute_of_Technology_-_Gold_Sponsor.png';
+import mlh from '../../img/mlh-logo-color.png';
 
 
 
@@ -111,8 +112,15 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
 
         <CardGroup style={{ width: '100%', height: 'auto' }}>
           <CardDeck>
+           
 
-
+          <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank">
+              <Image src={mlh} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
 
           <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://www.tvaihub.co.uk/" target="_blank">

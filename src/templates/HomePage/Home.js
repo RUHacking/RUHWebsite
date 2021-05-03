@@ -19,6 +19,7 @@ import {
 const Home = () => {
   return (
     <>
+      
       <HomePage />
       <InfoSection3 {...HomeObjectTwo} />
       <FAQ />
