@@ -3,6 +3,8 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
 import logo from '../../img/logo/newLogo.png';
+import Image from 'react-bootstrap/Image';
+import { Card } from 'react-bootstrap';
 
 import {
   Nav,
@@ -48,7 +50,8 @@ const Navbar = () => {
                 style={{ width: 'auto', height: 70, marginRight: 7 }}
               />
               <NavLinks
-                style={{ color: '#ffff', fontfamily: " clone-rounded-latin, sans-serif"}}
+                style={{ color: '#ffff', fontfamily: " clone-rounded-latin, sans-serif"
+              }}
                 
               >
                 {' '}
@@ -110,7 +113,8 @@ const Navbar = () => {
               </NavItem>
 
 
-
+              <NavItem>
+              <NavLinks>
               <NavItemBtn>
                 {button ? (
                   <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257"
@@ -131,14 +135,36 @@ const Navbar = () => {
                   </NavBtnLink>
                 )}
               </NavItemBtn>
+              </NavLinks>
+              </NavItem>
             </NavMenu>
+
+            <Card style = {{border: 'none',background:'#454545'}}>
+            <a id="mlh-trust-badge" 
+            style={{display:'block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000'}}
+            href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" 
+            target="_blank"><Image src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" fluid
+            alt="Major League Hacking 2021 Hackathon Season" style={{width:'100%'}} />
+            </a>
+          </Card>
+
+
+
+
           </NavbarContain>
+
         </Nav>
       </IconContext.Provider>
+
     </>
   );
 };
 
 export default Navbar;
+
+
+
+
+
 
 

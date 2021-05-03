@@ -127,6 +127,10 @@ const Sponsors = ({ lightBg, imgStart, alt, start }) => {
                         <Image src={ThamesValleyAiHub} fluid alt={alt} />
                       </a>
                     </ImgWrapper>
+
+                    <GapForSponsors></GapForSponsors>
+
+
                   </InfoRow>
                 </SponsorLinkTitle>
               </SponsorLinksItems>
