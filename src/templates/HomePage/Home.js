@@ -8,6 +8,7 @@ import InfoSection3 from '../../components/InfoSection3/InfoSection3';
 import { InfoSection } from '../../components';
 import HomePage from '../../components/HomePage/HomePage';
 import Sponsors1 from '../../components/Sponsors1/Sponsors1';
+import Preloder from '../../components/Preloder/Preloder';
 
 import {
   HomeObjectOne,
@@ -19,6 +20,8 @@ import {
 const Home = () => {
   return (
     <>
+      
+      <Preloder />
       <HomePage />
       <InfoSection3 {...HomeObjectTwo} />
       <FAQ />
