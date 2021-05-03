@@ -43,6 +43,19 @@ const Footer = () => {
               <FooterLinkTitle>Useful Links </FooterLinkTitle>
               <FooterLink style={{ color: '#ffff' }} >
              
+            <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+            target="_blank"
+            style={{ color: '#FFF' }}
+
+            
+            >
+
+                MLH code of conduct
+            </a>
+              </FooterLink>
+
+              <FooterLink style={{ color: '#ffff' }} >
+             
             <a href="chrome-extension://oemmndcbldboiebfnladdacbdfmadadm/https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
             target="_blank"
             style={{ color: '#FFF' }}
@@ -53,8 +66,6 @@ const Footer = () => {
                 Sponsorship
             </a>
               </FooterLink>
-
-
 
 
             </FooterLinksItems>
