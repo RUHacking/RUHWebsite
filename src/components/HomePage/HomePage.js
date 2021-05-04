@@ -21,26 +21,37 @@ const SmallMarging = styled.p`
 
 `
 const FooterHeading2 = styled.p`
-font-size: 5vw;
-align-items: center;
-text-align: center;
-display: flex;
+  max-width:840px;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+
 
 `;
 
 const FooterHeading = styled.p`
-  font-size: 8vw;
+  max-width:840px;
+  font-size: 75px;
   align-items: center;
   text-align: center;
-  display: flex;
-`;
+  flex-direction: column;
+  position: relative;
+
+  `;
+
+
+
+
 
 const FooterSubHeading = styled.p`
-  font-size: 5vw;
-  color: #ffff;
+  max-width:840px;
+  font-size: 25px;
   align-items: center;
   text-align: center;
-  display: flex;
+  flex-direction: column;
+  position: relative;
 
 `;
 
@@ -75,6 +86,8 @@ function HomePage() {
          >
           R. U. Hacking? 2021
         </FooterHeading>
+
+
         <FooterHeading2
           style={{ color: '#ea5837',
           class:"clone-rounded-latin,sans-serif"

@@ -30,8 +30,12 @@
 }
 
 .btn--large1 {
-  padding: 12px 26px;
-  font-size: 2.5vw;
+  max-width:840px;
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
 
 }
 
