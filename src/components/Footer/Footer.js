@@ -45,8 +45,8 @@ const Footer = () => {
              
             <a href ="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
             target="_blank"
-            style={{ color: '#FFF' }}
-
+            style={{ color: '#FFF'}}
+            
             
             >
 
