@@ -3,8 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
 import logo from '../../img/logo/newLogo.png';
-import Image from 'react-bootstrap/Image';
-import { Card } from 'react-bootstrap';
+
 
 import {
   Nav,
@@ -139,20 +138,17 @@ const Navbar = () => {
               </NavItem>
             </NavMenu>
 
-            <NavItem>
-            <NavLinks>
-            <Card style = {{border: 'none',background:'#454545',marginTop: 30,marginLeft: 40}}>
-            <a id="mlh-trust-badge" 
-            style={{display:'block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000'}} 
-            href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" 
-            target="_blank"><Image src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" 
-            alt="Major League Hacking 2021 Hackathon Season" style={{width:'100%'}}/>
-            </a>
-          </Card> 
-          </NavLinks>
-          </NavItem>
+            <NavLogo >
+              <NavLinks>
 
-
+              <img
+                src={"https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" }
+                alt="Major League Hacking 2021 Hackathon Season"
+                style={{ width: 'auto', height: 120, marginRight: 7,marginTop: 60,zIndex: 1}}
+              />
+           
+            </NavLinks>
+              </NavLogo>
 
 
           </NavbarContain>
