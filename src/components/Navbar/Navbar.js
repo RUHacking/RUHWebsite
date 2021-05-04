@@ -138,7 +138,10 @@ const Navbar = () => {
               </NavItem>
             </NavMenu>
 
-            <NavLogo >
+
+
+          </NavbarContain>
+          <NavLogo >
               <NavLinks>
 
               <img
@@ -149,10 +152,6 @@ const Navbar = () => {
            
             </NavLinks>
               </NavLogo>
-
-
-          </NavbarContain>
-
         </Nav>
       </IconContext.Provider>
 

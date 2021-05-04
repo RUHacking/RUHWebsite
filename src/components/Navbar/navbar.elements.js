@@ -42,7 +42,7 @@ export const ICON = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-500%, 60%);
+    transform: translate(-400%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
   }
