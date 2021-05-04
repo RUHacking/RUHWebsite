@@ -33,7 +33,7 @@ const FooterHeading2 = styled.p`
 
 const FooterHeading = styled.p`
   max-width:840px;
-  font-size: 75px;
+  font-size: 40px;
   align-items: center;
   text-align: center;
   flex-direction: column;
