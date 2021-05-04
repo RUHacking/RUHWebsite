@@ -11,6 +11,7 @@
     "config-yml": "^0.10.3",
     "file-loader": "^6.2.0",
     "flexbox-react": "^4.4.0",
+    "pdfjs": "^2.4.3",
     "react": "^17.0.2",
     "react-awesome-button": "^6.5.1",
     "react-bootstrap": "^1.5.2",
@@ -39,7 +40,6 @@
     "rules": {
       "no-useless-concat": "off",
       "react/jsx-no-target-blank": "off"
-
     }
   },
   "browserslist": {
