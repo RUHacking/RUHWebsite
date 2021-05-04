@@ -41,8 +41,8 @@ const Navbar = () => {
     <>
       <IconContext.Provider value={{ color: '#ea5837 ' }}>
         <Nav>
-          <NavbarContain>
-            <NavLogo >
+          <NavbarContain >
+            <NavLogo>
               <img
                 src={logo}
                 alt="RUHacking Logo"
@@ -57,12 +57,14 @@ const Navbar = () => {
                 R. U. Hacking?{' '}
               </NavLinks>
             </NavLogo>
+            
             <ICON onClick={handleClcick}>
               {click ? <FaTimes /> : <FaBars />}
             </ICON>
-            <NavMenu onClick={handleClcick} click={click}>
-              <NavItem>
+            <NavMenu onClick={handleClcick} click={click} >
+              <NavItem >
                 <NavLinks
+                onClick={handleClcick}
                   style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif"}}
                   to='Homepage'
                 >
@@ -73,6 +75,7 @@ const Navbar = () => {
 
               <NavItem>
                 <NavLinks
+                 onClick={handleClcick}
                   style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to="faq"
                 >
@@ -82,6 +85,7 @@ const Navbar = () => {
 
               <NavItem>
                 <NavLinks
+                 onClick={handleClcick}
                   style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to="inf2"
                 >
@@ -93,6 +97,7 @@ const Navbar = () => {
 
               <NavItem>
                 <NavLinks
+                 onClick={handleClcick}
                   style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif"}}
                   to='inf1'
                 >
@@ -104,6 +109,7 @@ const Navbar = () => {
 
               <NavItem>
                 <NavLinks
+                 onClick={handleClcick}
                   style={{ color: '#ffff',  fontfamily: " clone-rounded-latin, sans-serif" }}
                   to='team'
                 >
