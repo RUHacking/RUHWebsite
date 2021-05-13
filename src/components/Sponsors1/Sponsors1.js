@@ -16,6 +16,7 @@ import ThamesValleyAiHub from '../../img/ThamesValleyAiHub (1) (2).png';
 import Bayer from '../../img/Bayer_LifeHub_UK_Logo.png';
 import Institute_of_Technology from '../../img/Institute_of_Technology_-_Gold_Sponsor.png';
 import mlh from '../../img/mlh-logo-color.png';
+import BCS from '../../img/bcs-logo.svg';
 
 
 
@@ -139,7 +140,13 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
 
-
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.bcs.org/" target="_blank">
+              <Image src={BCS} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
 
           </CardDeck>
         </CardGroup>

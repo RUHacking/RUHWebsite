@@ -6,7 +6,7 @@ import InfoSection2 from '../../components/InfoSection2/InfoSection2';
 import InfoSection3 from '../../components/InfoSection3/InfoSection3';
 
 import { InfoSection } from '../../components';
-import Sponsors from '../../components/Sponsors/Sponsors';
+import Sponsors1 from '../../components/Sponsors1/Sponsors1';
 import HomePage from '../../components/HomePage/HomePage';
 
 import {
@@ -24,7 +24,7 @@ const Home = () =>  {
       <FAQ />
       <InfoSection2 {...HomeObjectFour} />
       <FooterSubHeading>
-        <Sponsors {...HomeObjectFive} />
+        <Sponsors1 {...HomeObjectFive} />
       </FooterSubHeading>
       <InfoSection {...HomeObjectOne} />
       <Team />
