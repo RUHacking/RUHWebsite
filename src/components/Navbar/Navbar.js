@@ -119,7 +119,7 @@ const Navbar = () => {
 
 
               <NavItem>
-              <NavLinks>
+              <NavLinks onClick={button}>
               <NavItemBtn>
                 {button ? (
                   
@@ -147,15 +147,17 @@ const Navbar = () => {
 
 
           </NavbarContain>
+
           <NavLogo >
-              <NavLinks>
+              <NavLinks >
 
               <img
                 src={"https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" }
                 alt="Major League Hacking 2021 Hackathon Season"
                 style={{ width: 'auto', height: 120, marginRight: 7,marginTop: 40,zIndex: 1}}
               />
-           
+                
+
             </NavLinks>
               </NavLogo>
         </Nav>
