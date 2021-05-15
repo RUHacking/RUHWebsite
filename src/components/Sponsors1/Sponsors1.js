@@ -17,6 +17,7 @@ import Bayer from '../../img/Bayer_LifeHub_UK_Logo.png';
 import Institute_of_Technology from '../../img/Institute_of_Technology_-_Gold_Sponsor.png';
 import mlh from '../../img/mlh-logo-color.png';
 import BCS from '../../img/bcs-logo.svg';
+import Citrix from '../../img/Citrix_Logo_Trademark_adobespark.png';
 
 
 
@@ -39,6 +40,16 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
         </SmallTopLine>
         <CardGroup>
           <CardDeck>
+
+          <InfoRow >
+            <Card style={{width: 'auto', height: 'auto',border: 'none' }}>
+            <a href="https://www.citrix.com/en-gb/" target="_blank">
+              <Image src={Citrix} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto', backgroundColor:'#ffff'}}>
+              </Card.Body>
+            </Card>
+             </InfoRow>
 
           <InfoRow>
             <Card style={{ width: 'auto', height: 'auto',border: 'none' }}>
@@ -69,6 +80,7 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
              </InfoRow>
+
 
 
           </CardDeck>
