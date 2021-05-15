@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import { Container, Card, CardGroup, CardDeck } from 'react-bootstrap';
+import { Button } from '../../global_styles';
 
 import { TopLine,SmallTopLine,Title,InfoRow } from './Sponsors1.elements';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -91,11 +92,11 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
         Silver  </SmallTopLine >
 
         <CardGroup style={{ width: 'auto', height: 'auto' }}>
-          <CardDeck>
-
-
-
-          </CardDeck>
+        <a href="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf" target="_blank">
+        <Button>
+        Do you want your logo here? Become a sponsor!
+          </Button>
+          </a>          
         </CardGroup>
 
 

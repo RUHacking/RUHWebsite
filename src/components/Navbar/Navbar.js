@@ -122,9 +122,9 @@ const Navbar = () => {
               <NavLinks>
               <NavItemBtn>
                 {button ? (
-                  <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257"
-                  target="_blank"
-                  >
+                  
+                  <a href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257" target="_blank">
+
                     <Button
                       style={{
                         fontFamily: " clone-rounded-latin, sans-serif",
@@ -153,7 +153,7 @@ const Navbar = () => {
               <img
                 src={"https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" }
                 alt="Major League Hacking 2021 Hackathon Season"
-                style={{ width: 'auto', height: 120, marginRight: 7,marginTop: 60,zIndex: 1}}
+                style={{ width: 'auto', height: 120, marginRight: 7,marginTop: 40,zIndex: 1}}
               />
            
             </NavLinks>
