@@ -150,16 +150,24 @@ const Navbar = () => {
 
           <NavLogo >
               <NavLinks >
+            
 
-              <img
+
+
+              <img onClick='click'
                 src={"https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" }
                 alt="Major League Hacking 2021 Hackathon Season"
                 style={{ width: 'auto', height: 120, marginRight: 7,marginTop: 40,zIndex: 1}}
               />
-                
+              
+
+         
+           
 
             </NavLinks>
               </NavLogo>
+
+
         </Nav>
       </IconContext.Provider>
 
@@ -168,10 +176,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
-
-
-
-
-
