@@ -20,7 +20,7 @@ import mlh from '../../img/mlh-logo-color.png';
 import BCS from '../../img/bcs-logo.svg';
 import Citrix from '../../img/Citrix_Logo_Trademark_adobespark.png';
 
-
+import POSTMAN from '../../img/postman-logo-stacked.svg';
 
 
 
@@ -115,6 +115,15 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
 
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.20i.com/" target="_blank">
+              <Image src={POSTMAN} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+
           </CardDeck>
         </CardGroup>
 
@@ -129,16 +138,16 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
            
 
           <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank">
-              <Image src={mlh} fluid style={{ width: 'auto', height: 'auto' }} />
+            <a href="https://www.tvaihub.co.uk/" target="_blank">
+              <Image src={ThamesValleyAiHub} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
 
           <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.tvaihub.co.uk/" target="_blank">
-              <Image src={ThamesValleyAiHub} fluid style={{ width: 'auto', height: 'auto' }} />
+            <a href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank">
+              <Image src={mlh} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
