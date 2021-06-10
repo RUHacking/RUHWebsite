@@ -22,6 +22,8 @@ import Citrix from '../../img/Citrix_Logo_Trademark_adobespark.png';
 
 import POSTMAN from '../../img/postman-logo-stacked.svg';
 
+import StickerMule from '../../img/Sticker_Mule_Logo.png';
+import Cirrus from '../../img/Cirrus_Logo.png';
 
 
 
@@ -171,7 +173,24 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
             </Card>
 
 
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral" target="_blank">
+              <Image src={StickerMule} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+            
 
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.cirrusresponse.com/" target="_blank">
+              <Image src={Cirrus} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+            
+            
           </CardDeck>
         </CardGroup>
       </Container>
