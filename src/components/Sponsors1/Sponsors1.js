@@ -27,6 +27,8 @@ import Cirrus from '../../img/Cirrus_Logo.png';
 import SEROCU from '../../img/SEROCU_logo-1.png';
 import SSH from '../../img/SSH.png';
 import CSA from '../../img/Comp_Sci_affiliation.png';
+import hackproduction from '../../img/hackproduction.png';
+
 
 const Team1 = ({ lightBg, imgStart, alt, start } ) => {
   return (
@@ -221,7 +223,14 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
 
-
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://hack.productions/" target="_blank">
+              <Image src={hackproduction} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+            
 
           </CardDeck>
         </CardGroup>
