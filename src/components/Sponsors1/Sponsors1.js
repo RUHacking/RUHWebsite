@@ -24,7 +24,10 @@ import POSTMAN from '../../img/postman-logo-stacked.svg';
 
 import StickerMule from '../../img/Sticker_Mule_Logo.png';
 import Cirrus from '../../img/Cirrus_Logo.png';
-
+import SEROCU from '../../img/SEROCU_logo-1.png';
+import SSH from '../../img/SSH.png';
+import CSA from '../../img/Comp_Sci_affiliation.png';
+import hackproduction from '../../img/hackproduction.png';
 
 
 const Team1 = ({ lightBg, imgStart, alt, start } ) => {
@@ -134,6 +137,15 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
 
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.cirrusresponse.com/" target="_blank">
+              <Image src={Cirrus} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+
           </CardDeck>
         </CardGroup>
 
@@ -174,6 +186,19 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
 
 
             <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://swagshiphack.dev/" target="_blank">
+              <Image src={SSH} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+
+
+            </CardDeck>
+
+            <CardDeck>
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral" target="_blank">
               <Image src={StickerMule} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
@@ -181,16 +206,32 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
             
-
             <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.cirrusresponse.com/" target="_blank">
-              <Image src={Cirrus} fluid style={{ width: 'auto', height: 'auto' }} />
+            <a href="https://serocu.police.uk/" target="_blank">
+              <Image src={SEROCU} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
             
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.reading.ac.uk/computer-science/" target="_blank">
+              <Image src={CSA} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://hack.productions/" target="_blank">
+              <Image src={hackproduction} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
             
+
           </CardDeck>
         </CardGroup>
       </Container>
