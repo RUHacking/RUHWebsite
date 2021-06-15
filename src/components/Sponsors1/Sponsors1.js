@@ -121,14 +121,13 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
         <CardGroup style={{ width: '50%', height: 'auto' }}>
           <CardDeck>
 
-            <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.20i.com/" target="_blank">
-              <Image src={S2Oi} fluid style={{ width: 'auto', height: 'auto' }} />
+          <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.cirrusresponse.com/" target="_blank">
+              <Image src={Cirrus} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
-
 
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://www.20i.com/" target="_blank">
@@ -139,9 +138,11 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
             </Card>
 
 
+
+
             <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.cirrusresponse.com/" target="_blank">
-              <Image src={Cirrus} fluid style={{ width: 'auto', height: 'auto' }} />
+            <a href="https://www.20i.com/" target="_blank">
+              <Image src={S2Oi} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
@@ -159,16 +160,15 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
         <CardGroup style={{ width: '100%', height: 'auto' }}>
           <CardDeck>
            
-
           <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.tvaihub.co.uk/" target="_blank">
-              <Image src={ThamesValleyAiHub} fluid style={{ width: 'auto', height: 'auto' }} />
+            <a href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral" target="_blank">
+              <Image src={StickerMule} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
 
-          <Card style={{ textAlign: 'center',border: 'none' }}>
+            <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://mlh.io/seasons/2021/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank">
               <Image src={mlh} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
@@ -185,7 +185,6 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               </Card.Body>
             </Card>
 
-
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://swagshiphack.dev/" target="_blank">
               <Image src={SSH} fluid style={{ width: 'auto', height: 'auto' }} />
@@ -199,14 +198,7 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
 
             <CardDeck>
 
-            <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral" target="_blank">
-              <Image src={StickerMule} fluid style={{ width: 'auto', height: 'auto' }} />
-              </a>
-              <Card.Body style={{ width: 'auto',height: 'auto'}}>
-              </Card.Body>
-            </Card>
-            
+
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://serocu.police.uk/" target="_blank">
               <Image src={SEROCU} fluid style={{ width: 'auto', height: 'auto' }} />
@@ -214,7 +206,7 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
-            
+
 
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://www.reading.ac.uk/computer-science/" target="_blank">
@@ -223,6 +215,15 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
             </Card>
+
+            <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.tvaihub.co.uk/" target="_blank">
+              <Image src={ThamesValleyAiHub} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+            
 
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://hack.productions/" target="_blank">
