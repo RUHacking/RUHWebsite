@@ -87,7 +87,16 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
             </Card>
              </InfoRow>
 
+             <InfoRow >
 
+             <Card style={{ textAlign: 'center',border: 'none' }}>
+            <a href="https://www.bcs.org/" target="_blank">
+              <Image src={BCS} fluid style={{ width: 'auto', height: 'auto' }} />
+              </a>
+              <Card.Body style={{ width: 'auto',height: 'auto'}}>
+              </Card.Body>
+            </Card>
+            </InfoRow >
 
           </CardDeck>
         </CardGroup>
@@ -124,14 +133,6 @@ const Team1 = ({ lightBg, imgStart, alt, start } ) => {
             <Card style={{ textAlign: 'center',border: 'none' }}>
             <a href="https://www.20i.com/" target="_blank">
               <Image src={POSTMAN} fluid style={{ width: 'auto', height: 'auto' }} />
-              </a>
-              <Card.Body style={{ width: 'auto',height: 'auto'}}>
-              </Card.Body>
-            </Card>
-
-            <Card style={{ textAlign: 'center',border: 'none' }}>
-            <a href="https://www.bcs.org/" target="_blank">
-              <Image src={BCS} fluid style={{ width: 'auto', height: 'auto' }} />
               </a>
               <Card.Body style={{ width: 'auto',height: 'auto'}}>
               </Card.Body>
