@@ -44,7 +44,7 @@ const Schedule = () => {
 <div class="row"  >
   <div class="column">
     <table >
-    <td colspan="2" class="table-active">Agenda 26th of June</td>
+    <th colspan="2" class="table-active">Agenda 26th of June</th>
       <tr>
         <th>TIME</th>
         <th>ACTIVITY</th>
@@ -61,7 +61,7 @@ const Schedule = () => {
         <td>10:00am</td>
         <td>Opening Ceremony</td>
       </tr>
-      <td colspan="2" class="table-active">Challenge introductions 26th of June</td>
+      <th colspan="2" class="table-active">Challenge introductions 26th of June</th>
       <tr>
         <th>TIME</th>
         <th>ACTIVITY</th>
@@ -110,7 +110,7 @@ const Schedule = () => {
   </div>
   <div class="column" >
     <table>
-    <td colspan="2" class="table-active">Department 26th of June</td>
+    <th colspan="2" class="table-active">Department 26th of June</th>
       <tr>
       <th>TIME</th>
         <th>ACTIVITY</th>
@@ -132,7 +132,7 @@ const Schedule = () => {
         <td>OVERNIGHT</td>
         <td>Chess Tournament</td>
       </tr>
-      <td colspan="2" class="table-active">Deadline 27th of June</td>
+      <th colspan="2" class="table-active">Deadline 27th of June</th>
       <tr>
       <th>TIME</th>
         <th>ACTIVITY</th>
