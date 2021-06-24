@@ -1,5 +1,7 @@
 import React from 'react';
 import FAQ from '../../components/FAQ/FAQ';
+import Schedule from '../../components/Schedule/Schedule';
+
 import Team from '../../components/Team/Team';
 import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
 import InfoSection2 from '../../components/InfoSection2/InfoSection2';
@@ -22,6 +24,7 @@ const Home = () => {
       
       <HomePage />
       <InfoSection3 {...HomeObjectTwo} />
+      <Schedule/>
       <FAQ />
       <InfoSection2 {...HomeObjectFour} />
       <FooterSubHeading>
