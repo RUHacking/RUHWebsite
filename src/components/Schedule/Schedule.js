@@ -44,7 +44,7 @@ const Schedule = () => {
 <div class="row"  >
   <div class="column">
     <table >
-    <th colspan="2" class="table-active">Sunday 26th June — Day 1</th>
+    <th colspan="2" class="table-active">Saturday 26th June — Day 1</th>
     <tr></tr>
     <th colspan="2" class="table-active">Agenda</th>
       <tr>
