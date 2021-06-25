@@ -42,15 +42,10 @@ const Schedule = () => {
 
 
 <div class="row"  >
-  <div class="column">
+<div class="column" >
     <table >
     <th colspan="2" class="table-active">Saturday 26th June — Day 1</th>
     <tr></tr>
-    <th colspan="2" class="table-active">Agenda</th>
-      <tr>
-        <th>TIME</th>
-        <th>ACTIVITY</th>
-      </tr>
       <tr>
         <td>09:00am</td>
         <td>Doors open, sponsor setup</td>
@@ -63,38 +58,37 @@ const Schedule = () => {
         <td>10:00am</td>
         <td>Opening Ceremony</td>
       </tr>
-      <th colspan="2" class="table-active">Challenge introductions</th>
-      <tr>
-        <th>TIME</th>
-        <th>ACTIVITY</th>
-      </tr>
       <tr>
         <td>11:15am</td>
-        <td>Zebra Workshop</td>
+        <td>Zebra Technologies Workshop</td>
       </tr>
       <tr>
         <td>12:00pm</td>
-        <td>Talk from SEROCU</td>
+        <td>SEROCU Talk</td>
       </tr>
       <tr>
         <td>12:30pm</td>
-        <td>Bayer LifeHub UK</td>
+        <td>Bayer LifeHub UK Workshop</td>
       </tr>
       <tr>
         <td>13:15pm</td>
-        <td>Postman API Workshop</td>
+        <td>BCS Q+A</td>
       </tr>
       <tr>
-        <td>14:15pm</td>
+        <td>13:45pm</td>
         <td>Savva’s ASCII Challenge</td>
       </tr>
       <tr>
-        <td>15:00pm</td>
-        <td>Cirrus Response</td>
+        <td>14:00pm</td>
+        <td>Lunch Break</td>
       </tr>
       <tr>
-        <td>16:00pm</td>
-        <td>BCS Q+A</td>
+        <td>14:30pm</td>
+        <td>Cirrus Response Workshop</td>
+      </tr>
+      <tr>
+        <td>15:30pm</td>
+        <td>Postman API Workshop</td>
       </tr>
       <tr>
         <td>16:30pm</td>
@@ -106,42 +100,33 @@ const Schedule = () => {
       </tr>
       <tr>
         <td>18:00pm</td>
-        <td>UoR Computer Science Department Talk</td>
-      </tr>
-      <th colspan="2" class="table-active">Department</th>
-      <tr>
-      <th>TIME</th>
-        <th>ACTIVITY</th>
+        <td>Computer Science Department Talk</td>
       </tr>
       <tr>
         <td>19:00pm</td>
-        <td>Pictionary > Hackathons UK</td>
+        <td>Pictionary - Hackathons UK</td>
       </tr>
       <tr>
         <td>20:00pm</td>
-        <td>MLH Werewolf </td>
+        <td>MLH Werewolf</td>
       </tr>
+
       <tr>
         <td>23:00pm</td>
         <td>Quiz</td>
       </tr>
-
       <tr>
         <td>OVERNIGHT</td>
         <td>Chess Tournament</td>
       </tr>
-    </table>
+      </table>
   </div>
+
   <div class="column" >
 
     <table>
     <th colspan="2" class="table-active">Sunday 27th June — Day 2</th>
       <tr></tr>
-      <th colspan="2" class="table-active">Deadline</th>
-      <tr>
-      <th>TIME</th>
-        <th>ACTIVITY</th>
-      </tr>
       <tr>
       <td>9:00am</td>
         <td>Soft Deadline</td>
@@ -152,11 +137,11 @@ const Schedule = () => {
       </tr>
       <tr>
         <td>11:00am</td>
-        <td>MLH Werewolf </td>
+        <td>Judging</td>
       </tr>
       <tr>
         <td>1:00pm</td>
-        <td>Quiz</td>
+        <td>Closing Ceremony & Prize Giving</td>
       </tr>
       <tr>
         <td>2:00pm</td>
