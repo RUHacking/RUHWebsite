@@ -44,7 +44,9 @@ const Schedule = () => {
 <div class="row"  >
   <div class="column">
     <table >
-    <th colspan="2" class="table-active">Agenda 26th of June</th>
+    <th colspan="2" class="table-active">Sunday 26th June — Day 1</th>
+    <tr></tr>
+    <th colspan="2" class="table-active">Agenda</th>
       <tr>
         <th>TIME</th>
         <th>ACTIVITY</th>
@@ -61,7 +63,7 @@ const Schedule = () => {
         <td>10:00am</td>
         <td>Opening Ceremony</td>
       </tr>
-      <th colspan="2" class="table-active">Challenge introductions 26th of June</th>
+      <th colspan="2" class="table-active">Challenge introductions</th>
       <tr>
         <th>TIME</th>
         <th>ACTIVITY</th>
@@ -106,11 +108,7 @@ const Schedule = () => {
         <td>18:00pm</td>
         <td>UoR Computer Science Department Talk</td>
       </tr>
-    </table>
-  </div>
-  <div class="column" >
-    <table>
-    <th colspan="2" class="table-active">Department 26th of June</th>
+      <th colspan="2" class="table-active">Department</th>
       <tr>
       <th>TIME</th>
         <th>ACTIVITY</th>
@@ -132,7 +130,14 @@ const Schedule = () => {
         <td>OVERNIGHT</td>
         <td>Chess Tournament</td>
       </tr>
-      <th colspan="2" class="table-active">Deadline 27th of June</th>
+    </table>
+  </div>
+  <div class="column" >
+
+    <table>
+    <th colspan="2" class="table-active">Sunday 27th June — Day 2</th>
+      <tr></tr>
+      <th colspan="2" class="table-active">Deadline</th>
       <tr>
       <th>TIME</th>
         <th>ACTIVITY</th>
