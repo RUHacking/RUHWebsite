@@ -100,11 +100,11 @@ const Schedule = () => {
       </tr>
       <tr>
         <td>17:00pm</td>
-        <td>Blackrock Challenge</td>
+        <td>BlackRock Challenge</td>
       </tr>
       <tr>
         <td>18:00pm</td>
-        <td>Computer Science</td>
+        <td>UoR Computer Science Department Talk</td>
       </tr>
     </table>
   </div>
