@@ -1,25 +1,14 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin,FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import logo from '../../img/logo/newLogo.png';
-
 import {
-  FooterContainer,
-  FooterSubHeading,
+  FooterContainer, FooterLink, FooterLinksContainer, FooterLinksItems, FooterLinksWrapper, FooterLinkTitle, FooterSubHeading,
   FooterSubscription,
-  FooterSubText,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinksItems,
-  FooterLinkTitle,
-  FooterLink,
-  SocialMedia,
+  FooterSubText, SocialIcon, SocialIconLink, SocialIcons, SocialLogo, SocialMedia,
   SocialMediaWrap,
-  WebsiteRights,
-  SocialIcons,
-  SocialIconLink,
-  SocialIcon,
-  SocialLogo,
+  WebsiteRights
 } from './Footer.elements';
+
 
 const Footer = () => {
   return (
@@ -92,7 +81,7 @@ const Footer = () => {
               />
               <FooterLink style={{ color: '#ffff' }}> R.U.HACKING? </FooterLink>
             </SocialLogo>
-            <WebsiteRights>RUHACKING © 2021</WebsiteRights>
+            <WebsiteRights>RUHACKING © 2022</WebsiteRights>
             <SocialIcons>
 
 

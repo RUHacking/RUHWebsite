@@ -1,8 +1,8 @@
 import React from 'react';
-import './HomePage.elements.css';
-import { Button } from './Button';
 import styled from 'styled-components';
+import { Button } from './Button';
 import { Button1 } from './Button1';
+import './HomePage.elements.css';
 
 
 
@@ -84,7 +84,7 @@ function HomePage() {
           class:"clone-rounded-latin,sans-serif"
         }}        
          >
-          R. U. Hacking? 2021
+          R. U. Hacking? 2022
         </FooterHeading>
 
 
@@ -98,7 +98,7 @@ function HomePage() {
         <FooterSubHeading
           style={{ color: '#16B8D8' }}
         >
-          26th - 27th June
+          25th - 26th June
         </FooterSubHeading>
         <SmallMarging></SmallMarging>
 

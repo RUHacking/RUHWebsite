@@ -12,7 +12,7 @@ export const Data = [
   {
     question: 'How much is entry?',
     answer:
-      'Admission to the event is COMPLETELY FREE! Thanks to our fantastic sponsors, we are able to bring to you R. U. Hacking 2021 free of charge!',
+      'Admission to the event is COMPLETELY FREE! Thanks to our fantastic sponsors, we are able to bring to you R. U. Hacking 2022 free of charge!',
   },
   {
     question: "But I don't have a team?",

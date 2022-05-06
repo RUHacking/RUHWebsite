@@ -35,7 +35,7 @@ export const HomeObjectTwo = {
     "Whether you're completely new to programming or are a seasoned hackathon veteran, you are welcome to join us in this fun and collaborative invention marathon!",
     description2:
     "There are lots of prizes to be won so come along and get involved - whether you're completely new to programming or are a seasoned hackathon veteran, you're in for a fantastic weekend!",
-  headline: 'R. U. Hacking? 2021',
+  headline: 'R. U. Hacking? 2022',
   lightText: true,
   img3: require('../../img/RUHWebsiteBanner02-01.png').default,
   alt: 'Image',
@@ -55,7 +55,7 @@ export const HomeObjectFour = {
     description1:
     "Our sponsors are first-class, have loads of experience and are here to provide support!",
     description2:
-    "More sponsors will be posted as we get closer to the event, and if you're interested in becoming a sponsor for RUHacking? 2021 then please register your interest below.",
+    "More sponsors will be posted as we get closer to the event, and if you're interested in becoming a sponsor for RUHacking? 2022 then please register your interest below.",
   headline: 'Interested in sponsoring us?',
   lightText: true,
   img: require('../../img/RUHLogoFinal02.png').default,
