@@ -18,7 +18,7 @@ export const HomeObjectOne = {
     
   headline: 'Who are we?',
   lightText: true,
-  img: require('../../img/BottomImage1.png').default,
+  img: require('../../img/BottomImage1.png'),
   alt: 'Image',
   start: 'true',
 };
@@ -37,7 +37,7 @@ export const HomeObjectTwo = {
     "There are lots of prizes to be won so come along and get involved - whether you're completely new to programming or are a seasoned hackathon veteran, you're in for a fantastic weekend!",
   headline: 'R. U. Hacking? 2022',
   lightText: true,
-  img3: require('../../img/RUHWebsiteBanner02-01.png').default,
+  img3: require('../../img/RUHWebsiteBanner02-01.png'),
   alt: 'Image',
   start: 'true',
 };
@@ -58,7 +58,7 @@ export const HomeObjectFour = {
     "More sponsors will be posted as we get closer to the event, and if you're interested in becoming a sponsor for RUHacking? 2022 then please register your interest below.",
   headline: 'Interested in sponsoring us?',
   lightText: true,
-  img: require('../../img/RUHLogoFinal02.png').default,
+  img: require('../../img/RUHLogoFinal02.png'),
   alt: 'Image',
   start: 'true',
 };

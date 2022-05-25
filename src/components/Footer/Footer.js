@@ -1,19 +1,35 @@
 import React from 'react';
-import { FaDiscord, FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import {
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter
+} from 'react-icons/fa';
 import logo from '../../img/logo/newLogo.png';
 import {
-  FooterContainer, FooterLink, FooterLinksContainer, FooterLinksItems, FooterLinksWrapper, FooterLinkTitle, FooterSubHeading,
+  FooterContainer,
+  FooterLink,
+  FooterLinksContainer,
+  FooterLinksItems,
+  FooterLinksWrapper,
+  FooterLinkTitle,
+  FooterSubHeading,
   FooterSubscription,
-  FooterSubText, SocialIcon, SocialIconLink, SocialIcons, SocialLogo, SocialMedia,
+  FooterSubText,
+  SocialIcon,
+  SocialIconLink,
+  SocialIcons,
+  SocialLogo,
+  SocialMedia,
   SocialMediaWrap,
   WebsiteRights
 } from './Footer.elements';
 
-
 const Footer = () => {
   return (
     <>
-      <FooterContainer id='footer'>
+      <FooterContainer id="footer">
         <FooterSubscription>
           <FooterSubHeading>Email</FooterSubHeading>
           <FooterSubText>
@@ -30,42 +46,37 @@ const Footer = () => {
           <FooterLinksWrapper>
             <FooterLinksItems>
               <FooterLinkTitle>Useful Links </FooterLinkTitle>
-              <FooterLink style={{ color: '#ffff' }} >
-             
-            <a href ="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-            target="_blank"
-            style={{ color: '#FFF'}}
-            
-            
-            >
-
-           MLH Code Of Conduct
-            </a>
+              <FooterLink style={{ color: '#ffff' }}>
+                <a
+                  href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  target="_blank"
+                  style={{ color: '#FFF' }}
+                >
+                  MLH Code Of Conduct
+                </a>
               </FooterLink>
 
-              <FooterLink style={{ color: '#ffff' }} >
-             
-            <a href ="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
-           type="pdf"
-           target="_blank"
-           style={{ color: '#FFF' }}
-
-            
-            >
-
-                Sponsorship
-            </a>
+              <FooterLink style={{ color: '#ffff' }}>
+                <a
+                  href="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
+                  type="pdf"
+                  target="_blank"
+                  style={{ color: '#FFF' }}
+                >
+                  Sponsorship
+                </a>
               </FooterLink>
-
-
             </FooterLinksItems>
             <FooterLinksItems>
               <FooterLinkTitle>Contact Us </FooterLinkTitle>
-              <a href = 'https://linktr.ee/r.u.hacking' target="_blank">
-              <FooterLink style={{ color: '#ffff' }} >
-              Get the latest updates from R.U.Hacking by following us on social media
+              <FooterLink
+                href="https://linktr.ee/r.u.hacking"
+                target="_blank"
+                style={{ color: '#ffff' }}
+              >
+                Get the latest updates from R.U.Hacking by following us on
+                social media
               </FooterLink>
-              </a>
             </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -83,25 +94,20 @@ const Footer = () => {
             </SocialLogo>
             <WebsiteRights>RUHACKING © 2022</WebsiteRights>
             <SocialIcons>
-
-
-            <SocialIconLink
+              <SocialIconLink
                 href="https://discord.gg/VfWm3nwsQF"
                 target="_blank"
                 aria-label="Discord"
                 style={{ color: '#FFF' }}
-
               >
                 <FaDiscord />
               </SocialIconLink>
-
 
               <SocialIconLink
                 href="https://www.facebook.com/readingunihack"
                 target="_blank"
                 aria-label="Facebook"
                 style={{ color: '#FFF' }}
-
               >
                 <FaFacebook />
               </SocialIconLink>
@@ -110,7 +116,6 @@ const Footer = () => {
                 target="_blank"
                 aria-label="Twitter"
                 style={{ color: '#FFF' }}
-
               >
                 <FaTwitter />
               </SocialIconLink>
@@ -119,7 +124,6 @@ const Footer = () => {
                 target="_blank"
                 aria-label="Instagram"
                 style={{ color: '#FFF' }}
-
               >
                 <FaInstagram />
               </SocialIconLink>
@@ -128,7 +132,6 @@ const Footer = () => {
                 target="_blank"
                 aria-label="Linkedin"
                 style={{ color: '#FFF' }}
-
               >
                 <FaLinkedin />
               </SocialIconLink>

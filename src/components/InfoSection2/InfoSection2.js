@@ -1,18 +1,12 @@
 import React from 'react';
-import { Container, Button } from '../../global_styles';
-import Image from 'react-bootstrap/Image'
 import { Card } from 'react-bootstrap';
-
+import Image from 'react-bootstrap/Image';
+import { Button, Container } from '../../global_styles';
 import {
-  InfoSec,
-  InfoRow,
-  InfoColumn,
-  TextWrapper,
-  TopLine,
-  Heading,
-  Subtitle,
-  ImgWrapper,
+  Heading, ImgWrapper, InfoColumn, InfoRow, InfoSec, Subtitle, TextWrapper,
+  TopLine
 } from './InfoSection2.elements';
+
 
 const InfoSection2 = ({
   primary,
@@ -33,7 +27,7 @@ const InfoSection2 = ({
 }) => {
   return (
     <>
-      <InfoSec lightBg={lightBg} id='inf2'>
+      <InfoSec lightBg={lightBg} id="inf2">
         <Container>
           <InfoRow imgStart={imgStart}>
             <InfoColumn>
@@ -41,9 +35,16 @@ const InfoSection2 = ({
                 <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                <Subtitle lightTextDesc={lightTextDesc}>{description1}</Subtitle>
-                <Subtitle lightTextDesc={lightTextDesc}>{description2}</Subtitle>
-                <a href="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf" target="_blank">
+                <Subtitle lightTextDesc={lightTextDesc}>
+                  {description1}
+                </Subtitle>
+                <Subtitle lightTextDesc={lightTextDesc}>
+                  {description2}
+                </Subtitle>
+                <a
+                  href="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
+                  target="_blank"
+                >
                   <Button big fontBig primary={primary}>
                     {buttonLabel}
                   </Button>
@@ -52,8 +53,8 @@ const InfoSection2 = ({
             </InfoColumn>
             <InfoColumn>
               <ImgWrapper start={start}>
-              <Card style = {{border: 'none',background:'#454545'}}>
-                <Image src={img} fluid alt={alt} />
+                <Card style={{ border: 'none', background: '#454545' }}>
+                  <Image src={img} fluid alt={alt} />
                 </Card>
               </ImgWrapper>
             </InfoColumn>

@@ -4,7 +4,6 @@ import { Container } from '../../global_styles';
 import './Schedule.css';
 
 export const SmallGap = styled.div`
-
   padding-top: 150px;
 `;
 
@@ -14,10 +13,8 @@ const FooterSubHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
-  font-family: 'clone-rounded-latin',sans-serif;
+  font-family: 'clone-rounded-latin', sans-serif;
 `;
-
-
 
 const AccordionSection = styled.div`
   display: flex;
@@ -29,8 +26,6 @@ const AccordionSection = styled.div`
   background: #ffff;
 `;
 
-
-
 const Schedule = () => {
   return (
     <Container id="faq">
@@ -38,38 +33,45 @@ const Schedule = () => {
         <FooterSubHeading>Schedule</FooterSubHeading>
       </AccordionSection>
 
-
-
-
-      <div class="row"  >
-        <div class="column" >
-          <table >
-            <th colspan="2" class="table-active">Saturday 25th June — Day 1</th>
-            <tr></tr>
-            <tr>
-              <td>--:--</td>
-              <td>TBD</td>
-            </tr>
+      <div className="row">
+        <div className="column">
+          <table>
+            <thead>
+              <tr>
+                <th colSpan="2" className="table-active">
+                  Saturday 25th June — Day 1
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>--:--</td>
+                <td>TBD</td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
-        <div class="column" >
-
+        <div className="column">
           <table>
-            <th colspan="2" class="table-active">Sunday 26th June — Day 2</th>
-            <tr></tr>
-            <tr>
-              <td>--:--</td>
-              <td>TBD</td>
-            </tr>
+            <thead>
+              <tr>
+                <th colSpan="2" className="table-active">
+                  Sunday 26th June — Day 2
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>--:--</td>
+                <td>TBD</td>
+              </tr>
+            </tbody>
           </table>
-
         </div>
       </div>
 
-
       <SmallGap></SmallGap>
-
     </Container>
   );
 };

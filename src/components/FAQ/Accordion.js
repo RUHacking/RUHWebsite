@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Data } from './Data';
-import styled from 'styled-components';
 import { IconContext } from 'react-icons';
 import {
   IoIosArrowDropdownCircle,
-  IoIosArrowDropupCircle,
+  IoIosArrowDropupCircle
 } from 'react-icons/io';
+import styled from 'styled-components';
 import { Container } from '../../global_styles';
+import { Data } from './Data';
 
 export const SmallGap = styled.div`
-
   padding-top: 150px;
 `;
 
@@ -19,11 +18,8 @@ const FooterSubHeading = styled.p`
   align-items: center;
   text-align: center;
   display: flex;
-  font-family: 'clone-rounded-latin',sans-serif;
+  font-family: 'clone-rounded-latin', sans-serif;
 `;
-
-
-
 
 const Dropdown = styled.div`
   background: #ffff;
@@ -33,7 +29,7 @@ const Dropdown = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  font-family: 'clone-rounded-latin',sans-serif;
+  font-family: 'clone-rounded-latin', sans-serif;
 
   border-radius: 25px;
 `;
@@ -59,7 +55,7 @@ const Wrap = styled.div`
   border-bottom: 20px solid #ffff;
   border-top: 20px solid #ffff;
   border-radius: 25px;
-  font-family: 'clone-rounded-latin',sans-serif;
+  font-family: 'clone-rounded-latin', sans-serif;
 
   cursor: pointer;
 
@@ -76,7 +72,7 @@ const Wrap = styled.div`
 export const Accordion = () => {
   const [clicked, setClicked] = useState(false);
 
-  const toggle = index => {
+  const toggle = (index) => {
     if (clicked === index) {
       return setClicked(null);
     }
@@ -90,30 +86,27 @@ export const Accordion = () => {
           <FooterSubHeading>Frequently Asked Questions</FooterSubHeading>
         </AccordionSection>
 
-        {Data.map((item, index) => {
-          return (
-            <>
-              <Wrap onClick={() => toggle(index)} keys={index}>
-                <h1> {item.question}</h1>
-                <span>
-                  {clicked === index ? (
-                    <IoIosArrowDropupCircle />
-                  ) : (
-                    <IoIosArrowDropdownCircle />
-                  )}
-                </span>
-              </Wrap>
-              {clicked === index ? (
-                <Dropdown>
-                  <p>{item.answer}</p>
-                </Dropdown>
-              ) : null}
-            </>
-          );
-        })}
+        {Data.map((item, index) => (
+          <React.Fragment key={index}>
+            <Wrap onClick={() => toggle(index)} keys={index}>
+              <h1> {item.question}</h1>
+              <span>
+                {clicked === index ? (
+                  <IoIosArrowDropupCircle />
+                ) : (
+                  <IoIosArrowDropdownCircle />
+                )}
+              </span>
+            </Wrap>
+            {clicked === index ? (
+              <Dropdown>
+                <p>{item.answer}</p>
+              </Dropdown>
+            ) : null}
+          </React.Fragment>
+        ))}
       </IconContext.Provider>
       <SmallGap></SmallGap>
-
     </Container>
   );
 };
