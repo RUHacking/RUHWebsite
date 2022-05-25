@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "autoprefixer": "10.4.5",
     "bootstrap": "^4.6.0",
     "config-yml": "^0.10.3",
     "file-loader": "^6.2.0",
@@ -25,6 +26,9 @@
     "web-vitals": "^1.0.1",
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.1"
+  },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
