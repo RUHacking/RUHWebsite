@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { Button } from '../../global_styles';
@@ -16,22 +16,7 @@ import {
 
 const Navbar = () => {
 	const [click, setClick] = useState(false);
-	const [button, setButton] = useState(true);
 	const handleClick = () => setClick(!click);
-
-	const showButton = () => {
-		if (window.innetWidth <= 960) {
-			setButton(false);
-		} else {
-			setButton(true);
-		}
-	};
-
-	useEffect(() => {
-		showButton();
-	}, []);
-
-	window.addEventListener('resize', showButton);
 
 	return (
 		<>
@@ -155,7 +140,6 @@ const Navbar = () => {
 						</NavMenu>
 					</NavbarContain>
 
-					{/* TODO: Add new MLH badge here */}
 					<a
 						href="https://mlh.io/seasons/2022/events?utm_source=eu-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white"
 						id="mlh-trust-badge"
