@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3865a475.css",
-    "main.js": "./static/js/main.a4e9fd1c.js",
+    "main.js": "./static/js/main.c520c679.js",
     "static/media/BottomImage1.png": "./static/media/BottomImage1.65f93e0268993078e304.png",
     "static/media/SSH.png": "./static/media/SSH.6d42526180e9aa17d6d4.png",
     "static/media/Dan.jpg": "./static/media/Dan.c8ac9053786b52126e6d.jpg",
@@ -31,10 +31,10 @@
     "static/media/postman-logo-stacked.svg": "./static/media/postman-logo-stacked.1ba31de5229882f6d4a0000822bed37e.svg",
     "index.html": "./index.html",
     "main.3865a475.css.map": "./static/css/main.3865a475.css.map",
-    "main.a4e9fd1c.js.map": "./static/js/main.a4e9fd1c.js.map"
+    "main.c520c679.js.map": "./static/js/main.c520c679.js.map"
   },
   "entrypoints": [
     "static/css/main.3865a475.css",
-    "static/js/main.a4e9fd1c.js"
+    "static/js/main.c520c679.js"
   ]
 }
