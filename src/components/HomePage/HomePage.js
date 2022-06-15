@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 import { Button1 } from './Button1';
@@ -70,7 +69,7 @@ function HomePage() {
 
         <div>
           <a
-            href="https://www.eventbrite.co.uk/e/r-u-hacking-2021-24-hour-student-hackathon-tickets-71648722257"
+            href="https://www.eventbrite.co.uk/e/r-u-hacking-2022-24-hour-student-hackathon-tickets-236290038867"
             target="_blank"
           >
             <Button1
