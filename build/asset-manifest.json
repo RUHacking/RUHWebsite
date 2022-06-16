@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.3865a475.css",
-    "main.js": "./static/js/main.13864a38.js",
+    "main.js": "./static/js/main.53b85fb7.js",
     "static/media/BottomImage1.png": "./static/media/BottomImage1.65f93e0268993078e304.png",
     "static/media/SSH.png": "./static/media/SSH.6d42526180e9aa17d6d4.png",
     "static/media/Dan.jpg": "./static/media/Dan.c8ac9053786b52126e6d.jpg",
@@ -12,25 +12,23 @@
     "static/media/Amadeusz.jpg": "./static/media/Amadeusz.ca4b5bbad0b8255ae376.jpg",
     "static/media/Neyma.jpg": "./static/media/Neyma.742b6635c5e6afdf3ea7.jpg",
     "static/media/newLogo.png": "./static/media/newLogo.ecdd8c65966754d36849.png",
+    "static/media/CodeWizards_Logo.png": "./static/media/CodeWizards_Logo.aad088de09d6d670b512.png",
     "static/media/Emily.jpg": "./static/media/Emily.e73466cb509d752119b5.jpg",
-    "static/media/hackproduction.png": "./static/media/hackproduction.a73ebe44059665c291dd.png",
     "static/media/Dimitar.jpg": "./static/media/Dimitar.4c00cc35dfde4f1d19ba.jpg",
     "static/media/Nataliya.jpg": "./static/media/Nataliya.fead29dfaea33523d907.jpg",
-    "static/media/SEROCU_logo-1.png": "./static/media/SEROCU_logo-1.fef5e328bcde9c5ac1f0.png",
     "static/media/Joe.jpg": "./static/media/Joe.209cd6890d3845eb0b64.jpg",
+    "static/media/Digital_Ocean.png": "./static/media/Digital_Ocean.0ee1f2ddfcfb59242086.png",
     "static/media/Zebra_Technologies.png": "./static/media/Zebra_Technologies.bf611442a3ae3917a5b0.png",
     "static/media/RUHWebsiteBanner02-01.png": "./static/media/RUHWebsiteBanner02-01.2b5c75b0b794865cf90a.png",
-    "static/media/Institute_of_Technology_-_Gold_Sponsor.png": "./static/media/Institute_of_Technology_-_Gold_Sponsor.d3205855547617b83e71.png",
-    "static/media/ThamesValleyAiHub (1) (2).png": "./static/media/ThamesValleyAiHub (1) (2).9aec29acefbbecf92d55.png",
     "static/media/bcs-logo.svg": "./static/media/bcs-logo.6301329d95621dcd4b73563e7c2657e8.svg",
     "static/media/Sticker_Mule_Logo.png": "./static/media/Sticker_Mule_Logo.d1ad4fc4d53ca6d0a495.png",
     "static/media/HackathonsUk.png": "./static/media/HackathonsUk.ff4b2b15bb49908a2e69.png",
     "index.html": "./index.html",
     "main.3865a475.css.map": "./static/css/main.3865a475.css.map",
-    "main.13864a38.js.map": "./static/js/main.13864a38.js.map"
+    "main.53b85fb7.js.map": "./static/js/main.53b85fb7.js.map"
   },
   "entrypoints": [
     "static/css/main.3865a475.css",
-    "static/js/main.13864a38.js"
+    "static/js/main.53b85fb7.js"
   ]
 }
