@@ -1,20 +1,17 @@
-import React from 'react';
 import FAQ from '../../components/FAQ/FAQ';
-import Schedule from '../../components/Schedule/Schedule';
-import Team from '../../components/Team/Team';
-import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
 import InfoSection2 from '../../components/InfoSection2/InfoSection2';
 import InfoSection3 from '../../components/InfoSection3/InfoSection3';
+import Schedule from '../../components/Schedule/Schedule';
+import { FooterSubHeading } from '../../components/Sponsors/Sponsors.elements';
+import Team from '../../components/Team/Team';
 
 import { InfoSection } from '../../components';
-import Sponsors1 from '../../components/Sponsors1/Sponsors1';
 import HomePage from '../../components/HomePage/HomePage';
+import Sponsors from '../../components/Sponsors/Sponsors';
 
 import {
-  HomeObjectOne,
-  HomeObjectTwo,
-  HomeObjectFour,
-  HomeObjectFive,
+  HomeObjectFive, HomeObjectFour, HomeObjectOne,
+  HomeObjectTwo
 } from './Data';
 
 const Home = () =>  {
@@ -26,7 +23,7 @@ const Home = () =>  {
       <FAQ />
       <InfoSection2 {...HomeObjectFour} />
       <FooterSubHeading>
-        <Sponsors1 {...HomeObjectFive} />
+        <Sponsors {...HomeObjectFive} />
       </FooterSubHeading>
       <InfoSection {...HomeObjectOne} />
       <Team />
