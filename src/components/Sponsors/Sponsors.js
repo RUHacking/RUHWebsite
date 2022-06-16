@@ -14,6 +14,7 @@ import HackathonsUk from '../../img/HackathonsUk.png';
 import mlh from '../../img/mlh-logo-color.png';
 import Zebra from '../../img/Zebra_Technologies.png';
 
+import { PROSPECT_PDF } from '../../constants/files';
 import CSA from '../../img/Comp_Sci_affiliation.png';
 import DigitalOcean from '../../img/Digital_Ocean.png';
 import SSH from '../../img/SSH.png';
@@ -160,8 +161,9 @@ const Team1 = ({ lightBg, imgStart, alt, start }) => {
 
 				<CardGroup style={{ width: 'auto', height: 'auto' }}>
 					<a
-						href="https://cdn.discordapp.com/attachments/704356731974844426/821814499946135592/prospectus2021-final_1.pdf"
+						href={PROSPECT_PDF}
 						target="_blank"
+						rel="noreferrer noopener"
 					>
 						<Button>
 							Do you want your logo here? Become a sponsor!
