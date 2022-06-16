@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.3865a475.css",
-    "main.js": "./static/js/main.53b85fb7.js",
+    "main.js": "./static/js/main.723ea7cd.js",
     "static/media/BottomImage1.png": "./static/media/BottomImage1.65f93e0268993078e304.png",
     "static/media/SSH.png": "./static/media/SSH.6d42526180e9aa17d6d4.png",
-    "static/media/Dan.jpg": "./static/media/Dan.c8ac9053786b52126e6d.jpg",
-    "static/media/Anna.jpg": "./static/media/Anna.0a7dea33dffc6d8d5208.jpg",
+    "static/media/Uvis_Treasurer.jpg": "./static/media/Uvis_Treasurer.69e480a6b58c08dc016d.jpg",
+    "static/media/RUHacking_Prospectus_2022.pdf": "./static/media/RUHacking_Prospectus_2022.b1a5a0b0330562de7a0a.pdf",
+    "static/media/Mark_Vice_president.jpg": "./static/media/Mark_Vice_president.0f42810f8acd57334bd6.jpg",
+    "static/media/Nirmani_Social_media_manager.jpg": "./static/media/Nirmani_Social_media_manager.e7ae2f771915ef02f62d.jpg",
     "static/media/RUHLogoFinal02.png": "./static/media/RUHLogoFinal02.89cb9dca950d61f29cc2.png",
-    "static/media/Savva.jpg": "./static/media/Savva.b0dd9b0e604edf0c85d7.jpg",
+    "static/media/Tiago_Secretary.jpg": "./static/media/Tiago_Secretary.564db2414c99f9969417.jpg",
+    "static/media/Taria_Graphic_designer.png": "./static/media/Taria_Graphic_designer.8678690c2207a5d0d005.png",
+    "static/media/Naomi_Graphic_designer.jpg": "./static/media/Naomi_Graphic_designer.8f8743150d0b056067fa.jpg",
+    "static/media/Emily_President.jpg": "./static/media/Emily_President.8ae3d0897b216edf5b9e.jpg",
     "static/media/Bayer_LifeHub_UK_Logo.png": "./static/media/Bayer_LifeHub_UK_Logo.e7f745a43a265c0ee935.png",
-    "static/media/Amadeusz.jpg": "./static/media/Amadeusz.ca4b5bbad0b8255ae376.jpg",
-    "static/media/Neyma.jpg": "./static/media/Neyma.742b6635c5e6afdf3ea7.jpg",
+    "static/media/Manu_Welfare_Officer.jpg": "./static/media/Manu_Welfare_Officer.8c68702827433d35d11f.jpg",
     "static/media/newLogo.png": "./static/media/newLogo.ecdd8c65966754d36849.png",
     "static/media/CodeWizards_Logo.png": "./static/media/CodeWizards_Logo.aad088de09d6d670b512.png",
-    "static/media/Emily.jpg": "./static/media/Emily.e73466cb509d752119b5.jpg",
-    "static/media/Dimitar.jpg": "./static/media/Dimitar.4c00cc35dfde4f1d19ba.jpg",
-    "static/media/Nataliya.jpg": "./static/media/Nataliya.fead29dfaea33523d907.jpg",
-    "static/media/Joe.jpg": "./static/media/Joe.209cd6890d3845eb0b64.jpg",
     "static/media/Digital_Ocean.png": "./static/media/Digital_Ocean.0ee1f2ddfcfb59242086.png",
     "static/media/Zebra_Technologies.png": "./static/media/Zebra_Technologies.bf611442a3ae3917a5b0.png",
     "static/media/RUHWebsiteBanner02-01.png": "./static/media/RUHWebsiteBanner02-01.2b5c75b0b794865cf90a.png",
@@ -25,10 +25,10 @@
     "static/media/HackathonsUk.png": "./static/media/HackathonsUk.ff4b2b15bb49908a2e69.png",
     "index.html": "./index.html",
     "main.3865a475.css.map": "./static/css/main.3865a475.css.map",
-    "main.53b85fb7.js.map": "./static/js/main.53b85fb7.js.map"
+    "main.723ea7cd.js.map": "./static/js/main.723ea7cd.js.map"
   },
   "entrypoints": [
     "static/css/main.3865a475.css",
-    "static/js/main.53b85fb7.js"
+    "static/js/main.723ea7cd.js"
   ]
 }

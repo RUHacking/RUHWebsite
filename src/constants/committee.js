@@ -16,6 +16,7 @@ const COMMITTEE = [
 		role: 'Secretary',
 		img: require('../img/committee/Tiago_Secretary.jpg'),
 		email: 'tjpa98@gmail.com',
+		linkedin: 'https://www.linkedin.com/in/allmosthere/',
 	},
 	{
 		name: 'Uvis Dulius',
