@@ -35,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "add-domain": "echo \"echo ruhacking.uk\" > build/CNAME",
+    "add-domain": "echo \"ruhacking.uk\" > build/CNAME",
     "predeploy": "yarn build && yarn add-domain",
     "deploy": "gh-pages -d build"
   },
