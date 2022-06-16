@@ -83,7 +83,7 @@ function HomePage() {
         </div>
 
         <div>
-          <a href="https://discord.gg/VfWm3nwsQF" target="_blank">
+          <a href="https://discord.gg/598PD4ghGw" target="_blank">
             <Button
               className="btns"
               buttonStyle="btn--outline"
