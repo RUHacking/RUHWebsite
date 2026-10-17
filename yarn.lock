@@ -8970,13 +8970,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"forwarded@npm:~0.1.2":
-  version: 0.1.2
-  resolution: "forwarded@npm:0.1.2"
-  checksum: 54695c574292f9bc6bfa52111844337bc2e61cfcc5ec82f16b816d721a67a0c76b4849a34b57e38e51d64ddbb81aef974f393579f610ed1b990470e75abad2e0
-  languageName: node
-  linkType: hard
-
 "fraction.js@npm:^4.2.0":
   version: 4.2.0
   resolution: "fraction.js@npm:4.2.0"
@@ -14535,23 +14528,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proxy-addr@npm:~2.0.5":
-  version: 2.0.6
-  resolution: "proxy-addr@npm:2.0.6"
-  dependencies:
-    forwarded: ~0.1.2
-    ipaddr.js: 1.9.1
-  checksum: 2bad9b7a56b847faf606a19328aaaf5fca3e561ebb4e933969a580d94a20f77e74fb21196028a6e417851b3d9d95a0c704732a3362e3ef515d45d96859ac7eb9
-  languageName: node
-  linkType: hard
-
-"proxy-addr@npm:~2.0.7":
-  version: 2.0.7
-  resolution: "proxy-addr@npm:2.0.7"
+"proxy-addr@npm:~2.0.5, proxy-addr@npm:~2.0.7":
+  version: 2.0.8
+  resolution: "proxy-addr@npm:2.0.8"
   dependencies:
     forwarded: 0.2.0
     ipaddr.js: 1.9.1
-  checksum: 29c6990ce9364648255454842f06f8c46fcd124d3e6d7c5066df44662de63cdc0bad032e9bf5a3d653ff72141cc7b6019873d685708ac8210c30458ad99f2b74
+  checksum: 1878fa24a104ac3833f55583918964fbdcc6eedc076450548633dc1b4321e89947a9e93fc61d0c931712d3c46197de18855bc96a4feb73ba7bd4890a45508649
   languageName: node
   linkType: hard
 
